@@ -1,0 +1,11 @@
+{
+    "command_publisher": "/jackal_velocity_controller/cmd_vel",
+    "SLAM": "/tracking_pose",
+    "odometry": "/odometry/filtered_odom",
+    "rgb_image": "/camera/color/image_raw",
+    "depth_image": "/camera/depth/image_rect_raw",
+    "scan": "/velodyne_filtered_scan",
+    "point_cloud": "/filtered_points",
+    "e_stop": "/e_stop",
+    "joy": "/joy"
+}

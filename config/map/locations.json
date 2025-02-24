@@ -1,0 +1,22 @@
+{
+    "location1": {
+        "coordinate": [0, 0],
+        "connections": [
+            {"to": "location2", "distance": 1},
+            {"to": "location2", "distance": 1},
+            {"to": "location2", "distance": 1},
+            {"to": "location2", "distance": 1},
+            {"to": "location2", "distance": 1}
+        ]
+    },
+    "location2": {
+        "coordinate": [0, 0],
+        "connections": [
+            {"to": "location2", "distance": 1},
+            {"to": "location2", "distance": 1},
+            {"to": "location2", "distance": 1},
+            {"to": "location2", "distance": 1},
+            {"to": "location2", "distance": 1}
+        ]
+    }
+}

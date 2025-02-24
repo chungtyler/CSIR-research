@@ -1,0 +1,17 @@
+{
+    "jerry": {
+        "face_ID": "C:\\Users\\sdcnlab427\\Desktop\\SDCNLab\\Jackal\\figures\\staff\\jerry\\faceID.jpg",
+        "occupation": "janitor",
+        "responsibility": "To ensure the building facilities are clean especially the meeting rooms and lunch rooms where food and garbage are left behind, and to return the cleaning utility back to the storage room once finished."
+    },
+    "grace": {
+        "face_ID": "C:\\Users\\sdcnlab427\\Desktop\\SDCNLab\\Jackal\\figures\\staff\\grace\\faceID.jpg",
+        "occupation": "graduate research assistant",
+        "responsibility": "To perform experiments and gather results in the engineering lab, write reports and research papers to be published, and have meetings to give updates on current research progress."
+    },
+    "tyson": {
+        "face_ID": "C:\\Users\\sdcnlab427\\Desktop\\SDCNLab\\Jackal\\figures\\staff\\tyson\\faceID.jpg",
+        "occupation": "technician",
+        "responsibility": "To receive and sort out delivery packages into the storage room, setup and validate testing apparatus, and provide storage resources for researchers."
+    }
+}
