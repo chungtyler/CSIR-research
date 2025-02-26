@@ -112,8 +112,9 @@ class Navigation:
         command.angular.z = angular_velocity
         self.pub.publish(command)
 
-    def rotate(self, setpoint_angle):
+    def rotate_to(self, setpoint_angle):
         # Use the angle controller to rotate the agent to the specified angle
+        previous_time = rospy.Time.now()
         while not rospy.is_shutdown():
             measured_angle = self.pose['yaw']
             error = measured_angle - setpoint_angle # Fine the error in angle from agent and setpoint
@@ -122,7 +123,7 @@ class Navigation:
             # Add stabalization time to ensure the agent reaches the setpoint for X amount of time
             current_time = rospy.Time.now()
             if abs(error) < self.angle_threshold:
-                if (current_time - previous_time) > self.angle_stablization_time:
+                if (current_time - previous_time).to_sec() > self.angle_stablization_time:
                     # Reset controller parameters after command is complete
                     self.angle_control.total_error = 0
                     self.angle_control.prev_error = 0

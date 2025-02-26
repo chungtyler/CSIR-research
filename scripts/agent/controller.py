@@ -47,7 +47,7 @@ class PurePursuit:
 
     def find_lookahead_point(self, agent_position, path):
         # Determine the lookahead point by finding the point with the closest distance to the lookahead distance
-        closest_point = agent_position # Default to the agent's position to stop the agent
+        closest_point = path[-1] # Default to the final path's position to stop the agent
         smallest_error = math.inf
 
         for point in path:

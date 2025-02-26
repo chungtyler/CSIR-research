@@ -8,7 +8,7 @@ class Inference:
             self.api_keys = json.load(api_key_file)
 
         # Load Models
-        self.models[model] = {
+        self.models = {
             'OpenAI': OpenAI(self.api_keys['OpenAI']),
             'DeepSeek': DeepSeek()
         }
