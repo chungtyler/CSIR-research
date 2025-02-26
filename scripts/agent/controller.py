@@ -29,12 +29,12 @@ class PID:
         step_command = self.saturation_filter(step_command)
 
         return step_command
-    
+
     def saturation_filter(self, step_command):
         # Add saturation filter to clamp the command values
         saturated_command = max(self.MIN, min(self.MAX, step_command))
         return saturated_command
-    
+
 class PurePursuit:
     '''
     Pure pursuit controller for controlling agent steering
@@ -44,10 +44,10 @@ class PurePursuit:
         self.forward_velocity = forward_velocity
         self.MIN_LOOKAHEAD_ANGLE = MIN_LOOKAHEAD_ANGLE
         self.MAX_LOOKAHEAD_ANGLE = MAX_LOOKAHEAD_ANGLE
-    
+
     def find_lookahead_point(self, agent_position, path):
         # Determine the lookahead point by finding the point with the closest distance to the lookahead distance
-        closest_point = agent_position # Default to the agent's position to stop the agent
+        closest_point = path[-1] # Default to the final path's position to stop the agent
         smallest_error = math.inf
 
         for point in path:
@@ -58,7 +58,7 @@ class PurePursuit:
                 closest_point = point
 
         return closest_point
-    
+
     def get_velocity_command(self, agent_pose, path):
         # Calculate the angular velocity commands based on pure pursuit controller
         agent_position = [agent_pose['X'], agent_pose['Y']]
@@ -75,4 +75,3 @@ class PurePursuit:
         steering_velocity = self.forward_velocity / turning_radius # Determine the angular velocity required to keep this turning radius *Note can be changed for PID control
 
         return forward_velocity, steering_velocity
-

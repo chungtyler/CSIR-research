@@ -2,7 +2,7 @@ import rospy
 import cv2
 import numpy as np
 import yaml
-from pyastar import AStar
+import pyastar2d as astar
 
 class Planning:
     '''
@@ -11,7 +11,6 @@ class Planning:
     def __init__(self, path_to_config):
         # Initialize occupancy map and path planning
         self.map, self.map_resolution, self.map_origin = self.load_map_config(path_to_config + '/map/map.pgm', path_to_config + '/map/map.yaml')
-        self.astar = AStar(self.map)
         self.PATH_COLOUR = (255, 0, 255)
 
     def load_map_config(self, map_pgm_path, map_yaml_path):
@@ -31,7 +30,7 @@ class Planning:
         map_origin = map_data['origin']
 
         return map, map_resolution, map_origin
-    
+
     def pad_map(self, map, radius):
         # Pad the occupied areas of the map with defined radius to prevent agent collision
         padded_map = map.copy()
@@ -52,21 +51,21 @@ class Planning:
         cv2.waitKey(-1)
         cv2.destroyAllWindows
 
-    def generate_path(self, start, goal):
+    def generate_path(self, start, goal, map=self.map):
         # Get AStar path as a list of tuples (x, y)
-        path = self.astar.find_path(start, goal)
+        path = astar.find_path(map, start, goal)
         return path
 
     def get_path_length(self, path):
         # return path_length by finding the distance between points and summing the total length
         path_length = 0
         previous_x, previous_y = path[0]
-        
+
         # Loop through the path points and find distance between current and previous point
         for x, y in path:
             path_length += math.dist(previous_x - x, previous_y - y)
             previous_x, previous_y = (x, y)
-        
+
         return path_length
 
     def show_path(self, map, path, scaling_factor=1):
@@ -79,12 +78,12 @@ class Planning:
 
         # Display the map with the path
         self.show_map(display_map, scaling_factor)
-    
+
     def convert_to_real_point(self, pixel):
         # Convert pixel coordinate path to real [meters] coordinate
         real_point = (pixel[0] * self.map_resolution + self.map_origin, pixel[1] * self.map_resolution + self.map_origin)
         return real_point
-    
+
     def convert_to_real_path(self, path):
         # Convert path pixel coordinate path to real [meters] coordinate
         real_path = [self.real_point(pixel) for pixel in path]
@@ -95,5 +94,3 @@ if __name__ == "__main__":
         Planning()
     except rospy.ROSInterruptException:
         pass
-
-
