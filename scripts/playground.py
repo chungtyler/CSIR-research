@@ -22,4 +22,5 @@ if __name__ == "__main__":
     # constant forward veloicty m/s
     # MIN_LOOKAHEAD_ANGLE just ensure no 0 division dont worry about this
     # MAX_LOOKAHEAD_ANGLE tells the controller if the angle is to large only perform a pure rotation instead
+
     rospy.spin()
