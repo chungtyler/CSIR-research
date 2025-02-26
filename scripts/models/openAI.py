@@ -1,3 +1,6 @@
+import validators
+import os
+import base64
 from openai import OpenAI
 
 class OpenAI:
@@ -7,12 +10,6 @@ class OpenAI:
     def __init__(self, API_KEY):
         self.API_KEY = API_KEY
         self.client = OpenAI(api_key=self.API_KEY)
-        self.text_template = {"type": "text", "text": None}
-        self.image_template = {"type": "image_url", "image_url": {"url": None}}
-        self.message_template = [
-            {"role": "system", "content": None},
-            {"role": "user", "content": None}
-        ]
 
     def format_image(self, image):
         # Process the image to format it to the correct type for OpenAI
@@ -33,17 +30,14 @@ class OpenAI:
         user_content = [{"type": "text","text": query}]
 
         # Add image content for multiple images
-        if images is None:
-            return None
-            
-        for image in images:
-            formatted_image = self.format_image(image)
-            user_content.append({"type": "image_url", "image_url": {"url": formatted_image}})
-        # image_content = [user_content.append({"type": "image_url", "image_url": {"url": self.format_image(image)}) for image in images if images]
+        if images:
+            for image in images:
+                formatted_image = self.format_image(image)
+                user_content.append({"type": "image_url", "image_url": {"url": formatted_image}})
 
         messages = [{"role": "system", "content": prompt}, {"role": "user", "content": user_content}]
 
         # Send message payload and return the messages response
-        completion = client.chat.completions.create(model=model, messages=messages)
+        completion = self.client.chat.completions.create(model=model, messages=messages)
         response = completion.choices[0].messages
         return response

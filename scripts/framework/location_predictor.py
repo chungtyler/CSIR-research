@@ -30,7 +30,7 @@ class LocationPredictor:
 
     def response_to_locations(self, response):
         locations = re.findall(r'<list>(.*?)</list>', response, re.DOTALL)
-        locations = ast.literal_eval(ranked_locations[-1].replace(' ',''))
+        locations = ast.literal_eval(locations[-1].replace(' ',''))
         return locations
 
     def get_locations(self, query):
