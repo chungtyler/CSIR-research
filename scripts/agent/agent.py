@@ -14,7 +14,7 @@ class Agent:
         rospy.init_node('agent_node', anonymous=True)
 
         # Get absolute path to config file
-        path_to_config = Path(__file__).resolve.parents[2] / 'config'
+        path_to_config = Path(__file__).resolve().parents[2] / 'config'
 
         # Instantiate agent stack
         self.perception = Perception(path_to_config)
@@ -27,11 +27,11 @@ class Agent:
         #self.person_matcher = PersonMatcher(path_to_config, self.inference)
 
         # Load locations file
-        with open(path_to_config + '/locations.json', 'r') as locations_file:
+        with open(path_to_config / 'map/locations.json', 'r') as locations_file:
             self.locations = json.load(locations_file)
 
         # Load actors file
-        with open(path_to_config + '/actors.json', 'r') as actors_file:
+        with open(path_to_config / 'actors.json', 'r') as actors_file:
             self.actors = json.load(actors_file)
 
         #rospy.spin()
