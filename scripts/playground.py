@@ -1,8 +1,8 @@
-from .agent.agent import Agent
+from agent.agent import Agent
 
 if __name__ == "__main__":
     agent = Agent()
-    # DEMOING 
+    # DEMOING
     # TODO
     # get map.pgm and map.yaml running cartographer my_robot.launch, choose a suitable start location for jackal, although doesnt matter to much
     # replace config/map/map.pgm and config/map/map.yaml
@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     # TODO
     # tune controller in config/controller_setting.json running agent.navigation.rotate(theta) # where theta is in radians, this should already be tuned though
-    
+
     # TODO
     # validate if pure pursuit implementation is correct
     # perform simple navigation based on the map.yaml
@@ -22,3 +22,4 @@ if __name__ == "__main__":
     # constant forward veloicty m/s
     # MIN_LOOKAHEAD_ANGLE just ensure no 0 division dont worry about this
     # MAX_LOOKAHEAD_ANGLE tells the controller if the angle is to large only perform a pure rotation instead
+    rospy.spin()

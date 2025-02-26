@@ -11,10 +11,8 @@ class Perception:
     This includes recieving the RealSense camera RGB image and depth image as well as the Velodyne-16 LiDAR's 2D and 3D scans
     '''
     def __init__(self, path_to_config, MIN_DEPTH_RANGE=0, MAX_DEPTH_RANGE=2000):
-        rospy.init_node('perception_node', anonymous=True)
-
         # Load rostopic names
-        with open(path_to_config + '/rostopic.json', 'r') as rostopics_file:
+        with open(path_to_config + '/rostopics.json', 'r') as rostopics_file:
             rostopics = json.load(rostopics_file)
 
         self.sub_rgb_image = rospy.Subscriber(rostopics['rgb_image'], Image, self.rgb_image_callback, queue_size=1)
@@ -78,4 +76,3 @@ if __name__ == "__main__":
         Perception()
     except rospy.ROSInterruptException:
         pass
-    

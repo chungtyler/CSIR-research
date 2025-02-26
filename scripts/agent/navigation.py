@@ -16,10 +16,8 @@ class Navigation:
 
     # POSE_SOURCE='SLAM' or 'ODOMETRY'
     def __init__(self, path_to_config, POSE_SOURCE='SLAM'):
-        rospy.init_node('navigation_node', anonymous=True)
-
         # Load rostopic names
-        with open(path_to_config + '/rostopic.json', 'r') as rostopics_file:
+        with open(path_to_config + '/rostopics.json', 'r') as rostopics_file:
             rostopics = json.load(rostopics_file)
 
         self.pub = rospy.Publisher(rostopics['command_publisher'], Twist, queue=10)
@@ -47,11 +45,11 @@ class Navigation:
         # Initialize positional controller
         angle_control_config = controller_setting['angle_control']
         self.angle_control = PID(
-            angle_control_config['gains']['Kp'], 
-            angle_control_config['gains']['Ki'], 
-            angle_control_config['gains']['Kd'], 
-            angle_control_config['settings']['dt'], 
-            angle_control_config['settings']['MIN_CMD'], 
+            angle_control_config['gains']['Kp'],
+            angle_control_config['gains']['Ki'],
+            angle_control_config['gains']['Kd'],
+            angle_control_config['settings']['dt'],
+            angle_control_config['settings']['MIN_CMD'],
             angle_control_config['settings']['MAX_CMD']
         )
         self.angle_stablization_time = angle_control_config['settings']['stablization_time']
@@ -65,7 +63,7 @@ class Navigation:
             path_follow_config['MIN_LOOKAHEAD_ANGLE'],
             path_follow_config['MAX_LOOKAHEAD_ANGLE']
         )
-    
+
     def SLAM_callback(self, data):
         # Get pose information based on Cartographer SLAM system
         try:
@@ -107,7 +105,7 @@ class Navigation:
         # Move the agent based on linear [m/s] and angular velocity [rad/s]
         if self.estop.is_estop_active: # Stop sending control commands if emergency stop is active
             return
-        
+
         # Publish control commands
         command = Twist()
         command.linear.x = linear_velocity
@@ -162,5 +160,3 @@ if __name__ == "__main__":
         Navigation()
     except rospy.ROSInterruptException:
         pass
-
-

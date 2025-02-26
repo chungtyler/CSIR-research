@@ -9,10 +9,8 @@ class EmergencyStop:
     Toggles the actuator control commands ON or OFF.
     '''
     def __init__(self, path_to_config, DEBOUNCE_DURATION=0.5):
-        rospy.init_node('emergency_stop', anonymous=True)
-
         # Load rostopic names
-        with open(path_to_config + '/rostopic.json', 'r') as rostopics_file:
+        with open(path_to_config + '/rostopics.json', 'r') as rostopics_file:
             rostopics = json.load(rostopics_file)
 
         self.pub = rospy.Publisher(rostopics['e_stop'], Bool, queue_size=10)

@@ -4,7 +4,7 @@ from pathlib import Path
 
 from .navigation import Navigation
 from .perception import Perception
-from ..framework import PersonMatcher, LocationPredictor, TaskPlanner
+from framework import PersonMatcher, LocationPredictor, TaskPlanner
 
 class Agent:
     '''
@@ -33,7 +33,7 @@ class Agent:
         with open(path_to_config + '/actors.json', 'r') as actors_file:
             self.actors = json.load(actors_file)
 
-        rospy.spin()
+        #rospy.spin()
 
     def give_item(self):
         # Agent visual movement for giving item action
@@ -73,5 +73,3 @@ if __name__ == "__main__":
         Agent()
     except rospy.ROSInterruptException:
         pass
-
-    
