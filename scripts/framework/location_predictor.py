@@ -1,4 +1,4 @@
-class PersonMatcher:
+class LocationPredictor:
     # TODO implement LLM to perform the following:
     # Determine the likleyhood of the person being at each locaiton given the social role
     # Update the liley hood of the person being at the location based off of semantic context

@@ -2,9 +2,9 @@ import rospy
 import json
 from pathlib import Path
 
+from framework import PersonMatcher, LocationPredictor, TaskPlanner
 from .navigation import Navigation
 from .perception import Perception
-from ..framework import PersonMatcher, LocationPredictor, TaskPlanner
 
 class Agent:
     '''
@@ -14,11 +14,13 @@ class Agent:
         rospy.init_node('agent_node', anonymous=True)
 
         # Get absolute path to config file
-        path_to_config = Path(__file__).resolve.parents[2] / 'config'
+        path_to_config = Path(__file__).resolve().parents[2] / 'config'
+        path_to_config = str(path_to_config)
+        # print(path_to_config, str(path_to_config))
 
         # Instantiate agent stack
         self.perception = Perception(path_to_config)
-        self.navigation = Navigation(path_to_config, POSE_SOURCE='SLAM') # Can change pose information based on 'ODOMETRY' as well
+        self.navigation = Navigation(path_to_config, POSE_SOURCE='ODOMETRY') # Can change pose information based on 'ODOMETRY' as well
 
         # Instantiate Person Goal Navigation framework stack
         self.task_planner = TaskPlanner()
@@ -26,14 +28,14 @@ class Agent:
         self.person_matcher = PersonMatcher()
 
         # Load locations file
-        with open(path_to_config + '/locations.json', 'r') as locations_file:
+        with open(path_to_config + '/map/locations.json', 'r') as locations_file:
             self.locations = json.load(locations_file)
 
         # Load actors file
         with open(path_to_config + '/actors.json', 'r') as actors_file:
             self.actors = json.load(actors_file)
-
-        rospy.spin()
+        print("Agent initialized!")
+        #rospy.spin()
 
     def give_item(self):
         # Agent visual movement for giving item action

@@ -5,8 +5,8 @@ from geometry_msgs.msg import Twist, PoseStamped
 from nav_msgs.msg import Odometry
 from scipy.spatial.transform import Rotation as R
 
-from .safety import EmergencyStop
-from .planning import Planning
+#from .safety import EmergencyStop
+# from .planning import Planning
 from .controller import PID, PurePursuit
 
 class Navigation:
@@ -16,22 +16,28 @@ class Navigation:
 
     # POSE_SOURCE='SLAM' or 'ODOMETRY'
     def __init__(self, path_to_config, POSE_SOURCE='SLAM'):
-        rospy.init_node('navigation_node', anonymous=True)
+        # rospy.init_node('navigation_node', anonymous=True)
+        self.pose_source = POSE_SOURCE
 
         # Load rostopic names
-        with open(path_to_config + '/rostopic.json', 'r') as rostopics_file:
+        with open(path_to_config + '/rostopics.json', 'r') as rostopics_file:
             rostopics = json.load(rostopics_file)
 
-        self.pub = rospy.Publisher(rostopics['command_publisher'], Twist, queue=10)
-        self.sub_SLAM = rospy.Subscriber(rostopics['SLAM'], PoseStamped, self.SLAM_callback, queue=1)
-        self.sub_odometry = rospy.Subscriber(rostopics['odometry'], Odometry, self.odometry_callback, queue=1)
+        self.pub = rospy.Publisher(rostopics['command_publisher'], Twist, queue_size=10)
+        if self.pose_source == "SLAM":
+                self.sub_SLAM = rospy.Subscriber(rostopics['SLAM'], PoseStamped, self.SLAM_callback, queue_size=1)
+        elif self.pose_source == "ODOMETRY":
+                self.sub_odometry = rospy.Subscriber(rostopics['odometry'], Odometry, self.odometry_callback, queue_size=1)
+        else: 
+                raise NotImplementedError()
 
         # Initialize packages
-        self.estop = EmergencyStop(path_to_config)
-        self.planning = Planning(path_to_config)
+        # self.estop = EmergencyStop(path_to_config)
+        # self.planning = Planning(path_to_config)
 
         # Setup Agent SLAM and Odometry poses
-        self.SLAM, self.odometry, self.pose = {
+        # self.SLAM, self.odometry, self.pose = {
+        self.SLAM = {
             'X': 0,
             'Y': 0,
             'Z': 0,
@@ -39,7 +45,6 @@ class Navigation:
             'pitch': 0,
             'yaw': 0
         }
-        self.POSE_SOURCE = POSE_SOURCE
 
         with open(path_to_config + '/controller_setting.json', 'r') as controller_setting_file:
             controller_setting = json.load(controller_setting_file)
@@ -54,20 +59,22 @@ class Navigation:
             angle_control_config['settings']['MIN_CMD'], 
             angle_control_config['settings']['MAX_CMD']
         )
-        self.angle_stablization_time = angle_control_config['settings']['stablization_time']
+        self.angle_stablization_time = angle_control_config['settings']['stabalization_time']
         self.angle_threshold = angle_control_config['settings']['error_threshold']
 
         # Initialize path following controller
         path_follow_config = controller_setting['path_following_control']
         self.path_follow_control = PurePursuit(
             path_follow_config['lookahead_distance'],
-            path_follow_config['forward_velocity'],
+            path_follow_config['linear_velocity'],
             path_follow_config['MIN_LOOKAHEAD_ANGLE'],
             path_follow_config['MAX_LOOKAHEAD_ANGLE']
         )
+        self.previous_time = rospy.Time.now()
     
     def SLAM_callback(self, data):
         # Get pose information based on Cartographer SLAM system
+        
         try:
             quaternion = [data.orientation.x, data.orientation.y, data.orientation.z, data.orientation.w] # Pack as quaternion
             euler_angles = R.from_quat(quaternion).as_euler('xyz') # Create rotation object from quaternion and conver to euler angles
@@ -79,6 +86,7 @@ class Navigation:
                 'pitch': euler_angles[1],
                 'yaw': euler_angles[2]
             }
+            print("Current pos", self.SLAM)
 
             if self.pose_source == 'SLAM':
                 self.pose = self.SLAM
@@ -105,8 +113,8 @@ class Navigation:
 
     def set_velocity(self, linear_velocity, angular_velocity):
         # Move the agent based on linear [m/s] and angular velocity [rad/s]
-        if self.estop.is_estop_active: # Stop sending control commands if emergency stop is active
-            return
+        #if self.estop.is_estop_active: # Stop sending control commands if emergency stop is active
+           # return
         
         # Publish control commands
         command = Twist()
@@ -124,13 +132,13 @@ class Navigation:
             # Add stabalization time to ensure the agent reaches the setpoint for X amount of time
             current_time = rospy.Time.now()
             if abs(error) < self.angle_threshold:
-                if (current_time - previous_time) > self.angle_stablization_time:
+                if (current_time - self.previous_time).to_sec() > self.angle_stablization_time:
                     # Reset controller parameters after command is complete
                     self.angle_control.total_error = 0
                     self.angle_control.prev_error = 0
                     return
             else:
-                previous_time = rospy.Time.now()
+                self.previous_time = rospy.Time.now()
 
             self.set_velocity(0, angular_velocity) # Send angular velocity control command to agent
 
@@ -153,9 +161,9 @@ class Navigation:
     def navigate_to_goal(self, goal):
         # Pathfind the agent to the goal location
         agent_position = [self.pose['X'], self.pose['Y']]
-        path = self.planning.generate_path(agent_position, goal)
-        real_path = self.planning.convert_to_real_path(path)
-        self.follow_path(real_path)
+        # path = self.planning.generate_path(agent_position, goal)
+        # real_path = self.planning.convert_to_real_path(path)
+        # self.follow_path(real_path)
 
 if __name__ == "__main__":
     try:
