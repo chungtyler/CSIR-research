@@ -2,6 +2,7 @@ import rospy
 import cv2
 import numpy as np
 import yaml
+from PIL import Image
 import pyastar2d as astar
 
 class Planning:
@@ -10,16 +11,17 @@ class Planning:
     '''
     def __init__(self, path_to_config):
         # Initialize occupancy map and path planning
-        self.map, self.map_resolution, self.map_origin = self.load_map_config(path_to_config + '/map/map.pgm', path_to_config + '/map/map.yaml')
+        self.map, self.map_resolution, self.map_origin = self.load_map_config(path_to_config / 'map/map.pgm', path_to_config / 'map/map.yaml')
         self.PATH_COLOUR = (255, 0, 255)
 
     def load_map_config(self, map_pgm_path, map_yaml_path):
         # Get map.pgm and map.yaml to create binary map with known resolution and origin
-        with open(map_pgm_path, 'r') as map_pgm_file:
-            map_pgm = yaml.safe_load(map_pgm_file)
+        map_pgm = Image.open(map_pgm_path)
+        map = np.array(map_pgm)
 
         # Convert map.pgm to binary occupancy grid
-        map = cv2.imread(map_pgm, cv2.IMREAD_GRAYSCALE)
+        # map = cv2.cvtColor(map, cv2.COLOR_BGR2GRAY)
+        # map = cv2.imread(map_pgm, cv2.IMREAD_GRAYSCALE)
         map = np.where(map == 0, 0, 1)
 
         # Read and record map resolution [meters / pixel] and origin
@@ -51,9 +53,9 @@ class Planning:
         cv2.waitKey(-1)
         cv2.destroyAllWindows
 
-    def generate_path(self, start, goal, map=self.map):
+    def generate_path(self, start, goal):
         # Get AStar path as a list of tuples (x, y)
-        path = astar.find_path(map, start, goal)
+        path = astar.find_path(self.map, start, goal)
         return path
 
     def get_path_length(self, path):

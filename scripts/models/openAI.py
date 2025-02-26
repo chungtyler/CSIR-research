@@ -7,7 +7,7 @@ class OpenAI:
     def __init__(self, API_KEY):
         self.API_KEY = API_KEY
         self.client = OpenAI(api_key=self.API_KEY)
-        self.text_template = {"type": "text": None}
+        self.text_template = {"type": "text", "text": None}
         self.image_template = {"type": "image_url", "image_url": {"url": None}}
         self.message_template = [
             {"role": "system", "content": None},
@@ -30,10 +30,16 @@ class OpenAI:
 
     def get_response(self, model, prompt, query, images=None):
         # Get the user response with defined system prompt behaviour
-        user_content = [{"type": "text": query}]
+        user_content = [{"type": "text","text": query}]
 
         # Add image content for multiple images
-        image_content = [user_content.append({"type": "image_url", "image_url": {"url": self.format_image(image)}) for image in images if images]
+        if images is None:
+            return None
+            
+        for image in images:
+            formatted_image = self.format_image(image)
+            user_content.append({"type": "image_url", "image_url": {"url": formatted_image}})
+        # image_content = [user_content.append({"type": "image_url", "image_url": {"url": self.format_image(image)}) for image in images if images]
 
         messages = [{"role": "system", "content": prompt}, {"role": "user", "content": user_content}]
 

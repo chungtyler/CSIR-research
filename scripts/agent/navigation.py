@@ -17,19 +17,19 @@ class Navigation:
     # POSE_SOURCE='SLAM' or 'ODOMETRY'
     def __init__(self, path_to_config, POSE_SOURCE='SLAM'):
         # Load rostopic names
-        with open(path_to_config + '/rostopics.json', 'r') as rostopics_file:
+        with open(path_to_config / 'rostopics.json', 'r') as rostopics_file:
             rostopics = json.load(rostopics_file)
 
-        self.pub = rospy.Publisher(rostopics['command_publisher'], Twist, queue=10)
-        self.sub_SLAM = rospy.Subscriber(rostopics['SLAM'], PoseStamped, self.SLAM_callback, queue=1)
-        self.sub_odometry = rospy.Subscriber(rostopics['odometry'], Odometry, self.odometry_callback, queue=1)
+        self.pub = rospy.Publisher(rostopics['command_publisher'], Twist, queue_size=10)
+        self.sub_SLAM = rospy.Subscriber(rostopics['SLAM'], PoseStamped, self.SLAM_callback, queue_size=1)
+        self.sub_odometry = rospy.Subscriber(rostopics['odometry'], Odometry, self.odometry_callback, queue_size=1)
 
         # Initialize packages
         self.estop = EmergencyStop(path_to_config)
         self.planning = Planning(path_to_config)
 
         # Setup Agent SLAM and Odometry poses
-        self.SLAM, self.odometry, self.pose = {
+        self.pose = {
             'X': 0,
             'Y': 0,
             'Z': 0,
@@ -37,9 +37,10 @@ class Navigation:
             'pitch': 0,
             'yaw': 0
         }
-        self.POSE_SOURCE = POSE_SOURCE
+        self.SLAM, self.odometry = self.pose, self.pose
+        self.pose_source = POSE_SOURCE
 
-        with open(path_to_config + '/controller_setting.json', 'r') as controller_setting_file:
+        with open(path_to_config / 'controller_setting.json', 'r') as controller_setting_file:
             controller_setting = json.load(controller_setting_file)
 
         # Initialize positional controller
@@ -52,14 +53,14 @@ class Navigation:
             angle_control_config['settings']['MIN_CMD'],
             angle_control_config['settings']['MAX_CMD']
         )
-        self.angle_stablization_time = angle_control_config['settings']['stablization_time']
+        self.angle_stablization_time = angle_control_config['settings']['stabalization_time']
         self.angle_threshold = angle_control_config['settings']['error_threshold']
 
         # Initialize path following controller
         path_follow_config = controller_setting['path_following_control']
         self.path_follow_control = PurePursuit(
             path_follow_config['lookahead_distance'],
-            path_follow_config['forward_velocity'],
+            path_follow_config['linear_velocity'],
             path_follow_config['MIN_LOOKAHEAD_ANGLE'],
             path_follow_config['MAX_LOOKAHEAD_ANGLE']
         )
