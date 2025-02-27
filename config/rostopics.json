@@ -1,6 +1,6 @@
 {
     "command_publisher": "/jackal_velocity_controller/cmd_vel",
-    "SLAM": "/tracking_pose",
+    "SLAM": "/tracked_pose",
     "odometry": "/odometry/filtered_odom",
     "rgb_image": "/camera/color/image_raw",
     "depth_image": "/camera/depth/image_rect_raw",
