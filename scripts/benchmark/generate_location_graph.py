@@ -18,11 +18,16 @@ if __name__ == "__main__":
             if start_location['name'] is goal_location['name']: # Continue if the start and goal node are the same
                 continue
 
+            # Get path length between locations
             goal_position = goal_location['position'] # Get the goal locations position
             path = planning.generate_path(start_position, goal_position) # Generate pixel path
             real_path = planning.convert_to_real_path(path) # Convert to real path in meters
             path_length = planning.get_path_length(real_path) # Calculate the distance between the
-            # Save positions
+            
+            # Update locations edge
+            start_location['edges'].append({"target": goal_location['name'], "path_length": path_length})
 
-    # Write to file
+    # Update locations file with path length information
+    with open(path_to_config / 'map/locations.json', 'w') as locations_file:
+        json.dump(locations_data, locations_file)
 

@@ -1,0 +1,38 @@
+{
+    "grace_pen": {
+        "scenario": "Give this pen and notebook to Grace to write down some notes.",
+        "ground_truth": ["office", "meeting_room", "lab", "lunch_room", "storage_room"]
+    },
+    "grace_soda": {
+        "scenario": "Can you give this soda can to Grace? I last saw her leaving the office heading to the southern hallway.",
+        "ground_truth": ["lunch_room", "meeting_room", "office", "storage_room", "lab"]
+    },
+    "grace_usb": {
+        "scenario": "Can you give this USB drive to Grace, it contains research papers she can reference for her work.",
+        "ground_truth": ["office", "meeting_room", "lab", "lunch_room", "storage_room"]
+    },
+    "jerry_mop": {
+        "scenario": "Give this mop to Jerry so he can clean up the food spill.",
+        "ground_truth": ["lunch_room", "meeting_room", "storage_room", "office", "lab"]
+    },
+    "jerry_bag": {
+        "scenario": "Can you deliver this new pack of garbage bags to Jerry. I saw him cleaning in the lunch room a while ago.",
+        "ground_truth": ["lunch_room", "meeting_room", "storage_room", "office", "lab"]
+    },
+    "jerry_shredder": {
+        "scenario": "Can you give this paper shredder to Jerry? There seems to be a lot of confidential reports and research papers to get rid of.",
+        "ground_truth": ["office", "meeting_room", "lab", "storage_room", "lunch_room"]
+    },
+    "tyson_toolkit": {
+        "scenario": "Give this toolkit to Tyson so he can fix up the testing apparatus.",
+        "ground_truth": ["lab", "storage_room", "office", "meeting_room", "lunch_room"]
+    },
+    "tyson_package": {
+        "scenario": "Can you deliver this shipment package to Tyson? I saw him leaving the lab heading to the north hallway.",
+        "ground_truth": ["storage_room", "office", "meeting_room", "lab", "lunch_room"]
+    },
+    "tyson_hdmi": {
+        "scenario": "Can you give these HDMI cables to Tyson? It seems the TV screen display cables no longer work.",
+        "ground_truth": ["meeting_room", "office", "storage_room","lab", "lunch_room"]
+    }
+}
