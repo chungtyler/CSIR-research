@@ -4,7 +4,7 @@ from models import OpenAI, DeepSeek
 class Inference:
     def __init__(self, path_to_config):
         # Load API Keys
-        with open(path_to_config + '/api_keys.json', 'r') as api_key_file:
+        with open(path_to_config / 'api_keys.json', 'r') as api_key_file:
             self.api_keys = json.load(api_key_file)
 
         # Load Models

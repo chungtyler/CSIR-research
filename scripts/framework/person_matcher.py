@@ -16,7 +16,7 @@ class PersonMatcher:
         self.inference = inference
 
         # Load Task Planner configuration
-        with open(path_to_config + '/framework/person_matcher.json', 'r') as config_file:
+        with open(path_to_config / 'framework/person_matcher.json', 'r') as config_file:
             self.config = json.load(config_file)
 
         # Load model and prompt
