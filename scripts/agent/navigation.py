@@ -37,7 +37,8 @@ class Navigation:
             'pitch': 0,
             'yaw': 0
         }
-        self.SLAM, self.odometry = self.pose, self.pose
+        self.SLAM = self.pose.copy() # Create copy of template
+        self.odometry = self.pose.copy() # Create copy of template
         self.pose_source = POSE_SOURCE
 
         with open(path_to_config / 'controller_setting.json', 'r') as controller_setting_file:
