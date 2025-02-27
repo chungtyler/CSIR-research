@@ -66,8 +66,10 @@ class Navigation:
             path_follow_config['MAX_LOOKAHEAD_ANGLE']
         )
 
-    def SLAM_callback(self, data):
+    def SLAM_callback(self, msg):
         # Get pose information based on Cartographer SLAM system
+        data = msg.pose
+
         try:
             quaternion = [data.orientation.x, data.orientation.y, data.orientation.z, data.orientation.w] # Pack as quaternion
             euler_angles = R.from_quat(quaternion).as_euler('xyz') # Create rotation object from quaternion and conver to euler angles
