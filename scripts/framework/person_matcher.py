@@ -16,12 +16,13 @@ class PersonMatcher:
         self.inference = inference
 
         # Load Task Planner configuration
-        with open(path_to_config / 'framework/person_matcher.json', 'r') as config_file:
-            self.config = json.load(config_file)
+        with open(path_to_config / 'framework/person_matcher.txt', 'r') as prompt_file:
+            self.prompt = prompt_file.read()
 
-        # Load model and prompt
-        self.model = self.config['model']
-        self.prompt = self.config['prompt']
+        # Load Task Planner configuration
+        with open(path_to_config / 'framework/framework_models.json', 'r') as framework_models_file:
+            framework_models = json.load(framework_models_file)
+            self.model = framework_models['person_matcher']
 
     def get_tasks(self, query):
         # Use model inference to generate plan of executable code

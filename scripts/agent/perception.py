@@ -4,6 +4,7 @@ import json
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image, LaserScan, PointCloud2
 import numpy as np
+import torch
 
 class Perception:
     '''
@@ -29,6 +30,8 @@ class Perception:
 
         self.MIN_DEPTH_RANGE = MIN_DEPTH_RANGE
         self.MAX_DEPTH_RANGE = MAX_DEPTH_RANGE
+
+        vision_model = torch.hub.load('ultralytics/yolo5', 'yolov5s', pretrained=True)
 
     def rgb_image_callback(self, data):
         # Get camera RGB image
@@ -62,14 +65,34 @@ class Perception:
         cv2.waitKey(-1)
         cv2.destroyAllWindows
 
-    def get_object_data(self, image, object='person'):
+    def get_object_data(self, image, object_name='person'):
         # TODO using yolov5 get the object information from the image such as X,Y,confidence, etc
-        pass
+        detection_results = self.vision_model(image)
+        detected_objects = json.loads(detection_results.pandas().xyxy[0].to_json(orient="records"))
+        
+        #objects_of_interest = []
+        for detected_object in detected_objects:
+            if detected_object['name'] is object_name:
+                #objects_of_interest.append(detected_object)
+                return detected_object
 
-    def crop_to_object(self, image, object_data, padding=25):
+        return None # objects_of_interest
+    
+    def get_object_ROI(self, object_data):
+        x = round((object_data['xmin'] + object_data['xmax'])/2)
+        y = round((object_data['ymin'] + object_data['ymax'])/2)
+        return x, y
+
+    def crop_to_object(self, image, object_info, padding=25):
         # TODO crop the image of the object to its bounding box with some padding value
         # return the cropped image
-        pass
+        height, width, channel = image.shape
+        crop_box = (round(object_info['ymin']-padding), round(object_info['ymax']+padding), round(object_info['xmin']-padding), round(person_info['xmax']+padding))
+        crop_box = (max(0, crop_box[0]), min(height, crop_box[1]), max(0, crop_box[2]), min(width, crop_box[3]))
+        cropped_image = image[crop_box[0]:crop_box[1], crop_box[2]:crop_box[3]]
+        cropped_image_contiguous = np.ascontiguousarray(cropped_image)
+        success, encoded_image = cv2.imencode('.jpg', cropped_image_contiguous)
+        return encoded_image
 
 if __name__ == "__main__":
     try:

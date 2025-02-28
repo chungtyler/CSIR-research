@@ -13,12 +13,13 @@ class LocationPredictor:
         self.inference = inference
 
         # Load Task Planner configuration
-        with open(path_to_config / 'framework/location_predictor.json', 'r') as config_file:
-            self.config = json.load(config_file)
+        with open(path_to_config / 'framework/location_predictor.txt', 'r') as prompt_file:
+            self.prompt = prompt_file.read()
 
-        # Load model and prompt
-        self.model = self.config['model']
-        self.prompt = self.config['prompt']
+        # Load Task Planner configuration
+        with open(path_to_config / 'framework/framework_models.json', 'r') as framework_models_file:
+            framework_models = json.load(framework_models_file)
+            self.model = framework_models['location_predictor']
 
         # Load location information
         with open(path_to_config / 'map/locations.json', 'r') as locations_file:

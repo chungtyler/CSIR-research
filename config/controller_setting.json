@@ -14,10 +14,25 @@
             "error_threshold": 0.02
         }
     },
+    "angle_control2": {
+        "type": "PID",
+        "gains": {
+            "Kp": 2.5,
+            "Ki": 0.000055,
+            "Kd": 0
+        },
+        "settings": {
+            "dt": 0.1,
+            "MIN_CMD": -1.5,
+            "MAX_CMD": 1.5,
+            "stabalization_time": 0.0,
+            "error_threshold": 0.2
+        }
+    },
     "path_following_control": {
         "type": "pure_pursuit",
         "linear_velocity": 0.5,
-        "lookahead_distance": 0.5,
+        "lookahead_distance": 0.25,
         "MIN_LOOKAHEAD_ANGLE": 1e-3,
         "MAX_LOOKAHEAD_ANGLE": 1.57
     }

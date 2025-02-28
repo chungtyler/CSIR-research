@@ -44,7 +44,7 @@ class Navigation:
         with open(path_to_config / 'controller_setting.json', 'r') as controller_setting_file:
             controller_setting = json.load(controller_setting_file)
 
-        # Initialize positional controller
+        # Initialize angular positional controller
         angle_control_config = controller_setting['angle_control']
         self.angle_control = PID(
             angle_control_config['gains']['Kp'],
@@ -56,6 +56,19 @@ class Navigation:
         )
         self.angle_stablization_time = angle_control_config['settings']['stabalization_time']
         self.angle_threshold = angle_control_config['settings']['error_threshold']
+
+        # Initialize positional controller
+        angle_control_config2 = controller_setting['angle_control2']
+        self.angle_control2 = PID(
+            angle_control_config2['gains']['Kp'],
+            angle_control_config2['gains']['Ki'],
+            angle_control_config2['gains']['Kd'],
+            angle_control_config2['settings']['dt'],
+            angle_control_config2['settings']['MIN_CMD'],
+            angle_control_config2['settings']['MAX_CMD']
+        )
+        self.position_stablization_time = angle_control_config2['settings']['stabalization_time']
+        self.position_threshold = angle_control_config2['settings']['error_threshold']
 
         # Initialize path following controller
         path_follow_config = controller_setting['path_following_control']
@@ -143,13 +156,35 @@ class Navigation:
         start_x, start_y = path[0] # Get initial point
         angle = math.atan2(start_y - self.pose['Y'], start_x - self.pose['X']) - self.pose['yaw'] # Find angle between the agent's heading and initial point
         self.rotate(angle) # Rotate towards initial point
+        linear_velocity = 0.5
+
+        # PURE PURSUIT CONTROLLER
+        # while not rospy.is_shutdown():
+        #     agent_position = [self.pose['X'], self.pose['Y']]
+        #     distance = math.dist(agent_position, path[-1])
+
+        #     if distance <= 0.2:
+        #         break
+        #     linear_velocity, angular_velocity = self.path_follow_control.get_velocity_command(self.pose, path)
+        #     self.set_velocity(linear_velocity, angular_velocity)
 
         # Travel to each point in the path
-        for points in path:
+
+
+        # PID CONTROL
+        for point in path:
             # NOTE possible issue is that the robot rotates the "wrong" way, this is due to the fact the calculated angle is possibly always CCW
             # To adjust this in the controller.py find a way to rotate to the smallest angle e.g. -90 degrees is better than 270 degrees, same end angle though
-            linear_velocity, angular_velocity = self.path_follow_control.get_velocity_command(self.pose, path)
-            self.set_velocity(linear_velocity, angular_velocity)
+            while not rospy.is_shutdown():
+                agent_position = [self.pose['X'], self.pose['Y']]
+                distance = math.dist(agent_position, point)
+
+                if distance <= 0.2:
+                    break
+
+                angle_setpoint = math.atan2(point[1] - agent_position[1], point[0] - agent_position[0])
+                angular_velocity = self.angle_controller2.step(angle_setpoint, self.pose['yaw'])
+                self.set_velocity(linear_velocity, angular_velocity)
 
         self.set_velocity(0, 0) # Stop the agent
 
