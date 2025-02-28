@@ -58,26 +58,27 @@ class Navigation:
         self.angle_threshold = angle_control_config['settings']['error_threshold']
 
         # Initialize positional controller
-        angle_control_config2 = controller_setting['angle_control2']
-        self.angle_control2 = PID(
-            angle_control_config2['gains']['Kp'],
-            angle_control_config2['gains']['Ki'],
-            angle_control_config2['gains']['Kd'],
-            angle_control_config2['settings']['dt'],
-            angle_control_config2['settings']['MIN_CMD'],
-            angle_control_config2['settings']['MAX_CMD']
+        path_follow_config = controller_setting['path_following_control_PID']
+        self.path_follow_control = PID(
+            path_follow_config['gains']['Kp'],
+            path_follow_config['gains']['Ki'],
+            path_follow_config['gains']['Kd'],
+            path_follow_config['settings']['dt'],
+            path_follow_config['settings']['MIN_CMD'],
+            path_follow_config['settings']['MAX_CMD']
         )
-        self.position_stablization_time = angle_control_config2['settings']['stabalization_time']
-        self.position_threshold = angle_control_config2['settings']['error_threshold']
+        self.position_stablization_time = path_follow_config['settings']['stabalization_time']
+        self.position_threshold = path_follow_config['settings']['error_threshold']
+        self.forward_velocity = path_follow_config['setting']['forward_velocity']
 
-        # Initialize path following controller
-        path_follow_config = controller_setting['path_following_control']
-        self.path_follow_control = PurePursuit(
-            path_follow_config['lookahead_distance'],
-            path_follow_config['linear_velocity'],
-            path_follow_config['MIN_LOOKAHEAD_ANGLE'],
-            path_follow_config['MAX_LOOKAHEAD_ANGLE']
-        )
+        # # Initialize path following controller
+        # path_follow_config = controller_setting['path_following_control']
+        # self.path_follow_control = PurePursuit(
+        #     path_follow_config['lookahead_distance'],
+        #     path_follow_config['linear_velocity'],
+        #     path_follow_config['MIN_LOOKAHEAD_ANGLE'],
+        #     path_follow_config['MAX_LOOKAHEAD_ANGLE']
+        # )
 
     def SLAM_callback(self, msg):
         # Get pose information based on Cartographer SLAM system
@@ -153,37 +154,22 @@ class Navigation:
     def follow_path(self, path):
         # Rotate to the first point and start following path to the goal
 
+        linear_velocity = self.forward_velocity
         start_x, start_y = path[0] # Get initial point
         angle = math.atan2(start_y - self.pose['Y'], start_x - self.pose['X']) - self.pose['yaw'] # Find angle between the agent's heading and initial point
-        self.rotate(angle) # Rotate towards initial point
-        linear_velocity = 0.5
+        self.rotate_to(angle) # Rotate towards initial point
 
-        # PURE PURSUIT CONTROLLER
-        # while not rospy.is_shutdown():
-        #     agent_position = [self.pose['X'], self.pose['Y']]
-        #     distance = math.dist(agent_position, path[-1])
-
-        #     if distance <= 0.2:
-        #         break
-        #     linear_velocity, angular_velocity = self.path_follow_control.get_velocity_command(self.pose, path)
-        #     self.set_velocity(linear_velocity, angular_velocity)
-
-        # Travel to each point in the path
-
-
-        # PID CONTROL
+        # Move to eaach point on the path
         for point in path:
-            # NOTE possible issue is that the robot rotates the "wrong" way, this is due to the fact the calculated angle is possibly always CCW
-            # To adjust this in the controller.py find a way to rotate to the smallest angle e.g. -90 degrees is better than 270 degrees, same end angle though
             while not rospy.is_shutdown():
                 agent_position = [self.pose['X'], self.pose['Y']]
                 distance = math.dist(agent_position, point)
 
-                if distance <= 0.2:
+                if distance <= self.position_threshold:
                     break
 
                 angle_setpoint = math.atan2(point[1] - agent_position[1], point[0] - agent_position[0])
-                angular_velocity = self.angle_controller2.step(angle_setpoint, self.pose['yaw'])
+                angular_velocity = self.path_follow_control.step(angle_setpoint, self.pose['yaw'])
                 self.set_velocity(linear_velocity, angular_velocity)
 
         self.set_velocity(0, 0) # Stop the agent

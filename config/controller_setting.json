@@ -11,10 +11,11 @@
             "MIN_CMD": -1.5,
             "MAX_CMD": 1.5,
             "stabalization_time": 0.01,
-            "error_threshold": 0.02
+            "error_threshold": 0.02,
+            "forward_velocity": 0
         }
     },
-    "angle_control2": {
+    "path_following_control_PID": {
         "type": "PID",
         "gains": {
             "Kp": 2.5,
@@ -26,7 +27,8 @@
             "MIN_CMD": -1.5,
             "MAX_CMD": 1.5,
             "stabalization_time": 0.0,
-            "error_threshold": 0.2
+            "error_threshold": 0.2,
+            "forward_velocity": 0.5
         }
     },
     "path_following_control": {
