@@ -12,15 +12,6 @@ class LocationPredictor:
         # Reference to inference object
         self.inference = inference
 
-        # Load Task Planner configuration
-        with open(path_to_config / 'framework/location_predictor.txt', 'r') as prompt_file:
-            self.prompt = prompt_file.read()
-
-        # Load Task Planner configuration
-        with open(path_to_config / 'framework/framework_models.json', 'r') as framework_models_file:
-            framework_models = json.load(framework_models_file)
-            self.model = framework_models['location_predictor']
-
         # Load location information
         with open(path_to_config / 'map/locations.json', 'r') as locations_file:
             self.locations = json.load(locations_file)
@@ -28,6 +19,23 @@ class LocationPredictor:
         # Load actor information
         with open(path_to_config / 'actors.json', 'r') as actors_file:
             self.actors = json.load(actors_file)
+
+        # Load Task Planner configuration
+        with open(path_to_config / 'framework/location_predictor.txt', 'r') as prompt_file:
+            unformatted_prompt = prompt_file.read()
+
+        print(unformatted_prompt)
+        self.prompt = unformatted_prompt.format(locations=self.locations, 
+                                                formatted_actor_info=self.actors,
+                                                randomized=self.locations,
+                                                )
+        
+        print(self.prompt)
+
+        # Load Task Planner configuration
+        with open(path_to_config / 'framework/framework_models.json', 'r') as framework_models_file:
+            framework_models = json.load(framework_models_file)
+            self.model = framework_models['location_predictor']
 
     def response_to_locations(self, response):
         locations = re.findall(r'<list>(.*?)</list>', response, re.DOTALL)
@@ -37,5 +45,6 @@ class LocationPredictor:
     def get_locations(self, query):
         # Use model inference to generate plan of executable code
         response = self.inference.get_response(self.model, self.prompt, query)
+        print(response)
         locations = self.response_to_locations(response)
         return locations

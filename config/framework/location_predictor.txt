@@ -5,13 +5,13 @@ Use contextual, semantic, social, and spatial information to guide your reasonin
 
 ### Information ###
 Query: The user prompt will give information such as the item to be delivered and extra context or story to deduce which locations are most probable to find the person.
-Locations: These are all the locations available to use to generate the ranked list; {', '.join(self.locations)}.
+Locations: These are all the locations available to use to generate the ranked list; {locations}.
 Schematic: The floor plan of the engineering facility that displays the spatial positions of each location and their relative positions against each other.
 
 ### Staff Occupations and Responsibilities ###
 This is the list of personnel and general responsibilities. 
 These are not absolute facts but give insight into each person's habits to guide the reasoning in finding the person's potential whereabouts.
-{formatted_staff_info}
+{formatted_actor_info}
 ### Solution Structure ###
 General structure format to guide reasoning for each piece of information given.
 For each step use step-by-step analysis.

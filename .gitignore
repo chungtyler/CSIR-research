@@ -172,3 +172,4 @@ cython_debug/
 checkpoints/
 saved/Annotated_*.png
 data.pkl
+config/api_keys.json
