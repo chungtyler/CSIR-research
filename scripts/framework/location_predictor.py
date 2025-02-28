@@ -14,7 +14,8 @@ class LocationPredictor:
 
         # Load location information
         with open(path_to_config / 'map/locations.json', 'r') as locations_file:
-            self.locations = json.load(locations_file)
+            self.locations_data = json.load(locations_file)
+            self.locations = [location['name'] for location in self.locations_data]
 
         # Load actor information
         with open(path_to_config / 'actors.json', 'r') as actors_file:
