@@ -69,7 +69,7 @@ class Navigation:
         )
         self.position_stablization_time = path_follow_config['settings']['stabalization_time']
         self.position_threshold = path_follow_config['settings']['error_threshold']
-        self.forward_velocity = path_follow_config['setting']['forward_velocity']
+        self.forward_velocity = path_follow_config['settings']['forward_velocity']
 
         # # Initialize path following controller
         # path_follow_config = controller_setting['path_following_control']

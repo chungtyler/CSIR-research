@@ -66,8 +66,8 @@ class Planning:
         #ath = astar.astar_path(self.map, start, goal, allow_diagonal=True)
         #path = AStar(self.map, start, goal)
         #path = self.astar.find_path(start, goal)
-        start_node = self.grid.node(start[0], start[1])
-        goal_node = self.grid.node(goal[0], goal[1])
+        start_node = self.grid.node(start[1], start[0])
+        goal_node = self.grid.node(goal[1], goal[0])
         path, _ = self.astar.find_path(start_node, goal_node, self.grid)
         return path
 
@@ -92,9 +92,9 @@ class Planning:
         # Add a point to the occupancy map with the path
         for x, y in path:
             display_map[y][x] = self.PATH_COLOUR
-
+        cv2.imwrite("Path.png", display_map)
         # Display the map with the path
-        self.show_map(display_map, scaling_factor)
+        # self.show_map(display_map, scaling_factor)
 
     def convert_to_pixel_point(self, real_point):
         # Convert pixel coordinate path to real [meters] coordinate
@@ -102,7 +102,11 @@ class Planning:
         real_x, real_y = real_point
         rotated_real_x, rotated_real_y= [real_x*math.cos(origin_theta) - real_y*math.sin(origin_theta), 
                                          real_x*math.sin(origin_theta) + real_y*math.cos(origin_theta)]
-        pixel_point = [round((rotated_real_x - origin_x) / self.map_resolution), round((rotated_real_y - origin_y) /  self.map_resolution)]
+        # Convert to grid
+        pixel_point = [round((rotated_real_x - origin_x) / self.map_resolution), round((rotated_real_y - origin_y) / self.map_resolution)]
+        # Convert to grid map axis
+        pixel_point = pixel_point[::-1] 
+        pixel_point[0] = self.map.shape[0] - pixel_point[0] 
         return pixel_point
 
     def convert_to_real_point(self, pixel_point):
