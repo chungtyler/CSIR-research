@@ -13,8 +13,7 @@ if __name__ == '__main__':
 
     #response = inference.get_response('gpt-4o', prompt, query)
     #tasks = task_planner.get_tasks(query)
-    locations = location_predictor.get_locations('Can you give this apple to Tyson?')
-    print(prompt)
+    locations = location_predictor.get_locations('Can you give this apple to Tyson?', 'Tyson')
     #print(query)
     #print(tasks)
     print(locations)
