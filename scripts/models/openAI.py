@@ -1,7 +1,7 @@
 import validators
 import os
 import base64
-from openai import OpenAI
+from openai import OpenAI as openAI
 
 class OpenAI:
     '''
@@ -9,7 +9,8 @@ class OpenAI:
     '''
     def __init__(self, API_KEY):
         self.API_KEY = API_KEY
-        self.client = OpenAI(api_key=self.API_KEY)
+        print(type(API_KEY))
+        self.client = openAI(api_key=API_KEY)
 
     def format_image(self, image):
         # Process the image to format it to the correct type for OpenAI
@@ -39,5 +40,5 @@ class OpenAI:
 
         # Send message payload and return the messages response
         completion = self.client.chat.completions.create(model=model, messages=messages)
-        response = completion.choices[0].messages
+        response = completion.choices[0].message.content
         return response

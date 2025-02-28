@@ -36,6 +36,31 @@ class Agent:
 
         #rospy.spin()
 
+    def track_person(self, iterations):
+        for _ in range(iterations):
+            self.look_at_person(0.5)
+            rospy.sleep(0.2)
+
+
+    def look_at_person(self, min_confidence, threhsold=75):
+        image = self.perception.rgb_image
+        _, width, _ = image.shape
+        while not rospy.is_shutdown():
+            object_info = self.perception.get_object_data(image)
+            if not object_info:
+                rospy.sleep(0.1)
+                continue
+
+            if object_info['confidence'] > min_confidence:
+                x, y = self.perception.get_object_ROI(object_info)
+                error = width/2 - x
+
+                if abs(error) < threhsold:
+                    return
+                
+                self.navigation.set_velocity(0, 0.001*error + 0.01)
+
+
     def give_item(self):
         # Agent visual movement for giving item action
         for _ in range(3):

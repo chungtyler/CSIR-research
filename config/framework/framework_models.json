@@ -1,0 +1,5 @@
+{
+    "task_planner": "gpt-4o-mini",
+    "location_predictor": "gpt-4o",
+    "person_matcher": "gpt-4o"
+}
