@@ -3,7 +3,7 @@ from agent import Planning
 
 if __name__ == "__main__":
     path_to_config = Path(__file__).resolve().parents[1] / 'config'
-    planning = Planning(path_to_config, 0.25)
+    planning = Planning(path_to_config, 0.0)
 
     #planning.map_origin[2] = 3.14/8
 
