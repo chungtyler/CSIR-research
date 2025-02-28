@@ -191,7 +191,9 @@ class Navigation:
     def navigate_to_goal(self, goal):
         # Pathfind the agent to the goal location
         agent_position = [self.pose['X'], self.pose['Y']]
-        path = self.planning.generate_path(agent_position, goal)
+        agent_pixel_position = self.planning.convert_to_pixel_point(agent_position)
+        goal_pixel_position = self.planning.convert_to_pixel_point(goal)
+        path = self.planning.generate_path(agent_pixel_position, goal_pixel_position)
         real_path = self.planning.convert_to_real_path(path)
         self.follow_path(real_path)
 

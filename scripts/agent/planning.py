@@ -23,7 +23,7 @@ class Planning:
         # Convert map.pgm to binary occupancy grid
         # map = cv2.cvtColor(map, cv2.COLOR_BGR2GRAY)
         # map = cv2.imread(map_pgm, cv2.IMREAD_GRAYSCALE)
-        map = np.where(map == 0, 0, 1)
+        map = np.where(map == 0, np.inf, 1.0)
 
         # Read and record map resolution [meters / pixel] and origin
         with open(map_yaml_path, 'r') as map_yaml:
@@ -56,7 +56,7 @@ class Planning:
 
     def generate_path(self, start, goal):
         # Get AStar path as a list of tuples (x, y)
-        path = astar.find_path(self.map, start, goal)
+        path = astar.astar_path(self.map, start, goal)
         return path
 
     def get_path_length(self, path):
@@ -82,9 +82,14 @@ class Planning:
         # Display the map with the path
         self.show_map(display_map, scaling_factor)
 
-    def convert_to_real_point(self, pixel):
+    def convert_to_pixel_point(self, real_point):
         # Convert pixel coordinate path to real [meters] coordinate
-        real_point = (pixel[0] * self.map_resolution + self.map_origin, pixel[1] * self.map_resolution + self.map_origin)
+        pixel_point = ((real_point[0] - self.map_origin[0]) / self.map_resolution, (real_point[1] - self.map_origin[1]) /  self.map_resolution)
+        return pixel_point
+
+    def convert_to_real_point(self, pixel_point):
+        # Convert pixel coordinate path to real [meters] coordinate
+        real_point = (pixel_point[0] * self.map_resolution + self.map_origin[0], pixel_point[1] * self.map_resolution + self.map_origin[1])
         return real_point
 
     def convert_to_real_path(self, path):

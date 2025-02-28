@@ -24,7 +24,7 @@ class PersonMatcher:
             framework_models = json.load(framework_models_file)
             self.model = framework_models['person_matcher']
 
-    def get_tasks(self, query):
+    def match(self, query):
         # Use model inference to generate plan of executable code
-        tasks = self.inference.get_response(self.model, self.prompt, query)
-        return tasks
+        person_info = self.inference.get_response(self.model, self.prompt, query)
+        return person_info
