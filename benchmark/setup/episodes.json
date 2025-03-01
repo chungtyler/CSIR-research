@@ -1,0 +1,183 @@
+{
+    "grace_pen": {
+        "episode_0": {
+            "grace": "meeting_room"
+        },
+        "episode_1": {
+            "grace": "meeting_room",
+            "jerry": "lab"
+        },
+        "episode_2": {
+            "grace": "meeting_room"
+        },
+        "episode_3": {
+            "grace": "storage_room"
+        },
+        "episode_4": {
+            "grace": "office",
+            "tyson": "lunch_room"
+        }
+    },
+    "grace_soda": {
+        "episode_0": {
+            "grace": "office",
+            "tyson": "lunch_room"
+        },
+        "episode_1": {
+            "grace": "storage_room"
+        },
+        "episode_2": {
+            "grace": "office",
+            "jerry": "storage_room"
+        },
+        "episode_3": {
+            "grace": "meeting_room",
+            "jerry": "lab"
+        },
+        "episode_4": {
+            "grace": "office",
+            "jerry": "meeting_room"
+        }
+    },
+    "grace_usb": {
+        "episode_0": {
+            "grace": "storage_room"
+        },
+        "episode_1": {
+            "grace": "office",
+            "tyson": "lab"
+        },
+        "episode_2": {
+            "grace": "meeting_room"
+        },
+        "episode_3": {
+            "grace": "office",
+            "jerry": "lunch_room"
+        },
+        "episode_4": {
+            "grace": "meeting_room",
+            "jerry": "storage_room"
+        }
+    },
+    "jerry_mop": {
+        "episode_0": {
+            "jerry": "lunch_room",
+            "grace": "storage_room"
+        },
+        "episode_1": {
+            "jerry": "meeting_room",
+            "grace": "office"
+        },
+        "episode_2": {
+            "jerry": "office"
+        },
+        "episode_3": {
+            "jerry": "office"
+        },
+        "episode_4": {
+            "jerry": "storage_room",
+            "tyson": "lunch_room"
+        }
+    },
+    "jerry_bag": {
+        "episode_0": {
+            "jerry": "storage_room",
+            "tyson": "lab"
+        },
+        "episode_1": {
+            "jerry": "office",
+            "grace": "lunch_room"
+        },
+        "episode_2": {
+            "jerry": "office",
+            "grace": "lunch_room"
+        },
+        "episode_3": {
+            "jerry": "office",
+            "tyson": "meeting_room"
+        },
+        "episode_4": {
+            "jerry": "office"
+        }
+    },
+    "jerry_shredder": {
+        "episode_0": {
+            "jerry": "office",
+            "grace": "lab"
+        },
+        "episode_1": {
+            "jerry": "meeting_room",
+            "tyson": "lunch_room"
+        },
+        "episode_2": {
+            "jerry": "office"
+        },
+        "episode_3": {
+            "jerry": "office",
+            "tyson": "lab"
+        },
+        "episode_4": {
+            "jerry": "office"
+        }
+    },
+    "tyson_toolkit": {
+        "episode_0": {
+            "tyson": "storage_room"
+        },
+        "episode_1": {
+            "tyson": "office",
+            "jerry": "storage_room"
+        },
+        "episode_2": {
+            "tyson": "office",
+            "grace": "meeting_room"
+        },
+        "episode_3": {
+            "tyson": "office"
+        },
+        "episode_4": {
+            "tyson": "office",
+            "grace": "lunch_room"
+        }
+    },
+    "tyson_package": {
+        "episode_0": {
+            "tyson": "office",
+            "grace": "meeting_room"
+        },
+        "episode_1": {
+            "tyson": "office",
+            "grace": "storage_room"
+        },
+        "episode_2": {
+            "tyson": "office"
+        },
+        "episode_3": {
+            "tyson": "office"
+        },
+        "episode_4": {
+            "tyson": "office",
+            "grace": "meeting_room"
+        }
+    },
+    "tyson_hdmi": {
+        "episode_0": {
+            "tyson": "office",
+            "grace": "lab"
+        },
+        "episode_1": {
+            "tyson": "office"
+        },
+        "episode_2": {
+            "tyson": "office"
+        },
+        "episode_3": {
+            "tyson": "office",
+            "grace": "lunch_room"
+        },
+        "episode_4": {
+            "tyson": "office",
+            "grace": "meeting_room"
+        }
+    }
+}

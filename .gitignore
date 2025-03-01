@@ -174,3 +174,4 @@ saved/Annotated_*.png
 data.pkl
 config/api_keys.json
 yolov5s.pt
+person_matcher_test/

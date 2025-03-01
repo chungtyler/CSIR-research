@@ -1,0 +1,2422 @@
+{
+    "greedy": {
+        "grace_pen": {
+            "episode_0": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 100.0
+            },
+            "episode_1": {
+                "locations": [
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 60.0
+            },
+            "episode_2": {
+                "locations": [
+                    "office",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 39.473684210526315
+            },
+            "episode_3": {
+                "locations": [
+                    "office",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 53.57142857142857
+            },
+            "episode_4": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 27.710843373493976
+            }
+        },
+        "grace_soda": {
+            "episode_0": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.6333333333333333,
+                "SPL": 27.710843373493976
+            },
+            "episode_1": {
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.7166666666666666,
+                "SPL": 31.914893617021278
+            },
+            "episode_2": {
+                "locations": [
+                    "lab",
+                    "lunch_room",
+                    "office",
+                    "storage_room",
+                    "meeting_room"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 26.436781609195403
+            },
+            "episode_3": {
+                "locations": [
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.6333333333333333,
+                "SPL": 60.0
+            },
+            "episode_4": {
+                "locations": [
+                    "lab",
+                    "lunch_room",
+                    "office",
+                    "storage_room",
+                    "meeting_room"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 26.436781609195403
+            }
+        },
+        "grace_usb": {
+            "episode_0": {
+                "locations": [
+                    "office",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 53.57142857142857
+            },
+            "episode_1": {
+                "locations": [
+                    "lab",
+                    "lunch_room",
+                    "office",
+                    "storage_room",
+                    "meeting_room"
+                ],
+                "ranking_accuracy": 0.4833333333333333,
+                "SPL": 26.436781609195403
+            },
+            "episode_2": {
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 26.31578947368421
+            },
+            "episode_3": {
+                "locations": [
+                    "office",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 100.0
+            },
+            "episode_4": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 100.0
+            }
+        },
+        "jerry_mop": {
+            "episode_0": {
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 100.0
+            },
+            "episode_1": {
+                "locations": [
+                    "lab",
+                    "lunch_room",
+                    "office",
+                    "storage_room",
+                    "meeting_room"
+                ],
+                "ranking_accuracy": 0.5166666666666666,
+                "SPL": 21.428571428571427
+            },
+            "episode_2": {
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 15.646258503401361
+            },
+            "episode_3": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.6333333333333333,
+                "SPL": 27.710843373493976
+            },
+            "episode_4": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.6333333333333333,
+                "SPL": 60.0
+            }
+        },
+        "jerry_bag": {
+            "episode_0": {
+                "locations": [
+                    "office",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "ranking_accuracy": 0.4833333333333333,
+                "SPL": 53.57142857142857
+            },
+            "episode_1": {
+                "locations": [
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.6333333333333333,
+                "SPL": 27.710843373493976
+            },
+            "episode_2": {
+                "locations": [
+                    "lab",
+                    "lunch_room",
+                    "office",
+                    "storage_room",
+                    "meeting_room"
+                ],
+                "ranking_accuracy": 0.5166666666666666,
+                "SPL": 26.436781609195403
+            },
+            "episode_3": {
+                "locations": [
+                    "lab",
+                    "lunch_room",
+                    "office",
+                    "storage_room",
+                    "meeting_room"
+                ],
+                "ranking_accuracy": 0.5166666666666666,
+                "SPL": 26.436781609195403
+            },
+            "episode_4": {
+                "locations": [
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.6333333333333333,
+                "SPL": 27.710843373493976
+            }
+        },
+        "jerry_shredder": {
+            "episode_0": {
+                "locations": [
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 27.710843373493976
+            },
+            "episode_1": {
+                "locations": [
+                    "office",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "ranking_accuracy": 0.8333333333333333,
+                "SPL": 39.473684210526315
+            },
+            "episode_2": {
+                "locations": [
+                    "office",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "ranking_accuracy": 0.8333333333333333,
+                "SPL": 100.0
+            },
+            "episode_3": {
+                "locations": [
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 27.710843373493976
+            },
+            "episode_4": {
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 15.646258503401361
+            }
+        },
+        "tyson_toolkit": {
+            "episode_0": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 60.0
+            },
+            "episode_1": {
+                "locations": [
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 27.710843373493976
+            },
+            "episode_2": {
+                "locations": [
+                    "lab",
+                    "lunch_room",
+                    "office",
+                    "storage_room",
+                    "meeting_room"
+                ],
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 26.436781609195403
+            },
+            "episode_3": {
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 15.646258503401361
+            },
+            "episode_4": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 27.710843373493976
+            }
+        },
+        "tyson_package": {
+            "episode_0": {
+                "locations": [
+                    "office",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "ranking_accuracy": 0.8,
+                "SPL": 100.0
+            },
+            "episode_1": {
+                "locations": [
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lunch_room",
+                    "lab"
+                ],
+                "ranking_accuracy": 0.85,
+                "SPL": 27.710843373493976
+            },
+            "episode_2": {
+                "locations": [
+                    "office",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "ranking_accuracy": 0.8,
+                "SPL": 100.0
+            },
+            "episode_3": {
+                "locations": [
+                    "office",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "ranking_accuracy": 0.8,
+                "SPL": 100.0
+            },
+            "episode_4": {
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 15.646258503401361
+            }
+        },
+        "tyson_hdmi": {
+            "episode_0": {
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 15.646258503401361
+            },
+            "episode_1": {
+                "locations": [
+                    "office",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "ranking_accuracy": 0.7,
+                "SPL": 100.0
+            },
+            "episode_2": {
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 15.646258503401361
+            },
+            "episode_3": {
+                "locations": [
+                    "lab",
+                    "lunch_room",
+                    "office",
+                    "storage_room",
+                    "meeting_room"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 26.436781609195403
+            },
+            "episode_4": {
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 15.646258503401361
+            }
+        }
+    },
+    "random": {
+        "grace_pen": {
+            "episode_0": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.4833333333333333,
+                "SPL": 20.27027027027027
+            },
+            "episode_1": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 24.59016393442623
+            },
+            "episode_2": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.4833333333333333,
+                "SPL": 22.727272727272727
+            },
+            "episode_3": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.5166666666666666,
+                "SPL": 60.0
+            },
+            "episode_4": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.8333333333333333,
+                "SPL": 100.0
+            }
+        },
+        "grace_soda": {
+            "episode_0": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 22.330097087378643
+            },
+            "episode_1": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.6833333333333333,
+                "SPL": 23.076923076923077
+            },
+            "episode_2": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 36.507936507936506
+            },
+            "episode_3": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 33.33333333333333
+            },
+            "episode_4": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 36.507936507936506
+            }
+        },
+        "grace_usb": {
+            "episode_0": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 42.857142857142854
+            },
+            "episode_1": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.4833333333333333,
+                "SPL": 26.436781609195403
+            },
+            "episode_2": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.75,
+                "SPL": 100.0
+            },
+            "episode_3": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.9,
+                "SPL": 100.0
+            },
+            "episode_4": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.5166666666666666,
+                "SPL": 20.27027027027027
+            }
+        },
+        "jerry_mop": {
+            "episode_0": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 15.384615384615385
+            },
+            "episode_1": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 53.57142857142857
+            },
+            "episode_2": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.4833333333333333,
+                "SPL": 11.330049261083744
+            },
+            "episode_3": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.8833333333333332,
+                "SPL": 22.330097087378643
+            },
+            "episode_4": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.6333333333333333,
+                "SPL": 20.27027027027027
+            }
+        },
+        "jerry_bag": {
+            "episode_0": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 24.59016393442623
+            },
+            "episode_1": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 100.0
+            },
+            "episode_2": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 19.327731092436977
+            },
+            "episode_3": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 12.299465240641712
+            },
+            "episode_4": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.4833333333333333,
+                "SPL": 11.557788944723619
+            }
+        },
+        "jerry_shredder": {
+            "episode_0": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 11.557788944723619
+            },
+            "episode_1": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.6333333333333333,
+                "SPL": 19.736842105263158
+            },
+            "episode_2": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 100.0
+            },
+            "episode_3": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.4833333333333333,
+                "SPL": 23.232323232323232
+            },
+            "episode_4": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 22.330097087378643
+            }
+        },
+        "tyson_toolkit": {
+            "episode_0": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 20.27027027027027
+            },
+            "episode_1": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 41.81818181818181
+            },
+            "episode_2": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 26.436781609195403
+            },
+            "episode_3": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.7166666666666666,
+                "SPL": 17.037037037037038
+            },
+            "episode_4": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.65,
+                "SPL": 100.0
+            }
+        },
+        "tyson_package": {
+            "episode_0": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.6833333333333333,
+                "SPL": 100.0
+            },
+            "episode_1": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 17.037037037037038
+            },
+            "episode_2": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 100.0
+            },
+            "episode_3": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 41.81818181818181
+            },
+            "episode_4": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 100.0
+            }
+        },
+        "tyson_hdmi": {
+            "episode_0": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.41666666666666663,
+                "SPL": 12.299465240641712
+            },
+            "episode_1": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.6333333333333333,
+                "SPL": 100.0
+            },
+            "episode_2": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.6333333333333333,
+                "SPL": 100.0
+            },
+            "episode_3": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.4833333333333333,
+                "SPL": 11.330049261083744
+            },
+            "episode_4": {
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room",
+                    "office"
+                ],
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 14.465408805031446
+            }
+        }
+    },
+    "o1-mini": {
+        "grace_pen": {
+            "episode_0": {
+                "response": "1) **Item's Relevance to Each Location**\n\n- **Office**: Pens and notebooks are commonly found and used here, making it likely Grace could be here.\n- **Meeting Room**: Potentially relevant if Grace is attending or has attended a meeting.\n- **Storage Room**: Less relevant for using a pen and notebook.\n- **Lunch Room**: Not typically a place for writing notes, so less relevant.\n- **Lab**: Relevant since Grace conducts experiments and might need to jot down notes.\n\nInitial Ordered List: `['office', 'lab', 'meeting_room', 'storage_room', 'lunch_room']`\n\n2) **Context and Relevance to Grace**\n\nGrace is a research assistant, so she often uses the **lab** and **meeting room** for her work. The need to write notes might indicate she's either preparing for a meeting or conducting experiments.\n\nContextual Weighted List: `['lab', 'meeting_room', 'office', 'storage_room', 'lunch_room']`\n\n3) **Optimize the Pathing Based on Relative Distances**\n\nStarting from `[15, 25]`, which is closest to the lab:\n\n- **Lab**: `[25, 25]` (22 distance cost)\n- **Office**: `[2, 15]` (33 from meeting_room, next closest from lab)\n- **Meeting Room**: `[25, 5]` (30 distance from start)\n\nOptimized List: `['lab', 'meeting_room', 'office', 'storage_room', 'lunch_room']`\n\n4) **Final Ordered List**\n\nCombining all insights:\n\n<list> ['lab', 'meeting_room', 'office', 'storage_room', 'lunch_room'] </list>",
+                "locations": [
+                    "lab",
+                    "meeting_room",
+                    "office",
+                    "storage_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 6.301517009735107,
+                "ranking_accuracy": 0.65,
+                "SPL": 45.45454545454545
+            },
+            "episode_1": {
+                "response": "To determine the best order of locations to find Grace and deliver the pen and notebook, let's follow the structured steps:\n\n1) **Identify the Item's Relevance to Each Location**:\n   - **Office**: Relevant for writing notes and handling documents.\n   - **Meeting Room**: Relevant for taking notes during meetings.\n   - **Lab**: Relevant for research documentation and experiments.\n   - **Lunch Room**: Less relevant unless she's taking a break.\n   - **Storage Room**: Not relevant for writing.\n\n   Initial relevance order: `['office', 'meeting_room', 'lab', 'lunch_room', 'storage_room']`\n\n2) **Investigate the Queries Context and Relevance to the Person**:\n   - Grace is likely to be in the lab performing experiments and taking notes as part of her job.\n   - Meeting rooms are also relevant if she\u2019s having a meeting.\n   - The office could be likely if she\u2019s working on reports or documentation.\n\n   Context-adjusted order: `['lab', 'meeting_room', 'office', 'lunch_room', 'storage_room']`\n\n3) **Optimize the Pathing Based on Relative Distances**:\n   - Start at `[15, 25]`, closest to the lab.\n   - From the lab, the meeting room is also relatively close.\n   - From the meeting room, the office is next.\n\n   Final optimized order: `['lab', 'meeting_room', 'office', 'lunch_room', 'storage_room']`\n\n4) **Output the Finalized Ranked List**:\n   - Based on relevance, context, and optimization, the list is:\n\n```xml\n<list> ['lab', 'meeting_room', 'office', 'lunch_room', 'storage_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "meeting_room",
+                    "office",
+                    "lunch_room",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.993016242980957,
+                "ranking_accuracy": 0.7,
+                "SPL": 45.45454545454545
+            },
+            "episode_2": {
+                "response": "1) **Identify the Item's Relevance to Each Location**\n\n- **Office**: Pens and notebooks are commonly used here for writing and documentation.\n- **Meeting Room**: Suitable for taking notes during discussions.\n- **Storage Room**: Less relevant for immediate notebook use.\n- **Lunch Room**: Not ideal for writing tasks.\n- **Lab**: Can be relevant for taking research notes and experiments.\n\nInitial Ordered List: ['office', 'meeting_room', 'lab', 'storage_room', 'lunch_room']\n\n2) **Investigate the Queries Context and Relevance to the Person**\n\nGrace is a graduate research assistant with responsibilities including performing experiments, writing reports, and attending meetings. This makes the lab and meeting room more relevant, as she might need to take notes there.\n\nAdjusted List: ['lab', 'meeting_room', 'office', 'storage_room', 'lunch_room']\n\n3) **Optimize the Pathing Based on Relative Distances**\n\n- Starting at the **lab** is efficient since it's spatially close to the start.\n- From the **lab**, moving to the **meeting_room** keeps the path optimal.\n- Next is the **office**, which is accessible from the meeting_room.\n- The remaining locations are the **storage_room** and **lunch_room**. Going from the office to the storage_room and then to the lunch_room minimizes backtracking.\n\nFinal Ordered List: ['lab', 'meeting_room', 'office', 'storage_room', 'lunch_room']\n\n4) **Output the Finalized Ranked List**\n\n```xml\n<list> ['lab', 'meeting_room', 'office', 'storage_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "meeting_room",
+                    "office",
+                    "storage_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.894634246826172,
+                "ranking_accuracy": 0.65,
+                "SPL": 45.45454545454545
+            },
+            "episode_3": {
+                "response": "1) **Identify the Item's Relevance to Each Location**\n\n- **Office**: Highly relevant for writing and administrative tasks.\n- **Meeting Room**: Relevant for taking notes during meetings.\n- **Lab**: Relevant for recording experiment results.\n- **Lunch Room**: Not relevant for writing tasks.\n- **Storage Room**: Not relevant for writing tasks.\n\nInitial list based on relevance: `['office', 'meeting_room', 'lab', 'storage_room', 'lunch_room']`\n\n2) **Investigate the Queries Context and Relevance to the Person**\n\n- Grace, as a graduate research assistant, likely needs to record experiments or meeting notes.\n- Grace may often be in the **Lab** or **Meeting Room** for her work responsibilities.\n\nAdjusted list based on context: `['lab', 'meeting_room', 'office', 'storage_room', 'lunch_room']`\n\n3) **Optimize the Pathing Based on Relative Distances**\n\n- Start at the closest relevant location.\n- From start: **Lab** (22), **Meeting Room** (30), **Office** (23).\n\nOptimized list: `['lab', 'office', 'meeting_room', 'storage_room', 'lunch_room']`\n\n4) **Output the Finalized Ranked List**\n\nFinal list ensuring all locations are included: \n\n```xml\n<list>['lab', 'office', 'meeting_room', 'storage_room', 'lunch_room']</list>\n```",
+                "locations": [
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "storage_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.4003021717071533,
+                "ranking_accuracy": 0.65,
+                "SPL": 25.0
+            },
+            "episode_4": {
+                "response": "1) **Identify the Item's Relevance to Each Location**\n\n- **Office**: Pens and notebooks are commonly used in offices, making this location relevant.\n- **Meeting Room**: Used for meetings where notes might be taken, so relevant.\n- **Lab**: As a graduate research assistant, Grace could use the notebook for experiments and results.\n- **Lunch Room**: Less relevant for writing unless taking a break.\n- **Storage Room**: Typically irrelevant for writing.\n\nInitial relevance order: ['office', 'meeting_room', 'lab', 'lunch_room', 'storage_room']\n\n2) **Investigate the Queries Context and Relevance to the Person**\n\n- Grace might need the pen and notebook for taking notes during experiments or meetings.\n- Most likely locations are the lab for experiments or the meeting room for updates.\n\nContextual relevance order: ['lab', 'meeting_room', 'office', 'lunch_room', 'storage_room']\n\n3) **Optimize the Pathing Based on Relative Distances**\n\nStarting from \"start\" location [15, 25], reorder based on efficiency:\n- Closest to start: Lab\n- Next closer: Office\n- Then: Meeting Room\n- Followed by: Lunch Room\n- Finally: Storage Room\n\nOptimized order: ['lab', 'office', 'meeting_room', 'lunch_room', 'storage_room']\n\n4) **Output the Finalized Ranked List**\n\nAfter considering all factors, here is the final order:\n\n```xml\n<list> ['lab', 'meeting_room', 'office', 'lunch_room', 'storage_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "meeting_room",
+                    "office",
+                    "lunch_room",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.503413915634155,
+                "ranking_accuracy": 0.7,
+                "SPL": 23.232323232323232
+            }
+        },
+        "grace_soda": {
+            "episode_0": {
+                "response": "To determine where to find Grace and deliver the soda can, let's analyze the available information:\n\n1) **Item's Relevance to Each Location**:\n   - **Lab**: Soda is generally not allowed due to laboratory safety protocols.\n   - **Lunch Room**: A very relevant location for a soda can, as it's a place for breaks and refreshments.\n   - **Office**: Less relevant for a soda can compared to the lunch room.\n   - **Meeting Room**: Soda can be relevant, but less so than the lunch room.\n   - **Storage Room**: Not relevant for a soda can.\n\n2) **Contextual Analysis**:\n   - Grace was last seen leaving the office heading south. This implies she might be going to either the **lunch room** or the **lab**.\n\n3) **Optimize the Pathing**:\n   - Starting from the **start location** [15, 25]:\n     - **Lab**: 22\n     - **Lunch Room**: 20\n   - Since Grace might be taking a break or getting a refreshment, prioritize the lunch room over the lab.\n\n4) **Final Ranked List**:\n   - Given the context and safety considerations, prioritize where she could logically be expected based on direction and item relevance.\n\n```xml\n<list> ['lunch_room', 'lab', 'office', 'meeting_room', 'storage_room'] </list>\n```\n\nThis list prioritizes locations based on both the observed behavior and relevance for delivering the soda can.",
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.6936087608337402,
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 24.210526315789473
+            },
+            "episode_1": {
+                "response": "Sure! Let's determine the best order of locations to find Grace:\n\n1) **Identify the Item's Relevance to Each Location**\n\n- **Soda Can**: Typically, this would be more appropriate in casual or non-restricted locations such as the lunch room. Soda cans are not relevant to labs due to spill risks and restrictions.\n\n2) **Investigate the Query's Context and Relevance to the Person**\n\n- Grace was seen leaving the office and heading towards the southern hallway. This suggests she might be going to the lunch room or lab.\n  \n- Given her occupation, she may frequently work in the lab, but the soda can's nature suggests she could be headed to the lunch room first for a break.\n\n3) **Optimize the Pathing Based on Relative Distances**\n\n- Starting from the lab and lunch room, since they're connected by the southern hallway.\n- Since the lunch room and lab have similar contextual weight, prioritize the nearest based on her last direction. \n- Continue to the other locations if needed for completeness.\n\n4) **Output the Finalized Ranked List**\n\nThe order to find Grace and deliver the soda can is:\n\n<list> ['lunch_room', 'lab', 'office', 'meeting_room', 'storage_room'] </list>",
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.272789478302002,
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 20.27027027027027
+            },
+            "episode_2": {
+                "response": "To deliver the soda can to Grace, here's the step-by-step reasoning for the optimal path:\n\n1) **Identify the Item's Relevance to Each Location**\n   - Soda cans are most relevant in social or break areas like the **lunch_room**.\n   - They are typically not associated with locations like the **lab** or **meeting_room** but could still be present in casual, informal settings.\n\n2) **Investigate the Queries Context and Relevance to the Person**\n   - Grace was last seen heading toward the **southern hallway**, indicating she might be moving towards the **lunch_room** or **lab**.\n   - Given her role, she might also be going to the **lab** to perform experiments.\n\n3) **Optimize the Pathing Based on Relative Distances**\n   - Starting at [15, 25], the most efficient order, considering the southern hall and her movement, would be to check the **lab** first.\n   - Next, the **lunch_room** because of her southern direction and the soda can's relevance there.\n   - Then, check the nearby **meeting_room**, **storage_room**, and lastly the **office**.\n\n4) **Output the Finalized Ranked List**\n   - Final order based on analysis: **lab**, **lunch_room**, **meeting_room**, **storage_room**, **office**.\n\n```xml\n<list> ['lab', 'lunch_room', 'meeting_room', 'storage_room', 'office'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "office"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.356519937515259,
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 14.838709677419354
+            },
+            "episode_3": {
+                "response": "To determine the best order to find Grace, let's analyze the information:\n\n1) **Item Relevance to Each Location:**\n   - Soda can: Typically consumed in casual areas like the lunch room. Less likely relevant in the lab or meeting room due to work guidelines.\n\n2) **Contextual Information:**\n   - You saw Grace leaving the office heading to the southern hallway, suggesting she might have gone towards the lunch room or lab.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Start location to lab: 22\n   - Start location to lunch room: 20\n\nGiven the context and analysis, the ranked list to find Grace is:\n\n<list> ['lunch_room', 'lab', 'office', 'storage_room', 'meeting_room'] </list>",
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "office",
+                    "storage_room",
+                    "meeting_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 2.865562915802002,
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 20.27027027027027
+            },
+            "episode_4": {
+                "response": "Sure, let's determine the order to find Grace:\n\n1) **Identify the Item's Relevance to Each Location:**\n\n   - **Lunch Room:** A soda can is most relevant in the lunch room, where drinks are commonly consumed.\n   - **Lab:** The lab might have restrictions on food and drink, making it less relevant.\n   - **Office, Meeting Room, Storage Room:** These locations have no strong relevance to a soda can.\n\n   Initial order based on item relevance: `lunch_room`, `office`, `meeting_room`, `storage_room`, `lab`.\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n\n   Grace was last seen leaving the office toward the southern hallway. This suggests she might be heading to either the `lunch_room` or the `lab`.\n   \n   - **Lunch Room:** She might be heading there for a break.\n   - **Lab:** She might be going there to continue her work.\n\n   Adjusted order based on context: `lunch_room`, `lab`, `office`, `meeting_room`, `storage_room`.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n\n   Start position: `[15, 25]`.\n\n   - First, go to `lunch_room` (Cost: 20).\n   - Then to `lab` (Cost: 30).\n   - From `lab`, the next closest is the `office` (Cost: 45).\n   - After the `office`, the `meeting_room` is closer (Cost: 33).\n   - Finally, the `storage_room` (Cost: 20).\n\n   Optimized order based on distance: `lunch_room`, `lab`, `office`, `meeting_room`, `storage_room`.\n\n4) **Output the Finalized Ranked List:**\n\n```xml\n<list> ['lunch_room', 'lab', 'office', 'meeting_room', 'storage_room'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.620406150817871,
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 24.210526315789473
+            }
+        },
+        "grace_usb": {
+            "episode_0": {
+                "response": "To determine the best order of locations to find Grace and deliver the USB drive, let's go through the steps:\n\n1) **Identify the Item's Relevance to Each Location:**\n   - **Lab:** The USB drive with research papers is highly relevant here since Grace conducts experiments and gathers results in the lab.\n   - **Office:** Could be relevant if she's writing reports or researching, but less likely than the lab.\n   - **Meeting Room:** Might be relevant for meetings, but less so for the task at hand.\n   - **Storage Room:** Unlikely to be relevant for research papers.\n   - **Lunch Room:** Not relevant for her research work.\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n   - As a graduate research assistant, Grace is likely to need these papers for her work in the lab or her office where she writes reports.\n   - No indication she\u2019s headed to a meeting or other rooms provided through additional context.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Start in the **Lab** due to its high relevance and proximity.\n   - Then check the **Office**, another likely place.\n   - Proceed to the **Meeting Room** in case she has a meeting.\n   - Check the **Storage Room** and **Lunch Room** last given their low relevance.\n\n4) **Output the Finalized Ranked List:**\n\n```xml\n<list> ['lab', 'office', 'meeting_room', 'storage_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "storage_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.716138601303101,
+                "ranking_accuracy": 0.65,
+                "SPL": 25.0
+            },
+            "episode_1": {
+                "response": "To deliver the USB drive to Grace, we'll prioritize locations based on her responsibilities and the item's relevance.\n\n1) **Item's Relevance to Each Location:**\n   - **Lab:** High relevance, as Grace performs experiments here and might need research papers for her experiments.\n   - **Office:** Relevant for accessing and referencing research papers while writing reports.\n   - **Meeting Room:** Possible relevance for meetings related to her research.\n   - **Storage Room/Lunch Room:** Low relevance for a USB drive with research papers.\n\n2) **Query Context and Relevance to Grace:**\n   - Grace is a research assistant, likely to be in the lab or office accessing or using research materials.\n   - If she's currently working, she might be in the lab conducting experiments.\n\n3) **Optimize Pathing Based on Relative Distances:**\n   - Start location: [15, 25]\n   - Lab (closest, 22 cost) should be checked first.\n   - Office is relevant and can be checked next (23 cost from start).\n\nBased on this analysis, the ranked order is:\n\n<list> ['lab', 'office', 'meeting_room', 'storage_room', 'lunch_room'] </list>",
+                "locations": [
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "storage_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.0006630420684814,
+                "ranking_accuracy": 0.65,
+                "SPL": 34.32835820895522
+            },
+            "episode_2": {
+                "response": "To find Grace and deliver the USB drive, let's follow these steps:\n\n1) **Identify the Item's Relevance to Each Location**\n\n   - **Lab**: Likely location since Grace performs experiments and gathers results here. The USB containing research papers is relevant for her work.\n   - **Office**: Possible location for accessing or referencing documents and research papers.\n   - **Meeting Room**: Could be relevant if Grace is having a meeting to discuss research.\n   - **Storage Room**: Less relevant for accessing or using USB drives with research papers.\n   - **Lunch Room**: Unlikely, as food is unrelated to research-focused content.\n\n2) **Investigate the Queries Context and Relevance to the Person**\n\n   - Grace's role involves experiments and writing reports. The USB drive's research papers support these tasks, making the lab a high-priority location. Meetings could also indicate the meeting room.\n\n3) **Optimize the Pathing Based on Relative Distances**\n\n   Begin from the starting location and consider path costs:\n   \n   - Start -> Lab (22)\n   - Lab -> Meeting Room (44) or Storage Room (44 if necessary)\n   - Meeting Room -> Office (33)\n\n   Let's consider these distances to make an efficient list.\n\n4) **Output the Finalized Ranked List**\n\n   Here's the final order combining relevance and path cost:\n\n```xml\n<list> ['lab', 'meeting_room', 'office', 'storage_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "meeting_room",
+                    "office",
+                    "storage_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 7.063800811767578,
+                "ranking_accuracy": 0.65,
+                "SPL": 45.45454545454545
+            },
+            "episode_3": {
+                "response": "To determine the optimal order to find Grace, let's analyze the information:\n\n1) **Identify the Item's Relevance to Each Location**\n\n   - **Lab**: Likely most relevant, as she performs experiments and may need research papers while in the lab.\n   - **Office**: Could be relevant for writing reports and reading papers.\n   - **Meeting Room**: Possible if she has scheduled meetings.\n   - **Storage Room**: Unlikely to be relevant for this context.\n   - **Lunch Room**: Unlikely since it's typically for breaks.\n\n2) **Investigate the Queries Context and Relevance to the Person**\n\n   - Grace, as a graduate research assistant, may spend significant time in the lab or office for research and writing.\n   - The USB drive's contents suggest she would need it while working, likely in the lab or office.\n\n3) **Optimize the Pathing Based on Relative Distances**\n\n   - Start Location: [15, 25]\n   - Lab: [25, 25] - Closest to the start, and most relevant.\n   - Office: [2, 15] - Second relevant and accessible.\n   - Meeting Room: [25, 5] - After office, based on role possibility.\n   - Lunch Room: [5, 35] - Select if others don't yield results.\n   - Storage Room: [35, 15] - Last, given low relevance.\n\nBased on these points, here's the optimized path:\n\n- Start with the Lab.\n- Next, check the Office.\n- Consider the Meeting Room.\n- Then, the Lunch Room.\n- Finally, the Storage Room.\n\nFinal path:\n\n```xml\n<list> ['lab', 'office', 'meeting_room', 'lunch_room', 'storage_room'] </list>\n```\n",
+                "locations": [
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "lunch_room",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.868157386779785,
+                "ranking_accuracy": 0.7,
+                "SPL": 34.32835820895522
+            },
+            "episode_4": {
+                "response": "To deliver the USB drive to Grace with research papers, we'll follow these steps:\n\n1) **Identify the Item's Relevance to Each Location:**\n   - **Office:** Relevant for writing and reviewing papers, but less relevant for experiments.\n   - **Meeting Room:** Possible place for meetings about research progress.\n   - **Storage Room:** Unlikely to need a USB drive here.\n   - **Lunch Room:** Not relevant for research work.\n   - **Lab:** High relevance since Grace is a research assistant and performs experiments here.\n\n   Initial order based on relevance: `['lab', 'office', 'meeting_room', 'storage_room', 'lunch_room']`\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n   - Grace needs the USB for her work, which involves experiments and report writing.\n   - Given her role, she's likely found in the lab more often.\n   - Meetings can occur in the meeting room, and office work like report writing may place her in the office.\n\n   Adjusted order with context: `['lab', 'office', 'meeting_room', 'storage_room', 'lunch_room']`\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Start at `[15, 25]`. Closest locations are the lab and lunch room.\n   - Optimize considering path costs and optimizing visits: start to lab, then find other locations.\n\n   Final path order based on efficiency and relevance: `['lab', 'office', 'meeting_room', 'storage_room', 'lunch_room']`\n\n4) **Output the Finalized Ranked List:**\n\n```xml\n<list> ['lab', 'office', 'meeting_room', 'storage_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "storage_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.404121398925781,
+                "ranking_accuracy": 0.65,
+                "SPL": 30.0
+            }
+        },
+        "jerry_mop": {
+            "episode_0": {
+                "response": "1) **Identify the Item's Relevance to Each Location**\n   - **Mop**: Primarily relevant to the **storage_room** where cleaning supplies are kept, and to areas that require cleaning such as the **lunch_room** and **meeting_room** where food spills are likely.\n\n2) **Investigate the Queries Context and Relevance to the Person**\n   - **Jerry** is the janitor responsible for cleaning, especially in the **meeting_room** and **lunch_room**.\n   - Context suggests a food spill, which points to the **lunch_room** as the initial area of concern, likely increasing his presence there initially.\n\n3) **Optimize the Pathing Based on Relative Distances**\n   - Start: [15, 25]\n   - Initial priority is the **lunch_room** due to the spill, followed by the **meeting_room**, and backtracking to the **storage_room** if he's not found.\n   - Consider distances and prioritize locations based on the probability of Jerry being there.\n\n4) **Output the Finalized Ranked List**\n\n```xml\n<list> ['lunch_room', 'meeting_room', 'storage_room', 'office', 'lab'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.0826797485351562,
+                "ranking_accuracy": 1.0,
+                "SPL": 100.0
+            },
+            "episode_1": {
+                "response": "I'm unable to interpret images or schematics directly. However, I can help you find Jerry using the textual information provided.\n\n1) **Identify the Item's Relevance to Each Location:**\n   - **Lunch Room:** Mops are used for cleaning spills, likely in the lunch room where food is involved.\n   - **Meeting Room:** Close second since Jerry often cleans here too.\n   - **Storage Room:** Where cleaning supplies are kept and where Jerry might return them.\n   - **Lab and Office:** Less likely for food spills or cleaning activities.\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n   - Jerry is likely addressing the food spill, which points to the lunch room or meeting room.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Starting from the initial position, consider closeness while maintaining priority: \n     - Lunch room is closest, then lab, meeting room, and storage room. Office remains the least likely.\n\n4) **Output the Finalized Ranked List:**\n   - Based on the analysis: \n\n```xml\n<list> ['lunch_room', 'meeting_room', 'storage_room', 'lab', 'office'] </list>\n```\n\nThis ordering prioritizes Jerry's main responsibilities and probable location due to the spill context.",
+                "locations": [
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "office"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.3865602016448975,
+                "ranking_accuracy": 0.95,
+                "SPL": 42.857142857142854
+            },
+            "episode_2": {
+                "response": "Let's determine the best order to find Jerry:\n\n1. **Identify the Item's Relevance to Each Location**\n   - Mop is primarily used in the **lunch room** or **meeting room** where spills are likely.\n   - Less relevant in **office**, **storage room**, or **lab**.\n\n2. **Investigate the Query's Context and Relevance to Jerry**\n   - Jerry needs the mop to clean a food spill, likely in the **lunch room** or **meeting room**. He will also return cleaning tools to the **storage room**.\n   - Prioritize areas Jerry might be now: **lunch room** followed by **meeting room** if he\u2019s moving through to clean or gather supplies.\n\n3. **Optimize the Pathing Based on Relative Distances**\n   - Start position: [15, 25]\n   - The **lunch room** is closest to the start.\n   - If Jerry is not there, the next logical place is the **meeting room**, accessible via the northern hallway.\n   - **Storage room** could be next if Jerry is returning or gathering supplies.\n   - **Office** and **lab** would be less likely but cover all bases.\n\n4. **Output the Finalized Ranked List**\n\nFinal list:\n<list> ['lunch_room', 'meeting_room', 'storage_room', 'office', 'lab'] </list>",
+                "locations": [
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 7.080056667327881,
+                "ranking_accuracy": 1.0,
+                "SPL": 18.69918699186992
+            },
+            "episode_3": {
+                "response": "To find Jerry and deliver the mop, follow these steps:\n\n1) **Identify the Item's Relevance to Each Location**  \n   - **Lunch Room**: High relevance since food spills are likely here.\n   - **Meeting Room**: Possible relevance due to drinks or snacks.\n   - **Storage Room**: Jerry may be returning or retrieving cleaning supplies.\n   - **Office & Lab**: Less likely for a food spill but not impossible.\n\n2) **Investigate the Query's Context and Relevance to the Person**  \n   Jerry's task is to clean spills, primarily in areas where food or garbage is present.\n   - **Lunch Room**: Most likely location due to the food spill context.\n   - **Meeting Room**: Second most likely if the spill occurred there.\n\n3) **Optimize the Pathing Based on Relative Distances**  \n   Start at the location with the highest likelihood and work through others efficiently:\n   - Starting at the **lunch room** since it's closest to the start point, and the spill context suggests this.\n   - Then check the **meeting room**.\n   - Next, the **storage room** since he might need or return supplies.\n   - Followed by the **office** and lastly the **lab**.\n\n4) **Output the Finalized Ranked List**  \nBased on the analysis, the optimal path is:\n\n```xml\n<list> ['lunch_room', 'meeting_room', 'storage_room', 'office', 'lab'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.4960131645202637,
+                "ranking_accuracy": 1.0,
+                "SPL": 18.69918699186992
+            },
+            "episode_4": {
+                "response": "1) **Item's Relevance to Each Location:**\n   - **Lunch Room:** High relevance due to food spills.\n   - **Meeting Room:** Potential relevance if the spill occurred during a meeting.\n   - **Storage Room:** Likely where cleaning supplies are kept.\n   - **Lab and Office:** Less relevant for a mop.\n\n2) **Queries Context and Relevance to Jerry:**\n   - Jerry is the janitor responsible for cleaning, specifically in areas like the lunch room.\n   - If he\u2019s cleaning up a food spill, he\u2019s likely in or headed to the lunch room or meeting room.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Start at the lunch room as it is the most probable location.\n   - Follow with the meeting room.\n   - Head to the storage room if not found, as he might be getting supplies.\n   - Finish with the office and lab if needed.\n\n4) **Output the Finalized Ranked List:**\n\n```xml\n<list> ['lunch_room', 'meeting_room', 'storage_room', 'office', 'lab'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.0774359703063965,
+                "ranking_accuracy": 1.0,
+                "SPL": 33.33333333333333
+            }
+        },
+        "jerry_bag": {
+            "episode_0": {
+                "response": "To find Jerry and deliver the garbage bags, let's determine the order of locations to check:\n\n1) **Item's Relevance to Each Location**\n   - **Lunch Room**: Jerry was cleaning here recently and would need garbage bags for cleaning tasks.\n   - **Storage Room**: Jerry might return here to store cleaning equipment.\n   - **Meeting Room**: Similar cleaning duties as the lunch room.\n   - **Office**: Unlikely for cleaning purposes for Jerry.\n   - **Lab**: Less likely place for a janitor's duties involving garbage bags.\n\n2) **Investigate the Query's Context**\n   - You mentioned seeing Jerry in the lunch room, which increases the likelihood he's still nearby or heading toward areas related to his duties (storage room or meeting room).\n\n3) **Optimize the Pathing Based on Relative Distances**\n   - Starting at the **Lunch Room**, next closest relevant location is the **Lab**.\n   - Following would be **Storage Room** given it's likely Jerry would head there.\n   - **Meeting Room** comes next due to similar duties.\n   - Finally, check the **Office**.\n\nHere's the optimized path:\n\n```xml\n<list>['lunch_room', 'storage_room', 'meeting_room', 'lab', 'office']</list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "office"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.5978572368621826,
+                "ranking_accuracy": 0.85,
+                "SPL": 42.857142857142854
+            },
+            "episode_1": {
+                "response": "To find Jerry and deliver the garbage bags, let's determine the most likely locations where he might be:\n\n1) **Identify the Item's Relevance to Each Location**:\n   - **Garbage bags** are relevant to areas where cleaning occurs: lunch room and meeting room.\n   - **Storage room** would also be relevant as Jerry may return the cleaning supplies there.\n   - **Office** and **lab** are less likely since cleaning and garbage bags are not primarily associated with these locations.\n\n2) **Investigate the Queries Context and Relevance to the Person**:\n   - Jerry was last seen **cleaning in the lunch room**, so it's reasonable to assume he might still be there or nearby.\n   - After cleaning, he might head to the **storage room** to return the cleaning equipment.\n\n3) **Optimize the Pathing Based on Relative Distances**:\n   - Start at the **lunch room** as it\u2019s the most recent location Jerry was spotted.\n   - Move to the **storage room** since it is close and relevant if Jerry has finished cleaning.\n   - The next closest place Jerry might be cleaning is the **meeting room**.\n   - Check the **office** and **lab** last, given their low relevance.\n\nFinal Ordered List:\n- Start at **lunch room**\n- Next, go to **storage room**\n- Then, check **meeting room**\n- Afterward, go to **office**\n- Finally, visit the **lab**\n\nHere's the ranked list:\n\n```xml\n<list> ['lunch_room', 'storage_room', 'meeting_room', 'office', 'lab'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.208593368530273,
+                "ranking_accuracy": 0.9,
+                "SPL": 18.69918699186992
+            },
+            "episode_2": {
+                "response": "To find Jerry and deliver the garbage bags, follow these steps:\n\n1) **Item Relevance to Each Location:**\n   - Jerry, as a janitor, is most likely to use garbage bags in the lunch room and meeting room, where garbage accumulates.\n   - The storage room is also relevant since cleaning supplies are kept there.\n   - The lab and office are less relevant for finding Jerry with garbage bags.\n\n2) **Contextual Clues:**\n   - Jerry was seen in the lunch room recently, so he might still be there.\n   - After cleaning the lunch room, he might move to the meeting room or return supplies to the storage room.\n\n3) **Optimize Pathing Based on Distances:**\n   - Start at the lunch room as Jerry was last seen there.\n   - Move to the meeting room next since it's relevant and relatively cost-effective from the lunch room.\n   - Consider the storage room for returning supplies.\n   - Check the lab and office last due to lower relevance.\n\nFinal ordered list based on analysis:\n\n```xml\n<list> ['lunch_room', 'meeting_room', 'storage_room', 'lab', 'office'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "office"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.231957197189331,
+                "ranking_accuracy": 0.95,
+                "SPL": 12.849162011173185
+            },
+            "episode_3": {
+                "response": "1) **Identify the Item's Relevance to Each Location:**\n   - **Lunch Room:** High relevance; cleaning and garbage collection.\n   - **Meeting Room:** High relevance; cleaning is common here.\n   - **Storage Room:** Relevant for storing cleaning supplies.\n   - **Office and Lab:** Less relevant for cleaning activities.\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n   - Jerry was last seen in the lunch room cleaning, indicating a likelihood of being in nearby areas or returning to the storage room to return supplies.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Start at the lunch room as he was last seen there.\n   - Check the storage room as it's nearby and relevant.\n   - Visit the meeting room next since it's often cleaned.\n   - Consider proximity to the start location and other rooms for offices and labs.\n\n4) **Output the Finalized Ranked List:**\n\n```xml\n<list> ['lunch_room', 'storage_room', 'meeting_room', 'office', 'lab'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 2.7726199626922607,
+                "ranking_accuracy": 0.9,
+                "SPL": 18.69918699186992
+            },
+            "episode_4": {
+                "response": "Let's determine the best order to find Jerry:\n\n1. **Identify the Item's Relevance to Each Location**\n   - Garbage bags are relevant to areas with trash, such as the lunch room and meeting room.\n   - Less relevant to the office and lab, where food and waste are minimal.\n   - Storage room could be relevant as Jerry might store cleaning supplies there.\n\n2. **Investigate the Queries Context and Relevance to the Person**\n   - Jerry was last seen cleaning in the lunch room, so he might still be there or nearby.\n   - Since he's responsible for the lunch room and meeting room, he may move between them.\n   - He might visit the storage room to store or retrieve cleaning supplies after his tasks.\n\n3. **Optimize the Pathing Based on Relative Distances**\n   - Start with the lunch room since Jerry was seen there.\n   - Next, check the meeting room due to proximity and relevance.\n   - Then, go to the storage room.\n   - Finally, check the office and lab as they are less relevant.\n\nHere's the optimized ordered list:\n\n```xml\n<list>['lunch_room', 'meeting_room', 'storage_room', 'office', 'lab']</list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.3861522674560547,
+                "ranking_accuracy": 1.0,
+                "SPL": 18.69918699186992
+            }
+        },
+        "jerry_shredder": {
+            "episode_0": {
+                "response": "Let's determine the optimal order for finding Jerry and delivering the paper shredder.\n\n1) **Identify the Item's Relevance to Each Location:**\n\n   - **Storage Room:** May store cleaning supplies; shredder could initially be stored here.\n   - **Office:** Likely a place where reports and documents are initially processed or need disposal.\n   - **Meeting Room:** Can accumulate reports and papers during meetings; shredding may be required.\n   - **Lunch Room:** Not directly relevant for shredding reports.\n   - **Lab:** Less likely to have confidential paper waste needing shredding.\n\n   Initial list based on relevance: `['meeting_room', 'office', 'storage_room', 'lab', 'lunch_room']`\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n\n   Jerry's duties involve cleaning, especially in the meeting rooms and lunch rooms where papers might accumulate. He may also visit the storage room to manage cleaning supplies. The context of shredding reports suggests visiting meeting rooms and offices where such documents are more common.\n\n   Contextually adjusted list based on Jerry\u2019s role: `['meeting_room', 'office', 'storage_room', 'lunch_room', 'lab']`\n\n3) **Optimize the Pathing Based on Relative Distances:**\n\n   Starting at the beginning point `[15, 25]`, consider Jerry\u2019s likely path for cleaning:\n   - **Lab (start 22):** Nearest first check, though not highly probable.\n   - **Meeting Room (lab 44):** High probability due to papers.\n   - **Office (meeting_room 33):** Another probable paper location.\n   - **Storage Room (office 33):** For cleaning supplies return.\n   - **Lunch Room (storage_room 50):** Ending check.\n\n   Optimized order based on distances: `['lab', 'meeting_room', 'office', 'storage_room', 'lunch_room']`\n\n4) **Output the Finalized Ranked List:**\n\nCombining insights for Jerry based on item relevance and contextual duties, and optimizing the path:\n\n```xml\n<list> ['lab', 'meeting_room', 'office', 'storage_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "meeting_room",
+                    "office",
+                    "storage_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 5.3558454513549805,
+                "ranking_accuracy": 0.7,
+                "SPL": 23.232323232323232
+            },
+            "episode_1": {
+                "response": "To deliver the paper shredder to Jerry, let's follow a step-by-step analysis:\n\n1) **Identify the Item's Relevance to Each Location**:\n   - Paper shredders might be used in the office or meeting room where confidential documents are common.\n   - The storage room might also be relevant for returning cleaning utilities.\n   - The lunch room and lab are less likely to need a paper shredder.\n\n2) **Investigate the Queries Context and Relevance to the Person**:\n   - Jerry's role as a janitor includes cleaning meeting rooms, which could mean he's there more often if there are a lot to clean.\n   - If there are a lot of reports, he might also be in the office area where such documents accumulate.\n\n3) **Optimize the Pathing Based on Relative Distances**:\n   - Starting at the initial location (start), visit the most probable locations while considering distance.\n   - The office is closest to start, making it a good initial check.\n   - The meeting room and storage room follow in proximity after the office.\n\n4) **Output the Finalized Ranked List**:\n   - Based on Jerry's responsibilities and item relevance, here\u2019s the ordered list:\n\n```xml\n<list> ['office', 'meeting_room', 'storage_room', 'lab', 'lunch_room'] </list>\n```\n\nThis order reflects the likelihood of Jerry's presence related to his duties and the need for a paper shredder.",
+                "locations": [
+                    "office",
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.403806924819946,
+                "ranking_accuracy": 0.9333333333333332,
+                "SPL": 53.57142857142857
+            },
+            "episode_2": {
+                "response": "To determine the best order of locations to find Jerry and deliver the paper shredder, here\u2019s the breakdown:\n\n1) **Item's Relevance to Each Location**\n   - **Office**: Offices might need shredding of confidential reports, so relevant.\n   - **Meeting Room**: Possible shredding if reports are discussed afterward, so also relevant.\n   - **Storage Room**: Shredders are often stored here, and Jerry might return cleaning tools.\n   - **Lunch Room**: Less likely to have shredder activity; not directly relevant.\n   - **Lab**: Shredding could be needed if confidential papers are involved, but less likely given safety concerns and space usage.\n\n2) **Context and Relevance to Jerry**\n   - Jerry is the janitor, responsible for cleaning, especially the meeting room and lunch room. Post-meeting, he might clean up, making the meeting room more relevant.\n   - Storage room is relevant as he stores cleaning utilities there.\n\n3) **Optimize the Pathing Based on Relative Distances**\n   Starting at the given start location [15, 25], here is the optimal order considering both relevance and distance:\n\n   - **Lab**: Nearest to the start [22 cost], relevant as reports can relate to lab work.\n   - **Meeting Room**: Next nearest location [44 cost from lab], likely since Jerry cleans here.\n   - **Office**: From the meeting room, it\u2019s the next logical point [33 cost from meeting room].\n   - **Storage Room**: Likely place for shredders; visit after the office for storage purposes [33 cost from office].\n   - **Lunch Room**: Least relevant to shredding, visited last [50 cost from storage room].\n\n4) **Final Ordered List**\n   Carefully considering the above insights, the list to find Jerry becomes:\n\n```xml\n<list> ['lab', 'meeting_room', 'office', 'storage_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "meeting_room",
+                    "office",
+                    "storage_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.865802764892578,
+                "ranking_accuracy": 0.7,
+                "SPL": 23.232323232323232
+            },
+            "episode_3": {
+                "response": "**Step 1: Identify the Item's Relevance to Each Location**\n\n- **Office:** High relevance, as paper shredders are often used to dispose of confidential documents found in offices.\n- **Meeting Room:** Moderate relevance, as it might have confidential reports from meetings.\n- **Storage Room:** Low relevance, as it's primarily for storage but less likely for active document shredding.\n- **Lunch Room:** Low relevance, as it's not used for document handling.\n- **Lab:** Low relevance, as safety and equipment protocols usually preclude shredding activities.\n\n**Initial Ordered List:**\n1. Office\n2. Meeting Room\n3. Storage Room\n4. Lab\n5. Lunch Room\n\n**Step 2: Investigate the Queries Context and Relevance to the Person**\n\n- **Jerry:** As a janitor, Jerry ensures cleanliness, especially in areas like the meeting room and lunch room. Given the need to dispose of paper, he might be found in areas where documents accumulate (office or meeting room).\n- **Context:** The presence of lots of confidential reports suggests higher relevance for areas dealing with documents (office and meeting room).\n\n**Adjusted Ordered List:**\n1. Office\n2. Meeting Room\n3. Lunch Room\n4. Storage Room\n5. Lab\n\n**Step 3: Optimize the Pathing Based on Relative Distances**\n\nStarting from the initial location, consider efficient movement:\n\n- **Start to Office:** Cost 23\n- **Office to Meeting Room:** Cost 33\n- **Meeting Room to Lunch Room:** Totaling Cost 50\n- **Lunch Room to Lab:** Totaling Cost 30\n- **Lab to Storage Room:** Totaling Cost 44\n\n**Final Ordered List:**\n- Office\n- Meeting Room\n- Lunch Room\n- Lab\n- Storage Room\n\nGiven this ordered list and context, it's efficient to start checking the office and meeting room first, followed by the lunch room, lab, and storage room.\n\n```xml\n<list> ['office', 'meeting_room', 'lunch_room', 'lab', 'storage_room'] </list>\n```",
+                "locations": [
+                    "office",
+                    "meeting_room",
+                    "lunch_room",
+                    "lab",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 6.328701972961426,
+                "ranking_accuracy": 0.8833333333333332,
+                "SPL": 100.0
+            },
+            "episode_4": {
+                "response": "To find Jerry and deliver the paper shredder, let's analyze the situation step-by-step.\n\n1) **Identify the Item's Relevance to Each Location**\n\n   - **Office**: Paper shredders are commonly used in offices for disposing of documents.\n   - **Meeting Room**: Could be relevant if confidential reports are being discussed or discarded after meetings.\n   - **Storage Room**: Less relevant unless storing the shredder.\n   - **Lunch Room**: Not typically related to shredding activities.\n   - **Lab**: Unlikely to be related since labs are for experiments, not paperwork.\n\n   Initial order based on item relevance: `office`, `meeting_room`, `storage_room`, `lab`, `lunch_room`.\n\n2) **Investigate the Query's Context and Relevance to the Person**\n\n   Jerry is a janitor, and his duties include ensuring areas like the meeting room and lunch room are clean. He might be in the meeting room or lunch room but also could be disposing of items like the shredder in the storage room.\n\n   Adjusted order with Jerry's responsibilities: `meeting_room`, `storage_room`, `lunch_room`, `office`, `lab`.\n\n3) **Optimize the Pathing Based on Relative Distances**\n\n   Starting from `start` at [15, 25]:\n\n   - **Meeting Room**: Cost 30 from `start`.\n   - **Storage Room**: Cost 30 from `start`.\n   - After checking those, the **office** and **lab** are close to each other (office 33 from meeting room; lab 44 from storage room), and finally, **lunch room** is least likely.\n\n   Final optimized path: `meeting_room`, `storage_room`, `lab`, `office`, `lunch_room`.\n\n4) **Output the Finalized Ranked List**\n\nHere is the list of locations to find Jerry:\n\n```xml\n<list> ['meeting_room', 'storage_room', 'lab', 'office', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "office",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.865892171859741,
+                "ranking_accuracy": 0.6333333333333333,
+                "SPL": 16.546762589928058
+            }
+        },
+        "tyson_toolkit": {
+            "episode_0": {
+                "response": "<list>['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room']</list>",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 0.8893032073974609,
+                "ranking_accuracy": 1.0,
+                "SPL": 45.45454545454545
+            },
+            "episode_1": {
+                "response": "```xml\n<list> ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 2.8530890941619873,
+                "ranking_accuracy": 1.0,
+                "SPL": 23.232323232323232
+            },
+            "episode_2": {
+                "response": "1) **Identify the Item's Relevance to Each Location**\n\n- **Lab**: The toolkit is most relevant here as Tyson would use it for setting up or fixing testing apparatus.\n- **Storage Room**: Relevant for storing the toolkit and associated equipment.\n- **Office**: Possible relevance for administrative tasks but less likely for using the toolkit.\n- **Meeting Room** and **Lunch Room**: Least relevant for this task.\n\nInitial relevance order: `['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room']`\n\n2) **Investigate the Query's Context and Relevance to the Person**\n\n- Since Tyson is tasked with fixing the testing apparatus, it's likely that he is currently or will soon be in the lab.\n- The storage room is also important since Tyson works with sorting and storing equipment.\n\nEnhanced order based on context: `['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room']`\n\n3) **Optimize the Pathing Based on Relative Distances**\n\nStart at `[15, 25]`:\n\n- **Lab** is closest to the start location.\n- From the lab, the closest relevant next location is the **Storage Room**.\n- The **Office** comes next, having a direct path from the storage room.\n- Finally, traverse less relevant areas: **Meeting Room** and **Lunch Room**.\n\nOptimized order considering distances: `['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room']`\n\n4) **Output the Finalized Ranked List**\n\nFinalize the conclusions into a list:\n\n```xml\n<list> ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.827357292175293,
+                "ranking_accuracy": 1.0,
+                "SPL": 23.232323232323232
+            },
+            "episode_3": {
+                "response": "1) **Identify the Item's Relevance to Each Location**\n\n- **Lab**: Highly relevant as Tyson needs to fix the testing apparatus here.\n- **Storage Room**: Relevant because Tyson might store or organize tools here.\n- **Office**: Not directly relevant for fixing apparatus but possible for checking emails or organizing tasks.\n- **Meeting Room**: Not relevant for fixing apparatus.\n- **Lunch Room**: Not relevant for fixing apparatus.\n\n**Initial Ordered List**: ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room']\n\n2) **Investigate the Queries Context and Relevance to the Person**\n\n- Tyson is responsible for setting up and validating testing apparatus, indicating he should be in the lab.\n- The toolkit is directly related to his duties, and if fixing is required, he's likely in the lab or storage room.\n\n**Adjusted List**: ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room']\n\n3) **Optimize the Pathing Based on Relative Distances**\n\n- Start from the lab since it's closest and highly relevant.\n- Move to the storage room next, then check the nearby office.\n- Finally, consider meeting room and lunch room based on distance costs.\n\n**Optimized List**: ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room']\n\n4) **Output the Finalized Ranked List**\n\n```xml\n<list> ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.3991875648498535,
+                "ranking_accuracy": 1.0,
+                "SPL": 23.232323232323232
+            },
+            "episode_4": {
+                "response": "1) **Identify the Item's Relevance to Each Location**\n\n- **Lab**: Highly relevant. Tyson might need tools here to fix the testing apparatus.\n- **Storage Room**: Relevant. Tyson organizes and could store toolkits here.\n- **Office**: Less relevant. Unlikely Tyson would be fixing apparatus here.\n- **Meeting Room**: Less relevant. Not typically used for fixing or storing tools.\n- **Lunch Room**: Irrelevant. Not used for fixing equipment.\n\n2) **Investigate the Query's Context and Relevance to the Person**\n\nTyson is a technician, responsible for setup and validation of testing apparatus. Therefore, he is most likely in the lab working on the apparatus or in the storage room for tools.\n\n3) **Optimize the Pathing Based on Relative Distances**\n\nStarting at the lab makes sense as it's both relevant and close to the start, then check the nearby storage room if not found, followed by other locations.\n\n4) **Output the Finalized Ranked List**\n\nConsidering relevance and distance:\n\n```xml\n<list> ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.832507371902466,
+                "ranking_accuracy": 1.0,
+                "SPL": 23.232323232323232
+            }
+        },
+        "tyson_package": {
+            "episode_0": {
+                "response": "Let's analyze the information step-by-step to determine the optimal order to find Tyson:\n\n1) **Identify the Item's Relevance to Each Location:**\n   - **Storage Room:** Tyson works as a technician responsible for sorting delivery packages here, so it's a primary location.\n   - **Lab:** Relevant for setting up and validating the testing apparatus, but Tyson was last seen leaving it.\n   - **Office, Meeting Room, Lunch Room:** Less relevant for Tyson's typical responsibilities.\n\n2) **Investigate the Query's Context and Relevance to the Person:**\n   - Tyson was last seen heading to the north hallway, suggesting he's moving away from the lab.\n   - Likely destinations include the **Storage Room** (for sorting packages) or possibly the **Office** (for administrative tasks).\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - From the start, the shortest paths considering Tyson's probable locations are to the Office or Storage Room.\n   - Based on the distances:\n     - **Office**: Cost from start is 23.\n     - **Storage Room**: Cost from start is 30.\n\n4) **Output the Finalized Ranked List:**\n\nConsidering all factors, here's the order to search for Tyson:\n\n```xml\n<list> ['office', 'storage_room', 'meeting_room', 'lab', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "office",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.4483251571655273,
+                "ranking_accuracy": 0.8,
+                "SPL": 100.0
+            },
+            "episode_1": {
+                "response": "To deliver the package to Tyson, here's how we can determine the most likely locations to find him:\n\n1) **Identify the Item's Relevance to Each Location:**\n   - The package is likely for storage or sorting, which Tyson handles in the storage room.\n   - The lab may be relevant if the package is for testing apparatus.\n   - The meeting room, office, and lunch room are less likely relevant for package delivery.\n\n2) **Investigate the Query's Context and Relevance to the Person:**\n   - Tyson was last seen leaving the lab heading to the north hallway, indicating he might be going to the storage room or the office.\n   - As a technician, his responsibilities include sorting deliveries, suggesting he might go to the storage room.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Starting from the lab, the closest locations are the storage room and meeting room.\n   - Given the context, prioritize the storage room over the meeting room.\n\n4) **Output the Finalized Ranked List:**\n\nBased on these considerations, here is the ranked list:\n\n```xml\n<list> ['storage_room', 'office', 'meeting_room', 'lab', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.5671026706695557,
+                "ranking_accuracy": 1.0,
+                "SPL": 36.507936507936506
+            },
+            "episode_2": {
+                "response": "To efficiently deliver the package to Tyson, let's determine the most probable locations based on the scenario:\n\n1. **Identify the Item's Relevance to Each Location**:\n   - The shipment package is often handled in the **storage room**, where Tyson's role involves sorting deliveries.\n   - The **lab** could also be relevant if the package contains testing apparatus.\n\n2. **Investigate the Queries Context and Relevance to the Person**:\n   - Tyson was last seen leaving the **lab** heading towards the north hallway.\n   - The north hallway connects to the **office**, **meeting room**, and **storage room**.\n\n3. **Optimize the Pathing Based on Relative Distances**:\n   - Since Tyson is heading north, prioritize locations along that path.\n   - Start from the **lab**, then explore locations in the north hallway.\n\nConsidering Tyson's responsibilities and his last known direction:\n\n- **Storage Room**: Likely, since it's in the north and it's where he sorts packages.\n- **Office**: Possible, as it's along the path Tyson was taking.\n- **Meeting Room**: Less likely, but still a possibility in the north.\n- **Lab**: Start point but least likely since he was leaving.\n- **Lunch Room**: Least likely since it's part of the southern hallway.\n\nFinal ordered list: \n\n```xml\n<list> ['storage_room', 'office', 'meeting_room', 'lab', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.691445827484131,
+                "ranking_accuracy": 1.0,
+                "SPL": 36.507936507936506
+            },
+            "episode_3": {
+                "response": "To efficiently find Tyson and deliver the shipment package, let's analyze the given information:\n\n1) **Identify the Item's Relevance to Each Location:**\n   - Since the shipment package is relevant to Tyson\u2019s role, the **storage room** is highly relevant for sorting delivery packages.\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n   - Tyson was seen leaving the lab and heading to the north hallway. The likely places he would be headed next are the **meeting room**, **storage room**, or **office**.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Starting from the **start** position, prioritize locations Tyson is likely to be in based on the north hallway: **office**, **storage room**, and then **meeting room** next due to proximity.\n\n4) **Output the Finalized Ranked List:**\n\nHere is the optimized list:\n\n<list>['office', 'storage_room', 'meeting_room', 'lab', 'lunch_room']</list>",
+                "locations": [
+                    "office",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.059436559677124,
+                "ranking_accuracy": 0.8,
+                "SPL": 100.0
+            },
+            "episode_4": {
+                "response": "To determine the best order to find Tyson, let's follow the steps:\n\n1) **Identify the Item's Relevance to Each Location:**\n   - **Office:** May not be relevant for package delivery unless checking documents.\n   - **Meeting Room:** Could be used for meetings but not directly related to package handling.\n   - **Storage Room:** Highly relevant as Tyson is responsible for sorting delivery packages.\n   - **Lunch Room:** Not relevant for package delivery.\n   - **Lab:** Initially relevant, but Tyson was seen leaving.\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n   - Tyson was seen leaving the lab heading to the north hallway, suggesting he could be going towards the **storage room** or **office**.\n   - His responsibility aligns closely with the **storage room**.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Starting from the lab, **storage room** is closer. If not found, check the **office** next.\n   - **Meeting room** follows due to the direction (north), then check the **lunch room**.\n\n4) **Output the Finalized Ranked List:**\n\n```xml\n<list> ['storage_room', 'office', 'meeting_room', 'lunch_room', 'lab'] </list>\n```",
+                "locations": [
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.867119550704956,
+                "ranking_accuracy": 0.95,
+                "SPL": 36.507936507936506
+            }
+        },
+        "tyson_hdmi": {
+            "episode_0": {
+                "response": "To determine the best order to find Tyson and deliver the HDMI cables, we can analyze each step:\n\n1) **Identify the Item's Relevance to Each Location**:\n   - **lab**: HDMI cables are commonly used for setting up displays, which may occur in a lab setting.\n   - **storage_room**: Tyson sorts deliveries here, so he may be organizing items like HDMI cables.\n   - **office, lunch_room, meeting_room**: Less relevant for HDMI cables, though meetings may occasionally use screens.\n\n2) **Investigate the Queries Context and Relevance to the Person**:\n   - Tyson is a technician responsible for setting up testing apparatus, so he might be in the **lab** setting things up or in the **storage_room** for organizing cables.\n\n3) **Optimize the Pathing Based on Relative Distances**:\n   - The agent starts at position [15, 25].\n   - Given Tyson's responsibilities, check the **storage_room** first since he handles deliveries there.\n   - Next, check the **lab** since he may need to set up equipment.\n   - Finally, visit the **office**, **lunch_room**, and **meeting_room** based on proximity if Tyson isn't found.\n\n4) **Output the Finalized Ranked List**:\n\nBased on this reasoning, the optimal order is:\n\n```xml\n<list> ['storage_room', 'lab', 'office', 'lunch_room', 'meeting_room'] </list>\n```",
+                "locations": [
+                    "storage_room",
+                    "lab",
+                    "office",
+                    "lunch_room",
+                    "meeting_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.49194598197937,
+                "ranking_accuracy": 0.4833333333333333,
+                "SPL": 19.327731092436977
+            },
+            "episode_1": {
+                "response": "Let's determine the best order of locations to find Tyson:\n\n1) **Identify the Item's Relevance to Each Location:**\n   - **Lab:** HDMI cables might be needed for testing equipment or displays.\n   - **Storage Room:** Tyson sorts delivery packages here, including cables.\n   - **Office:** Likely less relevant as it's not directly related to his technical duties.\n   - **Meeting Room:** Could have relevance if displays are set up there.\n   - **Lunch Room:** Unlikely to be relevant for HDMI cables.\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n   - Tyson is a technician and might be setting up or fixing displays, so he could be in the **Lab** or **Storage Room** getting or organizing the cables.\n   \n3) **Optimize the Pathing Based on Relative Distances:**\n   - Starting at the **Lab** since it's closest to the start and relevant.\n   - Then to the **Storage Room** as it's directly related to his role.\n   - Follow with the **Meeting Room** since it's more relevant than the Office.\n   - Then to the **Office**.\n   - Finally, the **Lunch Room** due to its irrelevance.\n\n4) **Output the Finalized Ranked List:**\n\n```xml\n<list> ['lab', 'storage_room', 'meeting_room', 'office', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.068920373916626,
+                "ranking_accuracy": 0.5333333333333333,
+                "SPL": 19.327731092436977
+            },
+            "episode_2": {
+                "response": "To find Tyson and deliver the HDMI cables, let's proceed with the steps:\n\n1) **Identify the Item's Relevance to Each Location:**\n\n   - **Office:** Less likely, as it's not directly related to HDMI cables or fixing the TV.\n   - **Meeting Room:** Possibly relevant if there's a display issue here, but not the primary function.\n   - **Storage Room:** Tyson often sorts inventory here; could be relevant for storing or accessing cables.\n   - **Lunch Room:** Not likely, as it's unrelated to HDMI cables.\n   - **Lab:** Likely, especially if there's work involving technical setup or repairs.\n\n   Initial list based on item relevance: `['lab', 'storage_room', 'meeting_room', 'office', 'lunch_room']`\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n\n   - Tyson, as a technician, is likely to be involved with setting up or repairing equipment.\n   - The request suggests a display issue with the TV screen, so it\u2019s likely Tyson is addressing this either in the lab or where the TV is located (possibly meeting room or lab).\n\n   Adjusted list: `['lab', 'storage_room', 'meeting_room', 'office', 'lunch_room']`\n\n3) **Optimize the Pathing Based on Relative Distances:**\n\n   - Start at the closest relevant location, then move to the nearest next relevant spot to reduce backtracking.\n   \n   Optimized path based on current starting location: `['lab', 'storage_room', 'meeting_room', 'office', 'lunch_room']`\n\n4) **Output the Finalized Ranked List:**\n\n   Final list:\n   \n   ```xml\n   <list> ['lab', 'meeting_room', 'storage_room', 'office', 'lunch_room'] </list>\n   ```",
+                "locations": [
+                    "lab",
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.83468770980835,
+                "ranking_accuracy": 0.6333333333333333,
+                "SPL": 19.327731092436977
+            },
+            "episode_3": {
+                "response": "To deliver the HDMI cables to Tyson, we need to determine the best order of locations to find him.\n\n### Step 1: Identify the Item's Relevance to Each Location\n- **Office**: Less likely, as HDMI cable usage in an office context isn't as common.\n- **Meeting Room**: Possible if there's a meeting involving displays or presentations needing HDMI cables.\n- **Storage Room**: Tyson might be here to sort or organize cables.\n- **Lunch Room**: Unlikely, as HDMI cables are not relevant.\n- **Lab**: Likely, as labs often involve technical setups needing HDMI cables.\n\n### Step 2: Investigate the Queries Context and Relevance to Tyson\n- Tyson is a technician responsible for setting up and validating testing apparatus and providing resources for researchers. \n- The need to fix display cables suggests that he might be working on this in the **Lab** or could be between the **Storage Room** and **Lab** for resources.\n\n### Step 3: Optimize the Pathing Based on Relative Distances\n1. Start at **Lab** due to high relevance for testing and fixing equipment.\n2. Check **Storage Room** next, where he might be organizing cables.\n3. The **Meeting Room** could be relevant next for presentation setups.\n4. **Office** and **Lunch Room** are least likely but still checked at the end.\n\n### Final List\n<list>['lab', 'storage_room', 'meeting_room', 'office', 'lunch_room']</list>",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.7722795009613037,
+                "ranking_accuracy": 0.5333333333333333,
+                "SPL": 19.327731092436977
+            },
+            "episode_4": {
+                "response": "Sure, let's process the request to find Tyson efficiently.\n\n### Step 1: Identify the Item's Relevance to Each Location\n- **Office:** Not typically relevant for HDMI cables, but not restricted.\n- **Meeting Room:** Possibly relevant if the TV or display is located here.\n- **Storage Room:** Relevant for storing or retrieving cables.\n- **Lunch Room:** Not relevant, likely not applicable.\n- **Lab:** Relevant if the setup/testing requires display connections.\n\n### Step 2: Investigate the Context and Relevance to Tyson\n- **Tyson's Role:** As a technician, Tyson might need to fix or replace the HDMI cables. It's logical for him to be at the TV screen location or where the cables are stored.\n- **Context:** The TV screen display cables no longer work, suggesting he might be where repairs are needed (lab or meeting room) or retrieving cables (storage room).\n\n### Step 3: Optimize the Pathing Based on Relative Distances\n- **Start location to storage room:** Direct and relevant as Tyson may be retrieving cables.\n- **Storage Room to Meeting Room:** Storage is close to the meeting room, and it makes sense for him to be fixing or setting up there.\n- **Meeting Room to Lab:** If not found, then moving to the lab would be logical.\n- **Other locations (Office, Lunch Room):** Lower probability based on the context.\n\n### Step 4: Output the Finalized Ranked List\nBased on the above analysis, here's the optimized list to find Tyson:\n\n```xml\n<list> ['storage_room', 'meeting_room', 'lab', 'office', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "office",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 6.1171557903289795,
+                "ranking_accuracy": 0.6333333333333333,
+                "SPL": 16.546762589928058
+            }
+        }
+    },
+    "deepseek-r1:32b": {
+        "grace_pen": {
+            "episode_0": {
+                "response": "1) **Identify the Item's Relevance to Each Location**\n\n- **Office**: Pens and notebooks are relevant for writing notes.\n- **Meeting Room**: Relevant for taking notes during meetings.\n- **Lab**: Somewhat relevant for making quick notes on experiments.\n- **Lunch Room**: Irrelevant for a notebook and pen.\n- **Storage Room**: Irrelevant for a notebook and pen.\n\nInitial ordered list: `['office', 'meeting_room', 'lab', 'lunch_room', 'storage_room']`\n\n2) **Investigate the Queries Context and Relevance to the Person**\n\n- Grace is a graduate research assistant who performs experiments (lab), writes reports (office), and attends meetings (meeting room). Given her responsibilities, the office and meeting room have higher relevance.\n\nAdjusted list based on context: `['office', 'meeting_room', 'lab', 'storage_room', 'lunch_room']`\n\n3) **Optimize the Pathing Based on Relative Distances**\n\n- From the start at [15, 25], the lab [25, 25] is closest, however, given the priority is already adjusted for relevance to Grace's occupation, traveling to the office first is optimal.\n- From the office, the meeting room is closer than the lab.\n\nFinal optimized list considering distances: `['office', 'meeting_room', 'lab', 'storage_room', 'lunch_room']`\n\n4) **Output the Finalized Ranked List**\n\n```xml\n<list>['office', 'meeting_room', 'lab', 'storage_room', 'lunch_room']</list>\n```",
+                "locations": [
+                    "office",
+                    "meeting_room",
+                    "lab",
+                    "storage_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 5.045008182525635,
+                "ranking_accuracy": 0.95,
+                "SPL": 53.57142857142857
+            },
+            "episode_1": {
+                "response": "I'm unable to identify people in images, but I can help you determine where Grace might be. \n\n1) **Item Relevance:**\n   - **Office:** High relevance for writing notes.\n   - **Lab:** May need to take notes during experiments.\n   - **Meeting Room:** Likely to take notes in meetings.\n   - **Storage Room:** Not relevant for writing notes.\n   - **Lunch Room:** Not relevant for writing notes.\n\n2) **Context and Relevance:**\n   - Grace is a graduate research assistant, often in the lab or in meetings.\n   - The office, lab, and meeting room are most likely locations.\n\n3) **Optimize Path:**\n   - Starting at [15, 25], the closest relevant locations are the lab, office, and meeting room.\n  \n4) **Final List:**\n   Based on relevance and proximity, here is the ranked list:\n\n```xml\n<list> ['lab', 'office', 'meeting_room', 'lunch_room', 'storage_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "lunch_room",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.0963826179504395,
+                "ranking_accuracy": 0.7,
+                "SPL": 30.0
+            },
+            "episode_2": {
+                "response": "To find Grace and deliver the pen and notebook, we will follow these steps:\n\n### 1) Identify the Item's Relevance to Each Location\n\n- **Office**: Likely place for writing notes; high relevance.\n- **Meeting Room**: Could be relevant if she's taking notes during a meeting.\n- **Storage Room**: Unlikely place for note-taking; low relevance.\n- **Lunch Room**: Not typically used for note-taking; lower relevance.\n- **Lab**: Possibly relevant if she's recording experimental data.\n\n### 2) Investigate the Queries Context and Relevance to the Person\n\nGrace might be in the lab if she's working on experiments, or in the office if she's organizing her notes. Both are highly relevant.\n\n### 3) Optimize the Pathing Based on Relative Distances\n\nStarting at the lab is more efficient if Grace is likely there, as it\u2019s closer to the start. \n\n### 4) Output the Finalized Ranked List\n\nConsidering relevance and distance:\n\n```xml\n<list> ['lab', 'office', 'meeting_room', 'lunch_room', 'storage_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "lunch_room",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.7016873359680176,
+                "ranking_accuracy": 0.7,
+                "SPL": 30.0
+            },
+            "episode_3": {
+                "response": "1) **Item's Relevance to Each Location:**\n   - **Office:** Likely relevant for writing; offices typically have such supplies.\n   - **Meeting Room:** Could also be relevant for taking notes during meetings.\n   - **Lab:** May need to jot down experimental results.\n   - **Lunch Room:** Unlikely to need a pen and notebook here.\n   - **Storage Room:** Unlikely for writing; more for storing items.\n   \n   Initial Order: `['office', 'meeting_room', 'lab', 'storage_room', 'lunch_room']`\n\n2) **Context and Relevance to Grace:**\n   - Grace is a graduate research assistant who writes reports and has meetings.\n   - The lab is where she performs experiments, making it very relevant, but she might also be in the meeting room for meetings.\n\n   Adjusted Order: `['lab', 'meeting_room', 'office', 'storage_room', 'lunch_room']`\n\n3) **Optimize Pathing Based on Relative Distances:**\n   - Start at `start`, go to `lab`, then `meeting_room`, followed by `office`.\n\n   Final Order: `['lab', 'meeting_room', 'office', 'storage_room', 'lunch_room']`\n\n4) **Output Finalized Ranked List:**\n\n<list>['lab', 'meeting_room', 'office', 'storage_room', 'lunch_room']</list>",
+                "locations": [
+                    "lab",
+                    "meeting_room",
+                    "office",
+                    "storage_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 6.360313892364502,
+                "ranking_accuracy": 0.65,
+                "SPL": 22.727272727272727
+            },
+            "episode_4": {
+                "response": "```xml\n<list> ['lab', 'office', 'meeting_room', 'lunch_room', 'storage_room'] </list>\n```\n\n1. **Identify the Item's Relevance to Each Location:**\n   - Pen and notebook are typically associated with writing tasks, which might be relevant in the office for reports, in a meeting room for taking notes, and possibly in the lab for recording experiments.\n   - These items are less relevant for places like the lunch room and storage room.\n\n2. **Investigate the Queries Context and Relevance to the Person:**\n   - Grace is a graduate research assistant who performs experiments and writes reports.\n   - She is likely to be in the lab, as she conducts experiments and might need to take notes there.\n   - The office and meeting room are also likely locations, as they are used for report writing and research updates.\n\n3. **Optimize the Pathing Based on Relative Distances:**\n   - Starting from the lab (closest to the start location), then moving on to the office, which is closer compared to the meeting room.\n   - Follow up with the lunch room and storage room due to their lower relevance to the task.\n\n4. **Output the Finalized Ranked List:**  \n   - The adjusted and consolidated order is: `['lab', 'office', 'meeting_room', 'lunch_room', 'storage_room']`.",
+                "locations": [
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "lunch_room",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.577451467514038,
+                "ranking_accuracy": 0.7,
+                "SPL": 34.32835820895522
+            }
+        },
+        "grace_soda": {
+            "episode_0": {
+                "response": "To determine the best path to find Grace, let's analyze the situation step by step.\n\n### 1) Identify the Item's Relevance to Each Location\n- **Soda Can**: More likely relevant in places associated with relaxation or breaks.\n  - **Lunch Room**: High relevance, as it's a common place to consume drinks.\n  - **Lab**: Less relevance, as food and drink are often restricted.\n  - **Office, Meeting Room, Storage Room**: Little to no relevance for leisure items like soda cans.\n\nInitial list based on item relevance: \n- Lunch Room\n- Lab\n- Office\n- Meeting Room\n- Storage Room\n\n### 2) Investigate the Queries Context and Relevance to the Person\n- Grace was last seen heading toward the southern hallway, which connects to the **Lunch Room** and **Lab**.\n- Given that she's a research assistant, she might be going to the **Lab** for work.\n- However, she might also visit the **Lunch Room** for a break, making it more likely for something like a soda delivery.\n  \nContextual adjusted list:\n- Lunch Room\n- Lab\n- Office\n- Meeting Room\n- Storage Room\n\n### 3) Optimize the Pathing Based on Relative Distances\n- Starting at the **start** location, the **Lunch Room** is closer than the **Lab** (20 vs. 22 cost).\n- Next, prioritize the **Lab** since it's spatially nearby.\n- Continue with the other less relevant areas but consider spatial efficiency. \n\nFinal Optimized List:\n- Lunch Room\n- Lab\n- Office\n- Meeting Room\n- Storage Room \n\n### 4) Output the Finalized Ranked List\nHere is the ranked list of locations to check for Grace:\n\n```xml\n<list>['lunch_room', 'lab', 'office', 'meeting_room', 'storage_room']</list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.940776109695435,
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 24.210526315789473
+            },
+            "episode_1": {
+                "response": "Let's determine the best order to find Grace:\n\n1) **Identify the Item's Relevance to Each Location**\n\n   - **Lab**: A soda can is not relevant here due to potential restrictions.\n   - **Lunch Room**: Highly relevant, as it's a common place for consuming beverages.\n   - **Office**: Slightly relevant if she's taking a break or needs a drink at her desk.\n   - **Meeting Room**: Less relevant unless there's a meeting or break.\n   - **Storage Room**: Least relevant since it's not a typical place for drinks.\n\n2) **Investigate the Query's Context and Relevance to the Person**\n\n   - You last saw Grace leaving the office heading to the southern hallway.\n   - The southern hallway connects to the **lunch room** and **lab**.\n   - Since she's heading south, the **lunch room** is the most likely location, followed by the **lab**.\n\n3) **Optimize the Pathing Based on Relative Distances**\n\n   Start from [15, 25]:\n   - **Lunch Room** is closest (20 cost)\n   - Then check the **Lab** (30 cost from Lunch Room)\n   - Next closest would be backtracking or considering less likely places such as the **Office**, **Meeting Room**, and **Storage Room**.\n\n4) **Output the Finalized Ranked List**\n\nBased on the analysis:\n\n```xml\n<list> ['lunch_room', 'lab', 'office', 'meeting_room', 'storage_room'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.6814119815826416,
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 20.27027027027027
+            },
+            "episode_2": {
+                "response": "To find Grace and deliver the soda can, let's analyze the situation:\n\n1) **Identify the Item's Relevance to Each Location:**\n   - Soda cans are typically consumed in casual environments, so the **lunch room** may be relevant.\n   - The **lab** and **storage room** are less typical locations for consuming a soda.\n   - **Meetings rooms** and **offices** are possible but less likely since you mentioned she left the office.\n\n2) **Investigate the Queries Context and Relevance to Grace:**\n   - Grace was last seen heading towards the southern hallway, which leads to the **lab** and **lunch room**.\n   - As a research assistant, Grace might be going to the **lab** to work on experiments.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Starting at the **lab** (since it's the closest from start and relevant) is logical given her responsibilities.\n   - Check the **lunch room** next as it's along the southern path.\n   - Then, check other locations further away if necessary.\n\nBased on these insights, here's the ordered list to search for Grace:\n\n<list> ['lab', 'lunch_room', 'meeting_room', 'storage_room', 'office'] </list>",
+                "locations": [
+                    "lab",
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "office"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.906189203262329,
+                "ranking_accuracy": 0.5833333333333333,
+                "SPL": 14.838709677419354
+            },
+            "episode_3": {
+                "response": "To determine the best order to find Grace, follow these steps:\n\n### Step 1: Item's Relevance to Each Location\n- **Office**: Not relevant for a soda can; lower priority.\n- **Meeting Room**: Not relevant; lower priority.\n- **Storage Room**: Not relevant; lower priority.\n- **Lunch Room**: Highly relevant for a soda can; higher priority.\n- **Lab**: Typically not relevant for food/drink, but possible if she's working late.\n\n### Step 2: Contextual Analysis\n- Grace was last seen heading towards the southern hallway, suggesting she may be going to the **lunch room** or **lab**.\n- Given she's going south and carrying a soda, the **lunch room** is most likely.\n\n### Step 3: Optimize Pathing Based on Distances\n- Start at the **lunch room** (since it's the closest southern location).\n- Followed by the **lab**.\n- Then backtrack north to check the **office**, if needed.\n- Finally, visit the more distant **storage room** and **meeting room**.\n\n### Step 4: Finalized Ranked List\nBased on the above reasoning, the optimal path is:\n\n<list>['lunch_room', 'lab', 'office', 'storage_room', 'meeting_room']</list>",
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "office",
+                    "storage_room",
+                    "meeting_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.923672437667847,
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 20.27027027027027
+            },
+            "episode_4": {
+                "response": "To deliver the soda can to Grace, let's determine the most likely locations based on her last known direction and optimize the path:\n\n1) **Item's Relevance to Each Location:**\n   - Soda can be consumed in the **lunch_room**.\n   - It's less appropriate in the **lab** due to potential lab restrictions.\n   - Less relevant in **meeting_room**, **storage_room**, and **office**.\n\n2) **Contextual Analysis:**\n   - Grace was last seen leaving the **office** towards the **southern hallway**.\n   - This suggests she might be heading to the **lunch_room** or **lab**.\n\n3) **Optimize Pathing Based on Distances:**\n   - Starting from the office heading south: **lunch_room** (35) and **lab** (45) are accessible.\n   - After checking southern locations, she might return, hence visiting **meeting_room**, **storage_room** next.\n\nBased on these insights:\n   \n- **Lunch Room**: Likely destination for consuming the soda.\n- **Lab**: Possible destination if she\u2019s moving further south, considering her role.\n- **Meeting Room**: Possible if she has meetings after.\n- **Storage Room**: Less likely, but next in her general path.\n- **Office**: Least likely since she left from there.\n\nFinal list based on contextual clues and optimization:\n\n```xml\n<list> ['lunch_room', 'lab', 'meeting_room', 'storage_room', 'office'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "meeting_room",
+                    "storage_room",
+                    "office"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.721552610397339,
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 15.646258503401361
+            }
+        },
+        "grace_usb": {
+            "episode_0": {
+                "response": "To deliver the USB drive to Grace, we need to determine the best order of locations to find her based on her role and tasks.\n\n1) **Identify the Item's Relevance to Each Location:**\n   - **Lab:** Highly relevant, as Grace performs experiments and gathers research results here.\n   - **Office:** Relevant, as she might write reports and papers there.\n   - **Meeting Room:** Somewhat relevant, as she attends meetings to give updates.\n   - **Storage Room:** Less relevant; it's not typically associated with research papers.\n   - **Lunch Room:** Least relevant for academic or research work.\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n   - Grace is likely gathering information or working on research papers. This suggests her presence in the lab or office is probable.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Start at the lab as it's close to the start and relevant to her work.\n   - Move to the office afterward since it's also relevant and close to the lab.\n   - The meeting room is next due to its relevance to meetings.\n   - The lunch room is next due to being on a different hallway.\n   - Finally, check the storage room, as it's the least relevant.\n\n4) **Output the Finalized Ranked List:**\n\n```xml\n<list> ['lab', 'office', 'meeting_room', 'lunch_room', 'storage_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "lunch_room",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.969469785690308,
+                "ranking_accuracy": 0.7,
+                "SPL": 15.0
+            },
+            "episode_1": {
+                "response": "Let's determine the best order of locations to find Grace and deliver the USB drive.\n\n1) **Identify the Item's Relevance to Each Location**\n   - Grace is likely to use a USB drive containing research papers in locations where she conducts research or writes papers. The lab and office are relevant.\n   - The meeting room might be somewhat relevant if she is preparing for a presentation.\n   - The lunch room and storage room are less relevant for research activities.\n\n2) **Investigate the Queries Context and Relevance to the Person**\n   - Since Grace needs the USB drive for research, she is most likely to be in the lab conducting experiments or in her office writing reports.\n   - Given her role, she is less likely to be in the lunch room during working hours unless it's a break time.\n\n3) **Optimize the Pathing Based on Relative Distances**\n   - Starting from the lab: [25, 25] has the shortest distance to the start point.\n   - If she is not found in the lab, the next closest relevant location is the office: [2, 15].\n   - If not there, check the meeting room: [25, 5], and then the lunch room: [5, 35].\n   - The storage room: [35, 15] is the least likely and should be checked last.\n\n4) **Output the Finalized Ranked List**\n\n```xml\n<list> ['lab', 'office', 'meeting_room', 'lunch_room', 'storage_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "lunch_room",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.899698257446289,
+                "ranking_accuracy": 0.7,
+                "SPL": 34.32835820895522
+            },
+            "episode_2": {
+                "response": "To efficiently find Grace and deliver the USB drive, follow these steps:\n\n1) **Identify the Item's Relevance to Each Location:**\n   - **Lab:** Key location as Grace performs experiments here, and the USB is relevant for research work.\n   - **Office:** Likely for writing reports and accessing computers for her research.\n   - **Meeting Room:** Possible location for meetings to discuss research progress.\n   - **Lunch Room:** Unlikely related directly to research work.\n   - **Storage Room:** Not directly related to the item or task.\n\n2) **Investigate the Query's Context and Relevance to the Person:**\n   - Grace is a graduate research assistant, focusing on experiments, research reports, and meetings. The USB drive is crucial for her work, enhancing the relevance of the lab, office, and meeting room.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Starting at [15, 25].\n   - **Lab** is closest to the start point, making it the first candidate.\n   - Next is the **Office** for research-related activities.\n   - The **Meeting Room** follows for potential meetings.\n   - **Lunch Room** and **Storage Room** are least related and can be checked last.\n\n4) **Output the Finalized Ranked List:**\n\nHere is the optimized order to find Grace:\n\n```xml\n<list> ['lab', 'office', 'meeting_room', 'lunch_room', 'storage_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "lunch_room",
+                    "storage_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.3569066524505615,
+                "ranking_accuracy": 0.7,
+                "SPL": 30.0
+            },
+            "episode_3": {
+                "response": "To determine the best order of locations to find Grace, I'll analyze the information provided.\n\n### Step 1: Identify the Item's Relevance to Each Location\n- **Lab**: Highly relevant as Grace may use the research papers there for experiments or analysis.\n- **Office**: Relevant for storing or organizing research papers and documents.\n- **Meeting Room**: Potentially relevant if she is discussing research progress.\n- **Storage Room**: Less relevant as this location is more for supplies or equipment.\n- **Lunch Room**: Generally irrelevant for work-related tasks like using research papers.\n\n### Step 2: Investigate the Queries Context and Relevance to the Person\nGrace needs the USB for her research work. She's likely in the lab performing experiments or discussing research in a meeting.\n\n### Step 3: Optimize the Pathing Based on Relative Distances\nStart location is [15, 25].\n\n1. **Lab**: [25, 25] - closest and highly relevant.\n2. **Office**: [2, 15] - relevant for research paper work and not far.\n3. **Meeting Room**: [25, 5] - relevant for meetings.\n4. **Storage Room**: [35, 15] - less relevant.\n5. **Lunch Room**: [5, 35] - least relevant.\n\n### Step 4: Output the Finalized Ranked List\nHere's the optimized list based on the analysis:\n\n```xml\n<list> ['lab', 'office', 'meeting_room', 'storage_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "storage_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 14.388956069946289,
+                "ranking_accuracy": 0.65,
+                "SPL": 34.32835820895522
+            },
+            "episode_4": {
+                "response": "To determine the best order of locations to find Grace, let's analyze the situation:\n\n1) **Identify the Item's Relevance to Each Location**:\n   - **Office**: Likely place to store or reference research papers.\n   - **Lab**: As a graduate research assistant, conducting experiments and using research papers would be expected here.\n   - **Meeting Room**: Could be used for discussions related to research.\n   - **Storage Room**: Less relevant for accessing research papers.\n   - **Lunch Room**: Unlikely related to work with a USB drive for research.\n\n2) **Investigate the Query's Context and Relevance to the Person**:\n   - Grace likely needs the USB for her work involving research, which makes the **lab** and **office** more relevant locations.\n   - Her responsibility includes experiments and report writing, aligning with lab activities.\n   \n3) **Optimize the Pathing Based on Relative Distances**:\n   - Start at [15, 25]. Closest is the **lab** with cost 22.\n   - From the **lab**, the **office** is next closest with cost 45.\n   - Compare other locations from the **office**: \n     - The **meeting room** costs 33.\n     - The **storage room** costs 33.\n     - The **lunch room** takes 35.\n\n4) **Output the Finalized Ranked List**:\n   - **Lab**: Grace may be conducting experiments requiring research papers.\n   - **Office**: She may be referencing or storing the USB for reports.\n   - **Meeting Room**: Possible place for research discussions.\n   - **Storage Room**: Less likely but possible for storing equipment like USBs.\n   - **Lunch Room**: Least likely to be relevant but included for completion.\n\nFinal list: \n```xml\n<list> ['lab', 'office', 'meeting_room', 'storage_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "storage_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 5.006789922714233,
+                "ranking_accuracy": 0.65,
+                "SPL": 30.0
+            }
+        },
+        "jerry_mop": {
+            "episode_0": {
+                "response": "```xml\n<list> ['lunch_room', 'meeting_room', 'storage_room', 'office', 'lab'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 0.9386260509490967,
+                "ranking_accuracy": 1.0,
+                "SPL": 100.0
+            },
+            "episode_1": {
+                "response": "1) **Identify the Item's Relevance to Each Location**\n\n- **Lunch Room**: Highly relevant, as the food spill likely occurred here.\n- **Meeting Room**: Relevant if food was consumed and spilled there.\n- **Storage Room**: Relevant for returning the cleaning utilities after use.\n- **Lab and Office**: Less relevant due to restrictions and typical food policies.\n\nInitial ordered list: `['lunch_room', 'meeting_room', 'storage_room', 'office', 'lab']`\n\n2) **Investigate the Queries Context and Relevance to the Person**\n\nJerry is likely attending to the food spill first, which would probably be in the lunch room or meeting room. The mop is crucial for cleanup, so he might also head to the storage room to return the mop afterward.\n\nRevised order: `['lunch_room', 'meeting_room', 'storage_room', 'office', 'lab']`\n\n3) **Optimize the Pathing Based on Relative Distances**\n\nStarting from the start location:\n- **Lunch Room**: Closest, cost is 20.\n- **Meeting Room**: Next logical place, cost from lunch room is 50.\n- **Storage Room**: From meeting room, cost is 20.\n- Based on starting efficiency, returning to office last and then the lab.\n\nOptimized order: `['lunch_room', 'meeting_room', 'storage_room', 'office', 'lab']`\n\n4) **Output the Finalized Ranked List**\n\nFinal ordered list: `<list> ['lunch_room', 'meeting_room', 'storage_room', 'office', 'lab'] </list>`",
+                "locations": [
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 6.3045876026153564,
+                "ranking_accuracy": 1.0,
+                "SPL": 42.857142857142854
+            },
+            "episode_2": {
+                "response": "1) **Identify the Item's Relevance to Each Location:**\n   - The mop is most relevant to areas where cleaning is required, especially where food spills happen.\n   - Relevant locations: **lunch_room**, **meeting_room** (where food may be spilled).\n   - Less relevant: **office**, **lab** (restricted for food), **storage_room** (for storing items, not using them).\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n   - Since Jerry is a janitor responsible for cleaning, he is likely near locations with food spills.\n   - Higher likelihood: **lunch_room** and **meeting_room**.\n   - After cleaning, he might return to the **storage_room** to store the mop.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Start is closest to the **lunch_room** (20).\n   - After that, **meeting_room** is a possibility (50 from lunch_room).\n   - **Storage_room** would follow (due to cleaning tools being stored).\n\n4) **Output the Finalized Ranked List:**\n\n```xml\n<list>['lunch_room', 'meeting_room', 'storage_room', 'office', 'lab']</list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.7971179485321045,
+                "ranking_accuracy": 1.0,
+                "SPL": 18.69918699186992
+            },
+            "episode_3": {
+                "response": "To efficiently find Jerry, let's analyze the situation:\n\n1) **Item's Relevance to Each Location:**\n   - **Lunch Room**: Most likely place for a food spill, so Jerry might be here cleaning up.\n   - **Meeting Room**: Another possible place since food might be consumed during meetings.\n   - **Storage Room**: Jerry might return here after finishing a task or to get supplies.\n   - **Office and Lab**: Less likely, as they are not typical locations for a food spill.\n\n2) **Query Context and Relevance to Jerry:**\n   - Jerry is a janitor responsible for cleaning the lunch and meeting rooms after spills.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Start at the **lunch room**, then check the **meeting room**, because they are primary locations for spills.\n   - Check the **storage room** next in case Jerry is returning equipment.\n   - Conclude with the **office** and **lab**.\n\nFinal ordered list:\n\n```xml\n<list> ['lunch_room', 'meeting_room', 'storage_room', 'office', 'lab'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.4510436058044434,
+                "ranking_accuracy": 1.0,
+                "SPL": 18.69918699186992
+            },
+            "episode_4": {
+                "response": "To determine the most likely location to find Jerry and deliver the mop, let's analyze:\n\n1) **Item's Relevance to Each Location:**\n   - **Meeting Room & Lunch Room:** High relevance since these areas are where food spills likely occur.\n   - **Storage Room:** Relevant for retrieving or returning cleaning supplies.\n   - **Lab & Office:** Less relevant as food spills are less likely in these areas.\n\n2) **Context and Relevance to the Person:**\n   - Jerry, being the janitor, is likely to be in the lunch room or meeting room where the food spill occurred.\n   - Once he finishes, he may head to the storage room to return the mop.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - From the start position, the lunch room is closest, making it a strategic first location.\n   - Followed by the meeting room, and then the storage room if he\u2019s returning cleaning supplies.\n   - The lab and office can be checked last.\n\nFinal ranked list:\n\n```xml\n<list> ['lunch_room', 'meeting_room', 'storage_room', 'lab', 'office'] </list>\n```\n\nThis order prioritizes probable locations based on Jerry\u2019s responsibilities and minimizes travel distance.",
+                "locations": [
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "office"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 2.800199270248413,
+                "ranking_accuracy": 0.95,
+                "SPL": 33.33333333333333
+            }
+        },
+        "jerry_bag": {
+            "episode_0": {
+                "response": "To deliver the garbage bags to Jerry, here\u2019s the step-by-step analysis:\n\n1) **Identify the Item's Relevance to Each Location**\n   - **Lunch Room**: Garbage bags are likely used here given the mention of Jerry cleaning this area.\n   - **Storage Room**: Jerry might return here after cleaning to store supplies.\n   - **Meeting Room**: Potential cleaning area; might need garbage bags.\n   - **Office**: Least relevant as it's not specified as a cleaning area.\n   - **Lab**: Unlikely for garbage bags unless cleaning-related tasks extend here.\n\n2) **Investigate the Queries Context and Relevance to the Person**\n   - Jerry was last seen in the **lunch room**, increasing the likelihood he's still nearby or cleaning.\n   - His responsibilities indicate a move towards the **storage room** after cleaning.\n\n3) **Optimize the Pathing Based on Relative Distances**\n   - Starting from **lunch room** and moving towards locations likely in Jerry's cleaning route.\n   - Since Jerry moves between cleaning locations and the storage room, optimizing by proximity.\n\nHere's the optimized list to find Jerry:\n\n```xml\n<list> ['lunch_room', 'storage_room', 'meeting_room', 'lab', 'office'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "storage_room",
+                    "meeting_room",
+                    "lab",
+                    "office"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.468139171600342,
+                "ranking_accuracy": 0.85,
+                "SPL": 42.857142857142854
+            },
+            "episode_1": {
+                "response": "To find Jerry and deliver the garbage bags, let's determine the best order of locations:\n\n1. **Identify the Item's Relevance to Each Location:**\n   - Garbage bags are primarily relevant to areas where cleaning occurs: lunch room, meeting room, and possibly storage room (where cleaning supplies are kept).\n   - Less relevant in the office and lab.\n\n2. **Investigate the Queries Context and Relevance to the Person:**\n   - Jerry was recently seen in the lunch room, so it's likely he may still be there or nearby.\n   - After cleaning the lunch room, Jerry might proceed to the meeting room or return the cleaning supplies to the storage room.\n\n3. **Optimize the Pathing Based on Relative Distances:**\n   - Since Jerry was last seen in the lunch room, start there. \n   - If not found, check the nearby areas: lab and storage room.\n   - Then consider places where Jerry might need to clean or return supplies: meeting room and office.\n\nHere's the optimized order:\n\n```xml\n<list> ['lunch_room', 'lab', 'storage_room', 'meeting_room', 'office'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.5285024642944336,
+                "ranking_accuracy": 0.7833333333333333,
+                "SPL": 15.646258503401361
+            },
+            "episode_2": {
+                "response": "To deliver the garbage bags to Jerry, let's analyze the situation:\n\n1. **Item's Relevance to Each Location:**\n   - Jerry, being the janitor, would use garbage bags mainly in the **lunch room** and **meeting room** where waste is generated.\n   - Post-cleaning, Jerry is likely to visit the **storage room** to return cleaning supplies.\n\n2. **Contextual Information:**\n   - Jerry was last seen cleaning in the **lunch room**.\n   - It's possible he might still be there or have moved to the **meeting room** if he has more cleaning duties.\n   - After cleaning, he would likely head to the **storage room**.\n\n3. **Optimize Pathing Based on Relative Distances:**\n   - Start at the **lunch room** since it\u2019s closest from where Jerry was last seen.\n   - Next, check the **meeting room** since it\u2019s another common area he cleans.\n   - Then, proceed to the **storage room** to check if he's returning supplies.\n   - Check the **office** and finally the **lab** as last options.\n\nBased on this analysis, the path is optimized as follows:\n\n<list> ['lunch_room', 'meeting_room', 'storage_room', 'office', 'lab'] </list>",
+                "locations": [
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.6309759616851807,
+                "ranking_accuracy": 1.0,
+                "SPL": 18.69918699186992
+            },
+            "episode_3": {
+                "response": "To find Jerry efficiently, I'll create an ordered list of locations:\n\n1. **Lunch Room**: Jerry was last seen here, making it the most probable location.\n2. **Storage Room**: Jerry might be here returning cleaning supplies.\n3. **Meeting Room**: Another place Jerry might clean, likely to be nearby.\n4. **Office**: Less likely, but a potential place Jerry might pass through.\n5. **Lab**: Least relevant based on responsibilities; located further from the usual cleaning areas.\n\nConsidering the distances and sequence based on the initial position, here\u2019s an optimized path:\n\n<list> ['lunch_room', 'storage_room', 'meeting_room', 'office', 'lab'] </list>",
+                "locations": [
+                    "lunch_room",
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 2.820824384689331,
+                "ranking_accuracy": 0.9,
+                "SPL": 18.69918699186992
+            },
+            "episode_4": {
+                "response": "To deliver the garbage bags to Jerry, follow these steps:\n\n1) **Item Relevance to Locations**:\n   - **Lunch Room**: Jerry could still be cleaning as garbage bags are used here.\n   - **Storage Room**: Likely to store cleaning supplies after cleaning.\n   - **Meeting Room**: Might be cleaning here if he's finished in the lunch room.\n   - **Office and Lab**: Less relevant for cleaning activities.\n\n2) **Contextual Clues**:\n   - Jerry was last seen cleaning in the lunch room, making it a priority location.\n   - If he's moved on, he might be heading to the storage room to store supplies or to other areas needing cleaning.\n\n3) **Optimize Pathing**:\n   - Start from the closest relevant location based on the starting point.\n\nFinal ordered list based on these insights:\n\n```xml\n<list> ['lunch_room', 'storage_room', 'meeting_room', 'office', 'lab'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 2.972355365753174,
+                "ranking_accuracy": 0.9,
+                "SPL": 18.69918699186992
+            }
+        },
+        "jerry_shredder": {
+            "episode_0": {
+                "response": "To deliver the paper shredder to Jerry, let's analyze the situation:\n\n1) **Item's Relevance to Each Location:**\n   - **Office:** Likely place for confidential reports and papers.\n   - **Meeting Room:** Another likely location for papers; frequently used by multiple people.\n   - **Storage Room:** Less likely for immediate need of paper shredding.\n   - **Lunch Room:** Unlikely for handling confidential papers.\n   - **Lab:** Papers may be present, but shredding is uncommon due to safety protocols.\n\n2) **Queries Context and Relevance to Jerry:**\n   - Jerry, as the janitor, is responsible for keeping the meeting and lunch rooms clean, suggesting presence in these areas. He might need to handle documents in the meeting room.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Start at [15, 25]. Most relevant and efficient path would be:\n     - **Meeting Room:** [25, 5]\n     - **Office:** [2, 15]\n     - **Storage Room:** [35, 15]\n     - **Lab:** [25, 25]\n     - **Lunch Room:** [5, 35]\n\nFinal path considering item relevance, Jerry's role, and path efficiency:\n   \n```xml\n<list> ['meeting_room', 'office', 'storage_room', 'lab', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "meeting_room",
+                    "office",
+                    "storage_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.799615383148193,
+                "ranking_accuracy": 0.7333333333333333,
+                "SPL": 36.507936507936506
+            },
+            "episode_1": {
+                "response": "Certainly! Let's determine the best order to find Jerry and deliver the paper shredder.\n\n1) **Identify the Item's Relevance to Each Location**\n   - **Office**: Likely where confidential papers originate, so Jerry might need to shred them here.\n   - **Meeting Room**: Reports and papers may also accumulate here, making it relevant.\n   - **Storage Room**: Unlikely for shredding, but Jerry could be storing cleaning materials.\n   - **Lunch Room**: Least relevant for shredding papers.\n   - **Lab**: Not typically related to paperwork disposal.\n\n2) **Investigate the Query's Context and Relevance to the Person**\n   - Jerry's role as a janitor involves cleaning places like the meeting room and lunch room. The office and meeting room are relevant for shredding and cleaning papers.\n   - Since there's a focus on shredding confidential reports, the **office** is likely a primary location.\n\n3) **Optimize the Pathing Based on Relative Distances**\n   - Starting from the **office**, the nearby locations are the **meeting room** and **storage room**.\n   - From the **office**, the meeting room comes next based on distance (33), then storage room, lab, and lunch room.\n\n4) **Output the Finalized Ranked List**\n\nBased on these considerations, here's the most efficient order:\n\n```xml\n<list> ['office', 'meeting_room', 'storage_room', 'lab', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "office",
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 5.010055303573608,
+                "ranking_accuracy": 0.9333333333333332,
+                "SPL": 53.57142857142857
+            },
+            "episode_2": {
+                "response": "Let's determine the best order to find Jerry and deliver the paper shredder.\n\n### Step 1: Identify the Item's Relevance to Each Location\n- **Meeting Room & Lunch Room**: Might be cleaning here if reports and papers were disposed of improperly.\n- **Storage Room**: Likely place for Jerry to store cleaning equipment.\n- **Office**: Less commonly a spot for cleaners unless there\u2019s a specific task.\n- **Lab**: Unlikely, since food is not involved and focus is not on general cleaning.\n\n### Step 2: Investigate the Query's Context and Relevance to the Person\n- Jerry, as a janitor, often ensures cleanliness in the meeting and lunch rooms.\n- If confidential documents need shredding, he may be near areas where reports are disposed.\n\n### Step 3: Optimize the Pathing Based on Relative Distances\nStart location is [15, 25].\n- Considering proximity and Jerry\u2019s responsibilities: Begin at **lunch_room** and **meeting_room** for cleaning duties, then head to **storage_room**. Finally, check **office** and **lab**.\n\n### Step 4: Output the Finalized Ranked List\n- Optimized list based on analysis:\n  - Lunch room is closest to start and relevant for Jerry's duties.\n  - Meeting room for similar duties.\n  - Storage room for storing equipment.\n  - Office and Lab are less likely but included for thoroughness.\n\n```xml\n<list> ['lunch_room', 'meeting_room', 'storage_room', 'office', 'lab'] </list>\n```",
+                "locations": [
+                    "lunch_room",
+                    "meeting_room",
+                    "storage_room",
+                    "office",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 5.339353799819946,
+                "ranking_accuracy": 0.5166666666666666,
+                "SPL": 18.69918699186992
+            },
+            "episode_3": {
+                "response": "To find Jerry and deliver the paper shredder efficiently, let's go through the steps:\n\n1) **Identify the Item's Relevance to Each Location**\n   - **Office**: Likely relevant as confidential reports and papers might be found here.\n   - **Meeting Room**: Could be relevant for disposing of meeting notes.\n   - **Storage Room**: A place where Jerry might store cleaning supplies but not directly related to shredding documents.\n   - **Lunch Room**: Unlikely to be related to document shredding.\n   - **Lab**: Unlikely to deal with paper shredding.\n\n2) **Investigate the Queries Context and Relevance to the Person**\n   - **Jerry's responsibilities** include cleaning, especially in the meeting rooms and lunch rooms, and returning supplies to the storage room.\n   - Given the context, Jerry might be found in the **office** or **meeting room** if he's dealing with confidential reports.\n\n3) **Optimize the Pathing Based on Relative Distances**\n   - Starting from [15, 25].\n   - If uncertain, we'll optimize the distance to minimize travel.\n\nBased on this analysis:\n\n1. **Office** (Relevant for shredding and regular cleaning)\n2. **Meeting Room** (Could be relevant for paper disposal and cleaning)\n3. **Storage Room** (Jerry may return to store supplies)\n4. **Lunch Room** (Regular cleaning area)\n5. **Lab** (Least relevant for shredding)\n\nFinal ordered list:\n\n```xml\n<list> ['office', 'meeting_room', 'storage_room', 'lunch_room', 'lab'] </list>\n```",
+                "locations": [
+                    "office",
+                    "meeting_room",
+                    "storage_room",
+                    "lunch_room",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.492441654205322,
+                "ranking_accuracy": 0.8833333333333332,
+                "SPL": 100.0
+            },
+            "episode_4": {
+                "response": "Certainly! Let's determine the best order to find Jerry based on the context and spatial information.\n\n1) **Identify the Item's Relevance to Each Location**\n   - **Office**: Likely place for confidential documents needing shredding.\n   - **Meeting Room**: Possible location for reports from meetings.\n   - **Storage Room**: Unlikely unless storing cleaning supplies.\n   - **Lunch Room**: Unrelated to shredding needs; unlikely location.\n   - **Lab**: Possible location for research papers; relevant for shredding.\n\n2) **Investigate the Query's Context and Relevance to the Person**\n   - Jerry, as a janitor, is responsible for cleaning common areas like the meeting rooms and lunch rooms. He may need the shredder near where confidential materials are disposed of.\n   - The task emphasizes confidential reports, suggesting a focus on areas where such papers are found: office, meeting room, lab.\n\n3) **Optimize the Pathing Based on Relative Distances**\n   - Start at the lab, as it's closest to the starting point and is relevant for shredding.\n   - Next, move to the office, a likely place for confidential papers.\n   - Follow with the meeting room and the storage room.\n   - End at the lunch room, as it is the least relevant.\n\n4) **Output the Finalized Ranked List**\n\nHere is the ordered list:\n\n```xml\n<list> ['lab', 'office', 'meeting_room', 'storage_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "office",
+                    "meeting_room",
+                    "storage_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.581048250198364,
+                "ranking_accuracy": 0.7,
+                "SPL": 34.32835820895522
+            }
+        },
+        "tyson_toolkit": {
+            "episode_0": {
+                "response": "To find Tyson, let's analyze the locations based on the given information:\n\n1) **Identify the Item's Relevance to Each Location:**\n   - Toolkit for fixing apparatus is relevant in:\n     - **Lab**: Likely used for setting up and validating testing apparatus.\n     - **Storage Room**: Tyson might need to organize or pick up resources.\n   - Less relevant in:\n     - **Office**: Likely unrelated to fixing tasks.\n     - **Meeting Room** and **Lunch Room**: Unlikely places for using a toolkit.\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n   - Tyson is directly involved in setting up testing apparatus, making the **Lab** a high priority location.\n   - The **Storage Room** is also relevant due to his responsibility for managing it.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - **Lab** is close to the start and crucial, making it the first location to check.\n   - **Storage Room** should be next due to Tyson\u2019s responsibilities.\n   - Consider proximity for remaining locations.\n\nBased on this analysis, the optimized order is:\n\n<list> ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room'] </list>",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.336017608642578,
+                "ranking_accuracy": 1.0,
+                "SPL": 45.45454545454545
+            },
+            "episode_1": {
+                "response": "1) **Item Relevance to Each Location:**\n   - The toolkit is relevant to areas where maintenance or technical work occurs, which likely includes the lab or storage room.\n   - It is less relevant in the lunch room or meeting room for this context.\n\n2) **Context and Relevance to Tyson:**\n   - Tyson, being a technician, would need the toolkit specifically in areas where he performs equipment setup or validation, aligning with the lab.\n   - Since he also manages deliveries, he could be in the storage room.\n\n3) **Optimize Pathing Based on Distances:**\n   - Starting from the \"start\" location, checking the lab first makes sense as it's nearby.\n   - If not found in the lab, checking the storage room next is logical.\n   - Following with the office, meeting room, and lunch room in order of relevance and distance.\n\nFinal Ordered List:\n<list> ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room'] </list>",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 5.663281679153442,
+                "ranking_accuracy": 1.0,
+                "SPL": 23.232323232323232
+            },
+            "episode_2": {
+                "response": "### Step 1: Identify the Item's Relevance to Each Location\n\n- **Lab**: Highly relevant. Tyson would likely be in the lab to fix the testing apparatus.\n- **Storage Room**: Relevant for storing tools but less so for immediate repairs.\n- **Office**: Less relevant unless Tyson is doing paperwork.\n- **Meeting Room**: Not relevant for toolkit use.\n- **Lunch Room**: Not relevant for toolkit use.\n\n### Step 2: Investigate the Queries Context and Relevance to the Person\n\n- The context involves Tyson fixing a testing apparatus. This is likely to occur in the **Lab** where the equipment is usually kept or tested. \n\n### Step 3: Optimize the Pathing Based on Relative Distances\n\n- Starting from the **start** location:\n  - **Lab** (closest critical location): 22\n  - **Storage Room** (in case Tyson is gathering or storing tools): 30\n  - **Office**: 33\n  - **Meeting Room**: 30\n  - **Lunch Room**: 20 (although less relevant)\n\n### Step 4: Output the Finalized Ranked List\n\nBased on the analysis and spatial considerations, the order is:\n\n```xml\n<list> ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.420165538787842,
+                "ranking_accuracy": 1.0,
+                "SPL": 23.232323232323232
+            },
+            "episode_3": {
+                "response": "### Step 1: Identify the Item's Relevance to Each Location\n\n- **Lab**: Highly relevant, Tyson might be in the lab fixing the testing apparatus.\n- **Office**: Less relevant, as fixing typically occurs in the lab or storage.\n- **Storage Room**: Relevant, Tyson might be getting resources or tools.\n- **Meeting Room**: Low relevance, not related to fixing tasks.\n- **Lunch Room**: Low relevance, Tyson is less likely to fix things there.\n\n### Step 2: Investigate the Query's Context and Relevance to the Person\n\n- **Tyson's responsibility** includes fixing testing apparatus, indicating he would often be in the **lab**.\n- He might visit the **storage room** for tools or replacement parts necessary for repairs.\n\n### Step 3: Optimize the Pathing Based on Relative Distances\n\n- Start in the **lab** due to high relevance.\n- Check the **storage room** next as it's likely if he needs parts or tools.\n- Consider the **office**, as it\u2019s on the way and might be a brief stop for Tyson.\n- Skip to the **meeting room** and **lunch room** last due to low relevance.\n\n### Step 4: Output the Finalized Ranked List\n\nBased on these insights, the most probable locations to find Tyson in order are:\n\n```xml\n<list> ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.79958438873291,
+                "ranking_accuracy": 1.0,
+                "SPL": 23.232323232323232
+            },
+            "episode_4": {
+                "response": "1) **Identify the Item's Relevance to Each Location**\n\n- **Lab**: Testing apparatus is likely in the lab, where Tyson might use the toolkit.\n- **Storage Room**: Tyson's role involves sorting delivery packages and resources here.\n- **Office**: Least relevant; toolkits aren't typical in offices.\n- **Meeting Room**: Unlikely place for fixing apparatus.\n- **Lunch Room**: Not relevant for repairs.\n\nInitial relevance list: ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room']\n\n2) **Investigate the Queries Context and Relevance to the Person**\n\n- The toolkit is necessary for fixing the testing apparatus\u2014likely to be in the lab.\n- Tyson's responsibilities include setting up testing apparatus; he'll likely be near the lab or storage room.\n\nAdjusted context list: ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room']\n\n3) **Optimize the Pathing Based on Relative Distances**\n\n- Start at [15, 25], closest to the lab.\n- Lab is central, easy to check first.\n- From the lab, the storage room is next, then the office.\n- Meeting room and lunch room are less relevant, positioned last.\n\nFinal ordered path: ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room']\n\n4) **Output the Finalized Ranked List**\n\n```xml\n<list> ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.794800281524658,
+                "ranking_accuracy": 1.0,
+                "SPL": 23.232323232323232
+            }
+        },
+        "tyson_package": {
+            "episode_0": {
+                "response": "To determine the best order to find Tyson, let's follow the steps:\n\n1) **Identify the Item's Relevance to Each Location**\n\n   - **Storage Room**: Tyson is responsible for sorting delivery packages here, making this a likely location.\n   - **Lab**: It might be relevant since Tyson sets up testing apparatus, but he was last seen leaving this area.\n   - **Office**: Less relevant for package delivery.\n   - **Meeting Room**: Least relevant for his responsibilities concerning deliveries.\n   - **Lunch Room**: Not relevant for his role regarding packages.\n\n2) **Investigate the Query's Context and Relevance to the Person**\n\n   The report states Tyson was seen leaving the lab heading towards the north hallway. This implies he may be going towards:\n\n   - **Storage Room**: A plausible destination for handling packages.\n   - **Meeting Room or Office**: Possible destinations as he was heading north.\n\n3) **Optimize the Pathing Based on Relative Distances**\n\n   Starting from the lab, optimize the path:\n\n   - **Storage Room**: Closest in the north hallway after leaving\n   - **Office**: Next closest in the north hallway.\n   - **Meeting Room**: Also accessible via the north hallway.\n   - **Lunch Room**: Least relevant but added for completeness and close to the start.\n   - **Lab**: Already confirmed he left this location.\n\n4) **Output the Finalized Ranked List**\n\nGiven the information and analysis:\n\n```xml\n<list> ['storage_room', 'office', 'meeting_room', 'lunch_room', 'lab'] </list>\n```",
+                "locations": [
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 6.859834432601929,
+                "ranking_accuracy": 0.95,
+                "SPL": 36.507936507936506
+            },
+            "episode_1": {
+                "response": "To efficiently find Tyson, we need to consider his occupation, the context provided, and the spatial layout:\n\n1. **Identify the Item\u2019s Relevance to Each Location**: \n   - Tyson, as a technician, is primarily associated with the storage room for handling shipments and packages.\n   - The lab could also be relevant as he sets up and validates testing apparatus.\n   - The other locations (office, meeting room, lunch room) are less relevant for this task.\n\n2. **Investigate the Queries Context and Relevance to the Person**:\n   - You saw Tyson leaving the lab heading north, indicating he might be going towards the meeting room, storage room, or office.\n   - His responsibilities often take him to the storage room, especially with packages, making it highly relevant.\n\n3. **Optimize the Pathing Based on Relative Distances**:\n   - Since Tyson was last seen heading north from the lab, check the northern hallway locations next.\n   - Prioritize the storage room as Tyson frequently handles deliveries there.\n\nGiven this analysis, the optimal order to find Tyson is:\n\n<list>['storage_room', 'office', 'meeting_room', 'lab', 'lunch_room']</list>",
+                "locations": [
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.559907913208008,
+                "ranking_accuracy": 1.0,
+                "SPL": 36.507936507936506
+            },
+            "episode_2": {
+                "response": "To deliver the shipment package to Tyson, follow these steps:\n\n1) **Identify the Item's Relevance to Each Location:**\n   - Tyson is responsible for sorting out delivery packages and storing resources in the storage room. Hence, the **storage room** is highly relevant.\n   - The **office** and **meeting room** may also be relevant as part of his administrative and collaborative tasks.\n   - The **lab** is where he sets up testing apparatus, but he has already left that area.\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n   - You've seen Tyson leaving the **lab** heading north, which suggests the **storage room** or **office** could be his destination.\n   - His role indicates he might frequently visit the **storage room** to handle packages.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Start at the **start** and head towards the most probable areas based on proximity and relevance:\n     - From start to **office** (23 cost).\n     - If not in the office, check the **meeting room** (33 cost from office).\n     - Next, head to **storage room** (20 cost from meeting room).\n\n4) **Output the Finalized Ranked List:**\n\nBased on these insights, here's the recommended order:\n\n```xml\n<list> ['office', 'meeting_room', 'storage_room', 'lab', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "office",
+                    "meeting_room",
+                    "storage_room",
+                    "lab",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.262789249420166,
+                "ranking_accuracy": 0.7,
+                "SPL": 100.0
+            },
+            "episode_3": {
+                "response": "To find Tyson effectively, let's analyze the situation:\n\n1) **Item's Relevance to Each Location:**\n   - **Storage Room:** Tyson frequently uses this location to sort out delivery packages, making it a highly relevant spot.\n   - **Office, Meeting Room, Lunch Room:** These locations are less relevant for handling shipment packages.\n   - **Lab:** Tyson was last seen leaving here.\n\n2) **Context and Relevance to Tyson:**\n   - Tyson was seen leaving the **lab** heading to the north hallway, suggesting he's likely to move towards the **storage room** or **office**.\n   - His role involves dealing with deliveries, making the **storage room** a highly probable location.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Starting location is [15, 25].\n   - From **start**, the **lab** is closest; however, Tyson left there, heading north.\n   - From the **lab**, both the **office** and **storage room** have similar distance costs (33, 44).\n   - **Meeting Room** might also be on his route via the hallway.\n\n4) **Finalized Ranked List:**\n\nBased on the insights:\n- **Storage Room** is the most likely spot because of his responsibilities.\n- **Office** is a secondary option, easier to reach coming from the north hallway.\n- **Meeting Room** and **Lunch Room** are less likely but possible, based on hallway access.\n\n```xml\n<list> ['storage_room', 'office', 'meeting_room', 'lunch_room', 'lab'] </list>\n```",
+                "locations": [
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room",
+                    "lab"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.4524853229522705,
+                "ranking_accuracy": 0.95,
+                "SPL": 36.507936507936506
+            },
+            "episode_4": {
+                "response": "1) **Identify the Item's Relevance to Each Location**\n   - The shipment package is likely to be relevant to the **storage_room** due to Tyson's responsibilities for sorting deliveries.\n   - Less relevant to the **lunch_room** and **meeting_room**.\n   - Could temporarily be in the **office** or **lab**.\n\n2) **Investigate the Query's Context and Relevance to the Person**\n   - Tyson was last seen leaving the **lab** heading to the north hallway, suggesting he might be heading towards places like the **storage_room**, **office**, or **meeting_room**.\n\n3) **Optimize the Pathing Based on Relative Distances**\n   - Start at the **lab** since he was last there.\n   - Follow to the **storage_room**, given his responsibilities and heading direction.\n   - Next, check the **office**, and then the **meeting_room**, as they are both accessible from the north hallway.\n   - Finally, check the **lunch_room**.\n\n4) **Output the Finalized Ranked List**\n\n```xml\n<list> ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.1881563663482666,
+                "ranking_accuracy": 0.6333333333333333,
+                "SPL": 23.232323232323232
+            }
+        },
+        "tyson_hdmi": {
+            "episode_0": {
+                "response": "To deliver the HDMI cables to Tyson, let's consider the optimal order:\n\n1) **Identify the Item's Relevance to Each Location:**\n   - The HDMI cables are relevant for setting up or replacing display equipment, which Tyson might do in the **lab** or possibly store in the **storage_room**.\n   - They are less relevant for the **lunch_room**, **office**, or **meeting_room** as these locations typically do not involve technical setups.\n\n2) **Investigate the Queries Context and Relevance to the Person:**\n   - Tyson, as a technician, is likely in the **lab** to set up or validate testing apparatus with the HDMI cables.\n   - The **storage_room** could be relevant if Tyson is organizing or checking inventory.\n   \n3) **Optimize the Pathing Based on Relative Distances:**\n   - Start from the **lab**, since it is closest to the start point and relevant for his role.\n   - Proceed to the **storage_room** as it's related to Tyson's responsibility.\n   - Other locations like **office**, **meeting_room**, and **lunch_room** can be considered less relevant.\n\n4) **Output the Finalized Ranked List:**\n\n```xml\n<list> ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.8615872859954834,
+                "ranking_accuracy": 0.5333333333333333,
+                "SPL": 23.232323232323232
+            },
+            "episode_1": {
+                "response": "To find Tyson and deliver the HDMI cables, let's analyze the situation step by step:\n\n1) **Identify the Item's Relevance to Each Location**: \n   - The HDMI cables are related to technical equipment, making locations like the lab or storage room relevant.\n   - The meeting room could also be relevant if the TV setup is located there.\n   - The office and lunch room are less relevant for technical equipment like HDMI cables.\n\n2) **Investigate the Queries Context and Relevance to the Person**:\n   - Tyson is a technician responsible for setting up and validating testing apparatus and dealing with storage resources.\n   - Since the cables are meant for TV screens, Tyson could be in the lab setting things up or in the storage room for inventory or resources. \n\n3) **Optimize the Pathing Based on Relative Distances**:\n   - Starting at the lab or storage room is strategic because of Tyson's responsibilities and the nature of the problem.\n   - Consider proximity when creating the path.\n\n4) **Output the Finalized Ranked List**:\n   - Using insights from above, order the locations based on the likelihood of finding Tyson.\n\nHere's the ordered list based on the analysis:\n\n```xml\n<list> ['lab', 'storage_room', 'meeting_room', 'office', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.075649738311768,
+                "ranking_accuracy": 0.5333333333333333,
+                "SPL": 19.327731092436977
+            },
+            "episode_2": {
+                "response": "To find Tyson and deliver the HDMI cables, we'll follow the structured approach:\n\n### 1) Identify the Item's Relevance to Each Location\n- **Storage Room**: Likely where Tyson may be if he is sorting out delivery packages or managing cables.\n- **Lab**: If Tyson needs to fix something related to the display, he might be here setting up or validating testing apparatus.\n- **Office**: Less relevant unless he was doing paperwork or administrative tasks.\n- **Meeting Room**: Possibly relevant if a meeting is happening to discuss technical issues.\n- **Lunch Room**: Least relevant for HDMI cables unless he is on a break.\n\n### 2) Investigate the Queries Context and Relevance to the Person\n- **Storage Room**: Tyson's responsibility to sort and store items makes this a high probability location for the cables.\n- **Lab**: Given the context that something isn't working, Tyson might be fixing or setting up equipment.\n- **Meeting Room**: If the display issue is urgent, he might be in a meeting discussing solutions.\n- **Office**: Unlikely based on the situation described.\n- **Lunch Room**: Not relevant for the task at hand.\n\n### 3) Optimize the Pathing Based on Relative Distances\nStart at the closest relevant location from the start and minimize distance traveled between locations.\n\n### 4) Output the Finalized Ranked List\nConsidering the relevance and Tyson\u2019s role, the most probable locations to find him are ranked as follows:\n\n```xml\n<list> ['lab', 'storage_room', 'meeting_room', 'office', 'lunch_room'] </list>\n```",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "meeting_room",
+                    "office",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 4.034445285797119,
+                "ranking_accuracy": 0.5333333333333333,
+                "SPL": 19.327731092436977
+            },
+            "episode_3": {
+                "response": "To deliver the HDMI cables to Tyson, let's evaluate the most likely locations where he might be found.\n\n1) **Identify the Item's Relevance to Each Location:**\n   - **Lab:** HDMI cables are used in labs for connecting devices; Tyson might need to set up or fix equipment here.\n   - **Storage Room:** Tyson is responsible for sorting delivery packages, so he might be organizing or getting tools for the task.\n   - **Office/Meeting Room/Lunch Room:** Less likely relevant, as HDMI cables are not typically associated with these locations.\n\n2) **Investigate the Query's Context and Relevance to the Person:**\n   - Since the TV screen display cables no longer work, Tyson might be actively involved in addressing this issue, possibly in the storage room or lab to get replacement cables or equipment.\n   \n3) **Optimize the Pathing Based on Relative Distances:**\n   - From the starting point, prioritize routes that minimize travel costs between promising locations, especially focusing on the relevant areas first.\n\nBased on this analysis, here\u2019s the ordered list:\n\n<list> ['lab', 'storage_room', 'office', 'lunch_room', 'meeting_room'] </list>",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "office",
+                    "lunch_room",
+                    "meeting_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.321988344192505,
+                "ranking_accuracy": 0.4833333333333333,
+                "SPL": 23.232323232323232
+            },
+            "episode_4": {
+                "response": "To deliver the HDMI cables to Tyson, I'll determine the best order of locations to check:\n\n1) **Identify the Item's Relevance to Each Location:**\n   - **Lab:** HDMI cables may be needed for equipment or display setups in the lab.\n   - **Storage Room:** Tyson may be organizing or retrieving equipment.\n   - **Office:** Not typically associated with the immediate need for HDMI cables.\n   - **Meeting Room:** Not the primary location but might be related to a display setup.\n   - **Lunch Room:** Least relevant for HDMI cable issue.\n\n2) **Investigate the Queries Context and Relevance to Tyson:**\n   - Tyson is responsible for setting up and validating equipment, making the **lab** highly relevant.\n   - **Storage room** is next as he organizes resources there, and it\u2019s part of his routine duties.\n\n3) **Optimize the Pathing Based on Relative Distances:**\n   - Start: [15, 25] is close to the **lab**.\n   - Lab: [25, 25] -> Storage Room: [35, 15] -> Office: [2, 15] -> Meeting Room: [25, 5] -> Lunch Room: [5, 35].\n\n4) **Output the Finalized Ranked List:**\n\n<list> ['lab', 'storage_room', 'office', 'meeting_room', 'lunch_room'] </list>",
+                "locations": [
+                    "lab",
+                    "storage_room",
+                    "office",
+                    "meeting_room",
+                    "lunch_room"
+                ],
+                "is_xml_format": true,
+                "xml_error": "",
+                "processing_time": 3.358828067779541,
+                "ranking_accuracy": 0.5333333333333333,
+                "SPL": 23.232323232323232
+            }
+        }
+    }
+}
