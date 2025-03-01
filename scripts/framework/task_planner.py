@@ -14,7 +14,6 @@ class TaskPlanner:
         with open(path_to_config / 'framework/task_planner.txt', 'r') as prompt_file:
             self.prompt = prompt_file.read()
 
-        print(self.prompt)
         # Load Task Planner configuration
         with open(path_to_config / 'framework/framework_models.json', 'r') as framework_models_file:
             framework_models = json.load(framework_models_file)
@@ -23,6 +22,21 @@ class TaskPlanner:
     def get_tasks(self, query):
         # Use model inference to generate plan of executable code
         response = self.inference.get_response(self.model, self.prompt, query)
-        tasks = re.findall(r'<command>(.*?)</command>', response, re.DOTALL)
-        tasks = [task.replace(' ', '') for task in tasks]
-        return tasks
+        tasks = ''
+        try:
+            tasks = re.findall(r'<command>(.*?)</command>', response, re.DOTALL)
+            tasks = [task.replace(' ', '') for task in tasks]
+            is_xml_format = True
+            xml_error = ''
+        except Exception as error:
+            is_xml_format = False
+            xml_error = error
+
+        log_info = {
+            "response": response,
+            "tasks": tasks,
+            "is_xml_format": is_xml_format,
+            "xml_error": str(xml_error)
+        }
+        return tasks, log_info
+    
