@@ -28,6 +28,9 @@ class PID:
         step_command = P + I + D
         step_command = self.saturation_filter(step_command)
 
+        # print("setpoint", setpoint, "error", error)
+        # print("action", step_command)
+
         return step_command
 
     def saturation_filter(self, step_command):

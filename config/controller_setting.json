@@ -2,7 +2,7 @@
     "angle_control": {
         "type": "PID",
         "gains": {
-            "Kp": 4,
+            "Kp": 3.5,
             "Ki": 0.00002,
             "Kd": 0
         },
@@ -11,15 +11,15 @@
             "MIN_CMD": -1.5,
             "MAX_CMD": 1.5,
             "stabalization_time": 0.01,
-            "error_threshold": 0.02,
+            "error_threshold": 0.1,
             "forward_velocity": 0
         }
     },
     "path_following_control_PID": {
         "type": "PID",
         "gains": {
-            "Kp": 2.5,
-            "Ki": 0.000055,
+            "Kp": 1.65,
+            "Ki": 0.000185,
             "Kd": 0
         },
         "settings": {
@@ -27,8 +27,8 @@
             "MIN_CMD": -1.5,
             "MAX_CMD": 1.5,
             "stabalization_time": 0.0,
-            "error_threshold": 0.2,
-            "forward_velocity": 0.5
+            "error_threshold": 0.50,
+            "forward_velocity": 0.2
         }
     },
     "path_following_control": {

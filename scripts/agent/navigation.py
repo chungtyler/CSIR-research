@@ -1,6 +1,8 @@
-import rospy
 import json
 import math
+
+import rospy
+import numpy as np
 from geometry_msgs.msg import Twist, PoseStamped
 from nav_msgs.msg import Odometry
 from scipy.spatial.transform import Rotation as R
@@ -16,6 +18,8 @@ class Navigation:
 
     # POSE_SOURCE='SLAM' or 'ODOMETRY'
     def __init__(self, path_to_config, POSE_SOURCE='SLAM'):
+        self.pose_source = POSE_SOURCE
+
         # Load rostopic names
         with open(path_to_config / 'rostopics.json', 'r') as rostopics_file:
             rostopics = json.load(rostopics_file)
@@ -39,7 +43,6 @@ class Navigation:
         }
         self.SLAM = self.pose.copy() # Create copy of template
         self.odometry = self.pose.copy() # Create copy of template
-        self.pose_source = POSE_SOURCE
 
         with open(path_to_config / 'controller_setting.json', 'r') as controller_setting_file:
             controller_setting = json.load(controller_setting_file)
@@ -130,12 +133,19 @@ class Navigation:
         command.angular.z = angular_velocity
         self.pub.publish(command)
 
+    def __find_lookahead_point(self, path, L):
+        for i, point in enumerate(path):
+            if math.dist((self.pose['X'], self.pose['Y']), point) >= L:
+                return np.array(point)
+        return np.array(path[-1])
+
     def rotate_to(self, setpoint_angle):
         # Use the angle controller to rotate the agent to the specified angle
         previous_time = rospy.Time.now()
         while not rospy.is_shutdown():
             measured_angle = self.pose['yaw']
             error = measured_angle - setpoint_angle # Fine the error in angle from agent and setpoint
+            error = (-error + math.pi) % (2 * math.pi) - math.pi
             angular_velocity = self.angle_control.step(error, 0) # Calculate required angular velocity command
 
             # Add stabalization time to ensure the agent reaches the setpoint for X amount of time
@@ -150,28 +160,32 @@ class Navigation:
                 previous_time = rospy.Time.now()
 
             self.set_velocity(0, angular_velocity) # Send angular velocity control command to agent
+            rospy.sleep(1)
 
     def follow_path(self, path):
         # Rotate to the first point and start following path to the goal
-
+        lookahead_distance = 0.25
         linear_velocity = self.forward_velocity
-        start_x, start_y = path[0] # Get initial point
-        angle = math.atan2(start_y - self.pose['Y'], start_x - self.pose['X']) - self.pose['yaw'] # Find angle between the agent's heading and initial point
+        lookahead_point = self.__find_lookahead_point(path, lookahead_distance)
+        # start_x, start_y = path[0] # Get initial point
+        start_x, start_y = lookahead_point
+        # Find angle between the agent's heading and initial point
+        angle = math.atan2(start_y - self.pose['Y'], start_x - self.pose['X']) # - self.pose['yaw'] 
         self.rotate_to(angle) # Rotate towards initial point
 
         # Move to eaach point on the path
-        for point in path:
+   
+        for i, point in enumerate(path): 
             while not rospy.is_shutdown():
                 agent_position = [self.pose['X'], self.pose['Y']]
                 distance = math.dist(agent_position, point)
-
                 if distance <= self.position_threshold:
-                    break
+                    break # move to the next point
 
                 angle_setpoint = math.atan2(point[1] - agent_position[1], point[0] - agent_position[0])
                 angular_velocity = self.path_follow_control.step(angle_setpoint, self.pose['yaw'])
                 self.set_velocity(linear_velocity, angular_velocity)
-
+        print("Detination reached!")
         self.set_velocity(0, 0) # Stop the agent
 
     def navigate_to_goal(self, goal):
