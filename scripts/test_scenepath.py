@@ -15,6 +15,7 @@ if __name__ == "__main__":
 
     # planning.map_origin[2] = 3.14/8
     agent_position = [navigation.pose['X'], navigation.pose['Y']] # [0, 3]
+    print(agent_position)
     goal_position = [1, 1]
     map = planning.map    
 

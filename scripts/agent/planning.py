@@ -14,7 +14,7 @@ class Planning:
     '''
     Path planning class handling waypoint creation and navigatio to each waypoint
     '''
-    def __init__(self, path_to_config, agent_radius=0):
+    def __init__(self, path_to_config, agent_radius=0.30):
         # Initialize occupancy map and path planning
         self.agent_radius = agent_radius
         self.map, self.map_resolution, self.map_origin = self.load_map_config(path_to_config / 'map/map.pgm', path_to_config / 'map/map.yaml')
@@ -112,7 +112,13 @@ class Planning:
     def convert_to_real_point(self, pixel_point):
         # Convert pixel coordinate path to real [meters] coordinate
         origin_x, origin_y, origin_theta = self.map_origin
-        pixel_x, pixel_y = pixel_point
+        pixel_y, pixel_x = pixel_point
+        pixel_x = self.map.shape[0] - pixel_x
+
+        temp = pixel_x
+        pixel_x = pixel_y
+        pixel_y = temp
+
         offset_pixel_x, offset_pixel_y = (pixel_x * self.map_resolution + origin_x, pixel_y * self.map_resolution + origin_y)
         real_point = [offset_pixel_x*math.cos(-origin_theta) - offset_pixel_y*math.sin(-origin_theta), 
                       offset_pixel_x*math.sin(-origin_theta) + offset_pixel_y*math.cos(-origin_theta)]
