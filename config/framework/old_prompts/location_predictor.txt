@@ -9,11 +9,9 @@ Locations: These are all the locations available to use to generate the ranked l
 Schematic: The floor plan of the engineering facility that displays the spatial positions of each location and their relative positions against each other.
 
 ### Staff Occupations and Responsibilities ###
-This is the list of personnel and general responsibilities.
+This is the list of personnel and general responsibilities. 
 These are not absolute facts but give insight into each person's habits to guide the reasoning in finding the person's potential whereabouts.
-
-{actor_info}
-
+{formatted_actor_info}
 ### Solution Structure ###
 General structure format to guide reasoning for each piece of information given.
 For each step use step-by-step analysis.
