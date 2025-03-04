@@ -17,7 +17,7 @@ class Agent:
         path_to_config = Path(__file__).resolve().parents[2] / 'config'
 
         # Instantiate agent stack
-        # self.perception = Perception(path_to_config)
+        self.perception = Perception(path_to_config)
         self.navigation = Navigation(path_to_config, POSE_SOURCE=POSE_SOURCE) # Can change pose information based on 'SLAM' as well
 
         # Instantiate Person Goal Navigation framework stack

@@ -1,3 +1,6 @@
+import sys
+sys.path.append('/home/administrator/yolov5')
+
 import rospy
 import cv2
 import json
@@ -31,7 +34,8 @@ class Perception:
         self.MIN_DEPTH_RANGE = MIN_DEPTH_RANGE
         self.MAX_DEPTH_RANGE = MAX_DEPTH_RANGE
 
-        vision_model = torch.hub.load('ultralytics/yolo5', 'yolov5s', pretrained=True)
+        # vision_model = torch.hub.load('ultralytics/yolo5', 'yolov5s', pretrained=True)
+        vision_model = torch.hub.load('ultralytics/yolov5:v6.0', 'yolov5s', pretrained=True)
 
     def rgb_image_callback(self, data):
         # Get camera RGB image

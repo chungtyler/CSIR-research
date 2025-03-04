@@ -44,8 +44,8 @@ if __name__ == "__main__":
     record = False
 
     agent = Agent('SLAM')
-    # goal = [3, 1]
-    goal = [0, 0]
+    goal = [1, 1]
+    # goal = [0, 0]
     # controller = agent.navigation.path_follow_control
     rospy.sleep(1)
     eval_path_following(agent, goal)
