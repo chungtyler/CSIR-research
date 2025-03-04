@@ -199,11 +199,13 @@ class Navigation:
         print("Destination reached!")
         self.set_velocity(0, 0) # Stop the agent
 
-    def navigate_to_goal(self, goal):
+    def navigate_to_goal(self, goal, is_goal_pixel=True):
         # Pathfind the agent to the goal location
         agent_position = [self.pose['X'], self.pose['Y']]
         agent_pixel_position = self.planning.convert_to_pixel_point(agent_position)
-        goal_pixel_position = self.planning.convert_to_pixel_point(goal)
+        goal_pixel_position = goal
+        if not is_goal_pixel:
+            goal_pixel_position = self.planning.convert_to_pixel_point(goal)
         path = self.planning.generate_path(agent_pixel_position, goal_pixel_position)
         real_path = self.planning.convert_to_real_path(path)
         self.follow_path(real_path)
