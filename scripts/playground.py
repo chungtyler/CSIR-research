@@ -38,12 +38,14 @@ def eval_path_following(agent, goal_position):
 
     real_path = planner.convert_to_real_path(grid_path)
     agent.navigation.follow_path(real_path)
+    rospy.sleep(0.1)
 
 if __name__ == "__main__":
     record = False
 
     agent = Agent('SLAM')
-    goal = [3, 1]
+    # goal = [3, 1]
+    goal = [0, 0]
     # controller = agent.navigation.path_follow_control
     rospy.sleep(1)
     eval_path_following(agent, goal)
