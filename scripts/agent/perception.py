@@ -1,3 +1,6 @@
+import sys
+sys.path.append('/home/administrator/yolov5')
+
 import rospy
 import cv2
 import json
@@ -11,7 +14,7 @@ class Perception:
     This node subscribes to the agents sensors to collect sensor data and standardizes the formats
     This includes recieving the RealSense camera RGB image and depth image as well as the Velodyne-16 LiDAR's 2D and 3D scans
     '''
-    def __init__(self, path_to_config, MIN_DEPTH_RANGE=0, MAX_DEPTH_RANGE=2000):
+    def __init__(self, path_to_config, MIN_DEPTH_RANGE=0.5, MAX_DEPTH_RANGE=5):
         # Load rostopic names
         with open(path_to_config / 'rostopics.json', 'r') as rostopics_file:
             rostopics = json.load(rostopics_file)
@@ -31,7 +34,8 @@ class Perception:
         self.MIN_DEPTH_RANGE = MIN_DEPTH_RANGE
         self.MAX_DEPTH_RANGE = MAX_DEPTH_RANGE
 
-        vision_model = torch.hub.load('ultralytics/yolo5', 'yolov5s', pretrained=True)
+        # vision_model = torch.hub.load('ultralytics/yolo5', 'yolov5s', pretrained=True)
+        self.vision_model = torch.hub.load('ultralytics/yolov5:v6.0', 'yolov5s', pretrained=True)
 
     def rgb_image_callback(self, data):
         # Get camera RGB image
@@ -70,9 +74,14 @@ class Perception:
         detection_results = self.vision_model(image)
         detected_objects = json.loads(detection_results.pandas().xyxy[0].to_json(orient="records"))
         
+        detection_results.render()
+        labeled_image = cv2.cvtColor(detection_results.imgs[0], cv2.COLOR_RGB2RGBA)
+        cv2.imwrite("Annotated.png", labeled_image)
+        
         #objects_of_interest = []
         for detected_object in detected_objects:
-            if detected_object['name'] is object_name:
+            print(detected_object['name'], detected_object['confidence'])
+            if detected_object['name'] == object_name:
                 #objects_of_interest.append(detected_object)
                 return detected_object
 

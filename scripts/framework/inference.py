@@ -1,5 +1,5 @@
 import json
-from models import OpenAI, DeepSeek
+from model_api import OpenAI, DeepSeek
 
 class Inference:
     def __init__(self, path_to_config):
