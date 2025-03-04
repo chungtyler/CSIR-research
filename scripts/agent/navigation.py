@@ -1,5 +1,6 @@
 import json
 import math
+import copy
 
 import rospy
 import numpy as np
@@ -136,8 +137,8 @@ class Navigation:
     def __find_lookahead_point(self, path, L):
         for i, point in enumerate(path):
             if math.dist((self.pose['X'], self.pose['Y']), point) >= L:
-                return np.array(point)
-        return np.array(path[-1])
+                return np.array(point), i
+        return np.array(path[0]), 0
 
     def rotate_to(self, setpoint_angle):
         # Use the angle controller to rotate the agent to the specified angle
@@ -164,28 +165,38 @@ class Navigation:
 
     def follow_path(self, path):
         # Rotate to the first point and start following path to the goal
-        lookahead_distance = 0.25
+        lookahead_distance, current_target_index = 0.3, 0
         linear_velocity = self.forward_velocity
-        lookahead_point = self.__find_lookahead_point(path, lookahead_distance)
+        point, _ = self.__find_lookahead_point(path, lookahead_distance)
         # start_x, start_y = path[0] # Get initial point
-        start_x, start_y = lookahead_point
+        start_x, start_y = point
         # Find angle between the agent's heading and initial point
         angle = math.atan2(start_y - self.pose['Y'], start_x - self.pose['X']) # - self.pose['yaw'] 
         self.rotate_to(angle) # Rotate towards initial point
+        print("Heading to the path!")
 
-        # Move to eaach point on the path
-   
-        for i, point in enumerate(path): 
-            while not rospy.is_shutdown():
-                agent_position = [self.pose['X'], self.pose['Y']]
-                distance = math.dist(agent_position, point)
-                if distance <= self.position_threshold:
-                    break # move to the next point
+        # Calculate the initial error
+        agent_position = [self.pose['X'], self.pose['Y']]
+        setpoint_angle = math.atan2(point[1] - agent_position[1], point[0] - agent_position[0])
+        error = self.pose['yaw'] - setpoint_angle
+        error = (-error + math.pi) % (2 * math.pi) - math.pi
+        goal_distance = math.dist(agent_position, path[-1])  
 
-                angle_setpoint = math.atan2(point[1] - agent_position[1], point[0] - agent_position[0])
-                angular_velocity = self.path_follow_control.step(angle_setpoint, self.pose['yaw'])
-                self.set_velocity(linear_velocity, angular_velocity)
-        print("Detination reached!")
+        while goal_distance >= self.position_threshold:
+            # Execute the action 
+            angular_velocity = self.path_follow_control.step(error, 0)
+            self.set_velocity(linear_velocity, angular_velocity)    
+            # Update the error and goal distance
+            agent_position = [self.pose['X'], self.pose['Y']]
+            point, i = self.__find_lookahead_point(path, 0.5)
+            setpoint_angle = math.atan2(point[1] - agent_position[1], point[0] - agent_position[0])
+            error = self.pose['yaw'] - setpoint_angle
+            error = (-error + math.pi) % (2 * math.pi) - math.pi   
+            goal_distance = math.dist(agent_position, path[-1])
+            # Drop the passed points 
+            path = path[i:]       
+
+        print("Destination reached!")
         self.set_velocity(0, 0) # Stop the agent
 
     def navigate_to_goal(self, goal):

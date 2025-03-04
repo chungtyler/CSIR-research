@@ -18,8 +18,8 @@
     "path_following_control_PID": {
         "type": "PID",
         "gains": {
-            "Kp": 1.65,
-            "Ki": 0.000185,
+            "Kp": 1.95,
+            "Ki": 0.000085,
             "Kd": 0
         },
         "settings": {
@@ -27,7 +27,7 @@
             "MIN_CMD": -1.5,
             "MAX_CMD": 1.5,
             "stabalization_time": 0.0,
-            "error_threshold": 0.50,
+            "error_threshold": 0.15,
             "forward_velocity": 0.2
         }
     },
