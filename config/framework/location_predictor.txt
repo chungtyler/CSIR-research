@@ -6,7 +6,11 @@ Use contextual, semantic, social, and spatial information to guide your reasonin
 ### Information ###
 Query: The user prompt will give information such as the item to be delivered and extra context or story to deduce which locations are most probable to find the person.
 Locations: These are all the locations available to use to generate the ranked list; {locations}.
-Schematic: The floor plan of the engineering facility that displays the spatial positions of each location and their relative positions against each other.
+Schematic: The floor plan of the engineering facility (only if provided) that displays the spatial positions of each location and their relative positions against each other.
+Location Positions: These are is the coordinates of the locations for spatial awareness, the agent begins at the start location; {location_positions}; 
+{hallway}
+Distance Costs: These are the costs of travel between each location, this is used to optimize the path to improve total travel costs;
+{distance_costs}
 
 ### Staff Occupations and Responsibilities ###
 This is the list of personnel and general responsibilities.
@@ -31,16 +35,13 @@ Use this information to adjust the initial ordered list giving more weight to th
 
 3) Optimize the Pathing Based on Relative Distances
 Since the ordered locations will be traversed using an autonomous agent stitching together a more optimal path to reduce the need for re-tracing steps will improve efficiency.
-For locations with similar probability or uncertainty use the distance to travel to that location as another metric to tip the scales.
+For locations with similar probability or uncertainty use the provided distance costs between locations as another metric to tip the scales.
 For example, if the last location was the office and the following locations were the lunch room and lab of similar uncertainty, the lunch room would be chosen over the lab since it's closer to the office.
 This step is to fine-tune the ordered list but prioritize the social, semantic, and contextual information given to create the list.
 Based on these new insights adjust the ordered list again.
 
-4) Final Sanity Check of Ordered List
-Now examine the insights gathered at each step and evaluate the currently ordered list reasoning, if there are any discrepancies in logic vs the generated list or better placement for the locations.
-Challenge the ranking of each location in order and adjust the ordered list as necessary.
-
-5) Output the Finalized Ranked List
+4) Output the Finalized Ranked List
+Examine the insights gathered at each step and evaluate the final ordered list, change the order based on any new conclusions.
 Make sure to output the list as a Python list surrounded by XML tags.
 Ensure that all given locations in the system prompt are listed in the ranked list.
 For example using a random order to demonstrate the format: <list> {randomized} </list>

@@ -31,39 +31,24 @@ if __name__ == "__main__":
         locations_data = json.load(locations_file)
         locations = locations_data['locations']
 
-    #print(locations[])
-    locations_data['costs'] = {}
-    costs = locations_data['costs']
     # For each node determine the distance to each location
-    for start_name, start_position in locations.items():
-        for goal_name, goal_position in locations.items():
-            print(goal_name)
-            if goal_name is start_name: # Continue if the start and goal node are the same
-                continue
-
-            print(locations_data['costs'])
-
-            duplicate_cost = False
-            for cost in locations_data['costs']:
-                print(f"Start: {start_name} || Goal: {goal_name} || Cost: {cost}")
-                if start_name in cost and goal_name in cost:
-                    duplicate_cost = True
-
-            if duplicate_cost:
+    for start_location in locations:
+        start_position = start_location['position']
+        start_location['edges'] = []
+        for goal_location in locations:
+            if start_location['name'] is goal_location['name']: # Continue if the start and goal node are the same
                 continue
 
             # Get path length between locations
+            goal_position = goal_location['position'] # Get the goal locations position
             path = generate_path(astar, grid, start_position, goal_position) # Generate pixel path
             #real_path = planning.convert_to_real_path(path) # Convert to real path in meters
             path_length = planning.get_path_length(path) # Calculate the distance between the
             planning.show_path(map, path)
             
             # Update locations edge
-            key = f"{goal_name} and {start_name}"
-            value = int(path_length)
-            locations_data['costs'][key] = value
+            start_location['edges'].append({"target": goal_location['name'], "path_length": path_length})
 
-    locations_data['costs'] = {k: v for k, v in sorted(locations_data['costs'].items(), key=lambda item: item[1], reverse=True)}
     # Update locations file with path length information
     with open(path_to_config / 'map/locations.json', 'w') as locations_file:
         json.dump(locations_data, locations_file, indent=4)

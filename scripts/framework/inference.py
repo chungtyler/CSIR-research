@@ -15,7 +15,7 @@ class Inference:
 
     def get_response(self, model, prompt, query, images=None):
         # Get the response of the defined model
-        if 'gpt' in model: # Run OpenAI model
+        if 'gpt' in model or 'o1' in model: # Run OpenAI model
             response = self.models['OpenAI'].get_response(model, prompt, query, images)
 
         elif 'deepseek' in model: # Run DeepSeek model

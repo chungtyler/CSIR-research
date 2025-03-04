@@ -1,0 +1,178 @@
+{
+    "locations": [
+        {
+            "name": "start",
+            "position": [
+                15,
+                25
+            ],
+            "edges": [
+                {
+                    "target": "office",
+                    "path_length": 20.0
+                },
+                {
+                    "target": "meeting_room",
+                    "path_length": 30.0
+                },
+                {
+                    "target": "storage_room",
+                    "path_length": 30.0
+                },
+                {
+                    "target": "lunch_room",
+                    "path_length": 20.0
+                },
+                {
+                    "target": "lab",
+                    "path_length": 22.0
+                }
+            ]
+        },
+        {
+            "name": "office",
+            "position": [
+                5,
+                15
+            ],
+            "edges": [
+                {
+                    "target": "start",
+                    "path_length": 20.0
+                },
+                {
+                    "target": "meeting_room",
+                    "path_length": 30.0
+                },
+                {
+                    "target": "storage_room",
+                    "path_length": 30.0
+                },
+                {
+                    "target": "lunch_room",
+                    "path_length": 32.0
+                },
+                {
+                    "target": "lab",
+                    "path_length": 42.0
+                }
+            ]
+        },
+        {
+            "name": "meeting_room",
+            "position": [
+                25,
+                5
+            ],
+            "edges": [
+                {
+                    "target": "start",
+                    "path_length": 30.0
+                },
+                {
+                    "target": "office",
+                    "path_length": 30.0
+                },
+                {
+                    "target": "storage_room",
+                    "path_length": 20.0
+                },
+                {
+                    "target": "lunch_room",
+                    "path_length": 50.0
+                },
+                {
+                    "target": "lab",
+                    "path_length": 44.0
+                }
+            ]
+        },
+        {
+            "name": "storage_room",
+            "position": [
+                35,
+                15
+            ],
+            "edges": [
+                {
+                    "target": "start",
+                    "path_length": 30.0
+                },
+                {
+                    "target": "office",
+                    "path_length": 30.0
+                },
+                {
+                    "target": "meeting_room",
+                    "path_length": 20.0
+                },
+                {
+                    "target": "lunch_room",
+                    "path_length": 50.0
+                },
+                {
+                    "target": "lab",
+                    "path_length": 44.0
+                }
+            ]
+        },
+        {
+            "name": "lunch_room",
+            "position": [
+                5,
+                35
+            ],
+            "edges": [
+                {
+                    "target": "start",
+                    "path_length": 20.0
+                },
+                {
+                    "target": "office",
+                    "path_length": 32.0
+                },
+                {
+                    "target": "meeting_room",
+                    "path_length": 50.0
+                },
+                {
+                    "target": "storage_room",
+                    "path_length": 50.0
+                },
+                {
+                    "target": "lab",
+                    "path_length": 30.0
+                }
+            ]
+        },
+        {
+            "name": "lab",
+            "position": [
+                25,
+                25
+            ],
+            "edges": [
+                {
+                    "target": "start",
+                    "path_length": 22.0
+                },
+                {
+                    "target": "office",
+                    "path_length": 42.0
+                },
+                {
+                    "target": "meeting_room",
+                    "path_length": 44.0
+                },
+                {
+                    "target": "storage_room",
+                    "path_length": 44.0
+                },
+                {
+                    "target": "lunch_room",
+                    "path_length": 30.0
+                }
+            ]
+        }
+    ]
+}
