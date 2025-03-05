@@ -70,6 +70,7 @@ class LocationPredictor:
         # Use model inference to generate plan of executable code
         formatted_prompt = self.format_prompt(actor)
         response = self.inference.get_response(self.model, formatted_prompt, query, map)
+        print("GPT prediction: ", response)
 
         try:
             locations = self.response_to_locations(response)

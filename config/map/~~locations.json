@@ -1,0 +1,45 @@
+{
+    "locations": {
+        "start": [
+            15,
+            25
+        ],
+        "office": [
+            2,
+            15
+        ],
+        "meeting_room": [
+            25,
+            5
+        ],
+        "storage_room": [
+            35,
+            15
+        ],
+        "lunch_room": [
+            5,
+            35
+        ],
+        "lab": [
+            25,
+            25
+        ]
+    },
+    "costs": {
+        "lunch_room and meeting_room": 50,
+        "lunch_room and storage_room": 50,
+        "lab and office": 45,
+        "lab and meeting_room": 44,
+        "lab and storage_room": 44,
+        "lunch_room and office": 35,
+        "meeting_room and office": 33,
+        "storage_room and office": 33,
+        "meeting_room and start": 30,
+        "storage_room and start": 30,
+        "lab and lunch_room": 30,
+        "office and start": 23,
+        "lab and start": 22,
+        "lunch_room and start": 20,
+        "storage_room and meeting_room": 20
+    }
+}

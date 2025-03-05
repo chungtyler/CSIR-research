@@ -1,6 +1,8 @@
 import validators
 import os
 import base64
+
+import cv2
 from openai import OpenAI as openAI
 
 class OpenAI:
@@ -21,7 +23,9 @@ class OpenAI:
 
             image_url = f"data:image/jpg;base64,{base64_image}"
         else: # Otherwise convert image to base64
-            image_url = f"data:image/jpg;base64,{image}"
+            _, buffer = cv2.imencode('.png', image)
+            base64_image: bytes = base64.b64encode(buffer).decode('utf-8')
+            image_url = f"data:image/jpg;base64,{base64_image}"
 
         return image_url
 
@@ -34,7 +38,9 @@ class OpenAI:
             user_content = [{"type": "text","text": query}]
 
             # Add image content for multiple images
-            if images:
+            print(type(images))
+            user_content.append({"type": "text", "text": query})
+            if images is not None:
                 for image in images:
                     formatted_image = self.format_image(image)
                     user_content.append({"type": "image_url", "image_url": {"url": formatted_image}})

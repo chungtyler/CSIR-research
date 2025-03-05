@@ -74,13 +74,14 @@ class Perception:
         detection_results = self.vision_model(image)
         detected_objects = json.loads(detection_results.pandas().xyxy[0].to_json(orient="records"))
         
-        detection_results.render()
-        labeled_image = cv2.cvtColor(detection_results.imgs[0], cv2.COLOR_RGB2RGBA)
-        cv2.imwrite("Annotated.png", labeled_image)
+        # detection_results.render()
+        # labeled_image = cv2.cvtColor(detection_results.ims[0], cv2.COLOR_RGB2RGBA)
+        # cv2.imwrite("Annotated.png", labeled_image)
         
         #objects_of_interest = []
         for detected_object in detected_objects:
             print(detected_object['name'], detected_object['confidence'])
+            #print(detected_object['name'], detected_object['confidence'])
             if detected_object['name'] == object_name:
                 #objects_of_interest.append(detected_object)
                 return detected_object
