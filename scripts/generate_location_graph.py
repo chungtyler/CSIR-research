@@ -14,8 +14,8 @@ def generate_path(astar, grid, start_position, goal_position):
     return path
 
 if __name__ == "__main__":
-    path_to_config = Path(__file__).resolve().parents[2] / 'config'
-    path_to_map = path_to_config / 'map/engineering_map.png'
+    path_to_config = Path(__file__).resolve().parents[1] / 'config'
+    path_to_map = path_to_config / 'map/map.pgm'
 
     map = Image.open(path_to_map)
     map = map.convert("L")

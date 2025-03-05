@@ -125,8 +125,8 @@ class Navigation:
 
     def set_velocity(self, linear_velocity, angular_velocity):
         # Move the agent based on linear [m/s] and angular velocity [rad/s]
-        if self.estop.is_estop_active: # Stop sending control commands if emergency stop is active
-            return
+        #if self.estop.is_estop_active: # Stop sending control commands if emergency stop is active
+            #return
 
         # Publish control commands
         command = Twist()
@@ -161,7 +161,7 @@ class Navigation:
                 previous_time = rospy.Time.now()
 
             self.set_velocity(0, angular_velocity) # Send angular velocity control command to agent
-            rospy.sleep(1)
+            #rospy.sleep(1)
 
     def follow_path(self, path):
         # Rotate to the first point and start following path to the goal

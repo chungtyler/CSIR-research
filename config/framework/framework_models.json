@@ -1,5 +1,5 @@
 {
     "task_planner": "gpt-4o-mini",
-    "location_predictor": "gpt-4o",
+    "location_predictor": "deepseek-r1:32b",
     "person_matcher": "gpt-4o"
 }

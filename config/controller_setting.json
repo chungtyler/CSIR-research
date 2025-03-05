@@ -2,7 +2,7 @@
     "angle_control": {
         "type": "PID",
         "gains": {
-            "Kp": 3.5,
+            "Kp": 1.95,
             "Ki": 0.00002,
             "Kd": 0
         },
